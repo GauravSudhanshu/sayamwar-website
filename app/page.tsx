@@ -235,10 +235,18 @@ export default function HomePage() {
       <section className="py-28 px-6 bg-[#3D0A0A]">
         <div className="max-w-5xl mx-auto">
           <AnimateOnScroll className="text-center mb-16">
-            <p className="section-label mb-4">All Packages Include</p>
-            <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-white">Everything Arranged</h2>
-            <div className="gold-line" />
-            <p className="text-white/40 text-sm mt-5 max-w-md mx-auto">Not a single detail left to chance — we handle it all so you celebrate freely</p>
+            <p className="section-label mb-6">All Packages Include</p>
+            <h2 className="font-[var(--font-playfair)] text-4xl md:text-6xl font-bold text-white leading-tight">
+              Everything <span className="gold-shimmer">Arranged</span>
+            </h2>
+            <div className="flex items-center justify-center gap-5 mt-7 mb-6">
+              <div className="h-px w-20 bg-gradient-to-r from-transparent to-[#C9A84C]/60" />
+              <span className="text-[#C9A84C] text-xl">✦</span>
+              <div className="h-px w-20 bg-gradient-to-l from-transparent to-[#C9A84C]/60" />
+            </div>
+            <p className="font-[var(--font-playfair)] text-white/50 text-base italic max-w-lg mx-auto leading-relaxed">
+              Not a single detail left to chance — we handle it all so you celebrate freely
+            </p>
           </AnimateOnScroll>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-px bg-[#C9A84C]/10">
             {whatsIncluded.map((item, i) => (
