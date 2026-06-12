@@ -69,7 +69,7 @@ export default function HomePage() {
           HERO — Full screen cinematic
       ══════════════════════════════════════ */}
       <section className="relative h-screen min-h-[680px] flex items-center justify-center overflow-hidden -mt-[80px]">
-        <Image src="/venue-5.jpg" alt="Sayamwar Hall" fill className="object-cover object-center" priority sizes="100vw" />
+        <Image src="/hero-bg.jpg" alt="Sayamwar Hall" fill className="object-cover object-center" priority sizes="100vw" />
         {/* Deep luxury overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#1A0303]/80 via-[#1A0303]/55 to-[#1A0303]/85" />
         {/* Gold vignette sides */}
