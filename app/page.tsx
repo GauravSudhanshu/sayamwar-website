@@ -244,7 +244,6 @@ export default function HomePage() {
             {whatsIncluded.map((item, i) => (
               <AnimateOnScroll key={item.label} delay={i * 50}>
                 <div className="glass hover:bg-white/10 transition-all duration-400 p-7 text-center group">
-                  <div className="text-3xl mb-3 group-hover:scale-110 transition-transform duration-300">{item.icon}</div>
                   <p className="text-white/70 text-xs uppercase tracking-widest group-hover:text-[#C9A84C] transition-colors">{item.label}</p>
                 </div>
               </AnimateOnScroll>
