@@ -243,8 +243,9 @@ export default function HomePage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-px bg-[#C9A84C]/10">
             {whatsIncluded.map((item, i) => (
               <AnimateOnScroll key={item.label} delay={i * 50}>
-                <div className="glass hover:bg-white/10 transition-all duration-400 p-7 text-center group">
-                  <p className="text-white/70 text-xs uppercase tracking-widest group-hover:text-[#C9A84C] transition-colors">{item.label}</p>
+                <div className="glass hover:bg-white/10 transition-all duration-500 p-8 text-center group cursor-default">
+                  <p className="text-[#C9A84C]/60 text-base mb-2 group-hover:text-[#C9A84C] transition-colors duration-300">✦</p>
+                  <p className="font-[var(--font-playfair)] text-white font-semibold text-sm md:text-base leading-snug tracking-wide group-hover:text-[#C9A84C] transition-colors duration-300">{item.label}</p>
                 </div>
               </AnimateOnScroll>
             ))}
