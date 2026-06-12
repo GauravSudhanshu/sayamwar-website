@@ -77,21 +77,30 @@ export default function HomePage() {
         <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#1A0303]/40 to-transparent" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-          <p className="anim-0 section-label mb-6">Danapur &nbsp;•&nbsp; Patna &nbsp;•&nbsp; Bihar</p>
 
-          <h1 className="anim-1 font-[var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.25] mb-6">
-            Where Celebrations<br />
-            <span className="gold-shimmer">Become Memories</span>
-          </h1>
-
-          <div className="anim-2 flex items-center justify-center gap-4 mb-8">
-            <div className="h-px w-16 bg-[#C9A84C]/60" />
-            <p className="text-white/60 text-sm tracking-[0.2em] uppercase">Sayamwar Hall &amp; Homestay</p>
-            <div className="h-px w-16 bg-[#C9A84C]/60" />
+          {/* Location tag */}
+          <div className="anim-0 flex items-center justify-center gap-3 mb-8">
+            <div className="h-px w-10 bg-[#C9A84C]/50" />
+            <p className="section-label tracking-[0.4em]">Danapur &nbsp;•&nbsp; Patna &nbsp;•&nbsp; Bihar</p>
+            <div className="h-px w-10 bg-[#C9A84C]/50" />
           </div>
 
-          <p className="anim-3 text-white/65 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-            Patna&apos;s premier venue for weddings, birthday celebrations, receptions &amp; comfortable stays — crafted for the extraordinary.
+          {/* Main heading */}
+          <h1 className="anim-1 font-[var(--font-playfair)] leading-[1.2] mb-6">
+            <span className="block text-3xl md:text-4xl lg:text-5xl font-normal italic text-white/85 mb-1">Where Celebrations</span>
+            <span className="block text-4xl md:text-5xl lg:text-6xl font-bold gold-shimmer">Become Memories</span>
+          </h1>
+
+          {/* Brand name with ornamental lines */}
+          <div className="anim-2 flex items-center justify-center gap-5 mb-8">
+            <div className="h-px w-20 bg-gradient-to-r from-transparent to-[#C9A84C]/70" />
+            <span className="text-[#C9A84C] text-[10px] tracking-[0.45em] uppercase font-[var(--font-inter)] font-semibold">Sayamwar Hall &amp; Homestay</span>
+            <div className="h-px w-20 bg-gradient-to-l from-transparent to-[#C9A84C]/70" />
+          </div>
+
+          {/* Description */}
+          <p className="anim-3 font-[var(--font-playfair)] italic text-white/60 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+            Patna&apos;s premier venue for weddings, birthday celebrations,<br className="hidden md:block" /> receptions &amp; comfortable stays — crafted for the extraordinary.
           </p>
 
           <div className="anim-4 flex flex-col sm:flex-row gap-4 justify-center">
