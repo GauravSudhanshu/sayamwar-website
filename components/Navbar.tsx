@@ -27,10 +27,10 @@ export default function Navbar() {
   return (
     <nav className={`sticky top-0 z-50 transition-all duration-500 ${
       scrolled
-        ? 'bg-[#0C0806]/95 backdrop-blur-md border-b border-[#C9A84C]/20 shadow-xl'
+        ? 'bg-[#3D0A0A]/95 backdrop-blur-md border-b border-[#C9A84C]/20 shadow-xl'
         : 'bg-transparent border-b border-transparent'
     }`}
-    style={{ backgroundColor: scrolled ? undefined : 'rgba(12,8,6,0.65)', backdropFilter: 'blur(8px)' }}
+    style={{ backgroundColor: scrolled ? undefined : 'rgba(61,10,10,0.65)', backdropFilter: 'blur(8px)' }}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-[80px]">
 
@@ -72,7 +72,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div className={`lg:hidden overflow-hidden transition-all duration-500 ${open ? 'max-h-[500px]' : 'max-h-0'}`}>
-        <div className="bg-[#0C0806]/98 border-t border-[#C9A84C]/20 px-6 py-6 space-y-4">
+        <div className="bg-[#3D0A0A]/98 border-t border-[#C9A84C]/20 px-6 py-6 space-y-4">
           {links.map((l) => (
             <Link key={l.href} href={l.href}
               className="block text-white/70 hover:text-[#C9A84C] text-sm uppercase tracking-widest transition-colors"

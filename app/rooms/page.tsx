@@ -13,29 +13,29 @@ export const metadata: Metadata = {
 const rooms = [
   {
     img: '/venue-3.jpg',
+    name: 'Standard Room',
+    price: '₹1,500 / night',
+    features: ['Ceiling Fan', 'Double Bed', 'TV', 'Attached Bathroom', 'Clean Linen', '24x7 Water'],
+    badge: null,
+  },
+  {
+    img: '/venue-3.jpg',
     name: 'Deluxe AC Room',
-    price: '₹1,200 / night',
+    price: '₹1,800 / night',
     features: ['Air Conditioning', 'Double Bed', 'TV', 'Attached Bathroom', 'Free Wi-Fi', 'Room Service'],
     badge: 'Most Popular',
   },
   {
     img: '/venue-6.jpg',
     name: 'Premium AC Suite',
-    price: '₹1,800 / night',
+    price: '₹2,500 / night',
     features: ['Air Conditioning', 'King Bed + Sofa', 'LED Ceiling', 'Attached Bathroom', 'Free Wi-Fi', 'Welcome Kit'],
     badge: 'Best Value',
   },
   {
-    img: '/venue-3.jpg',
-    name: 'Standard Room',
-    price: '₹700 / night',
-    features: ['Ceiling Fan', 'Double Bed', 'TV', 'Attached Bathroom', 'Clean Linen', '24x7 Water'],
-    badge: null,
-  },
-  {
     img: '/venue-6.jpg',
     name: 'Family Suite',
-    price: '₹2,200 / night',
+    price: '₹2,500 / night',
     features: ['2 Bedrooms', 'Living Area', 'AC', '2 Bathrooms', 'TV', 'Mini Kitchen'],
     badge: 'For Families',
   },
@@ -52,7 +52,7 @@ export default function RoomsPage() {
       {/* Hero */}
       <section className="relative py-28 px-4 text-center text-white overflow-hidden">
         <Image src="/venue-6.jpg" alt="Rooms" fill className="object-cover" sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1A0303]/70 via-[#1A0303]/60 to-[#1A0303]/80" />
         <div className="relative z-10">
           <p className="text-[#C9A227] text-xs tracking-[0.35em] uppercase font-[var(--font-inter)] mb-3">Comfortable Stay</p>
           <h1 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold mb-4">

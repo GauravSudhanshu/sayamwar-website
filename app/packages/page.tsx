@@ -163,7 +163,7 @@ export default function PackagesPage() {
                       className="object-cover transition-transform duration-500 group-hover:scale-[1.06]"
                       sizes="320px"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#1A0303]/50 to-transparent" />
                     <div className="absolute bottom-3 left-4">
                       <p className="font-[var(--font-playfair)] text-white font-bold text-xl">{pkg.name}</p>
                     </div>
@@ -315,9 +315,9 @@ export default function PackagesPage() {
           </AnimateOnScroll>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             {[
-              { name: 'Standard Room', price: '₹700 / night', note: 'Fan, Double Bed, Attached Bath' },
-              { name: 'Deluxe AC Room', price: '₹1,200 / night', note: 'AC, Double Bed, TV, Wi-Fi' },
-              { name: 'Premium AC Suite', price: '₹1,800 / night', note: 'AC, King Bed, Sofa, LED Ceiling' },
+              { name: 'Standard Room', price: '₹1,500 / night', note: 'Fan, Double Bed, Attached Bath' },
+              { name: 'Deluxe AC Room', price: '₹1,800 / night', note: 'AC, Double Bed, TV, Wi-Fi' },
+              { name: 'Premium AC Suite', price: '₹2,500 / night', note: 'AC, King Bed, Sofa, LED Ceiling' },
             ].map((r, i) => (
               <AnimateOnScroll key={r.name} delay={i * 100}>
                 <div className="bg-white/8 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/12 hover:border-[#C9A227]/50 transition-all">

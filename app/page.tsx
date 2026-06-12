@@ -36,7 +36,7 @@ const services = [
     img: '/venue-6.jpg', tag: 'Restful Stay',
     title: 'Rooms & Homestay',
     desc: 'Contemporary AC rooms with premium interiors — the perfect retreat for your event guests.',
-    href: '/rooms', price: 'From ₹700/night',
+    href: '/rooms', price: 'From ₹1,500/night',
   },
 ]
 
@@ -71,15 +71,15 @@ export default function HomePage() {
       <section className="relative h-screen min-h-[680px] flex items-center justify-center overflow-hidden -mt-[80px]">
         <Image src="/venue-5.jpg" alt="Sayamwar Hall" fill className="object-cover object-center" priority sizes="100vw" />
         {/* Deep luxury overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/55 to-black/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1A0303]/80 via-[#1A0303]/55 to-[#1A0303]/85" />
         {/* Gold vignette sides */}
-        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-black/40 to-transparent" />
-        <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-black/40 to-transparent" />
+        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#1A0303]/40 to-transparent" />
+        <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#1A0303]/40 to-transparent" />
 
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <p className="anim-0 section-label mb-6">Danapur &nbsp;•&nbsp; Patna &nbsp;•&nbsp; Bihar</p>
 
-          <h1 className="anim-1 font-[var(--font-playfair)] text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.08] mb-6">
+          <h1 className="anim-1 font-[var(--font-playfair)] text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.25] mb-6">
             Where Celebrations<br />
             <span className="gold-shimmer">Become Memories</span>
           </h1>
@@ -121,7 +121,7 @@ export default function HomePage() {
       <div className="bg-[#C9A84C] py-4 overflow-hidden">
         <div className="marquee-track">
           {[...marqueeItems, ...marqueeItems].map((item, i) => (
-            <span key={i} className="flex items-center text-[#0C0806] font-[var(--font-playfair)] text-sm font-semibold tracking-widest uppercase mx-10 whitespace-nowrap">
+            <span key={i} className="flex items-center text-[#3D0A0A] font-[var(--font-playfair)] text-sm font-semibold tracking-widest uppercase mx-10 whitespace-nowrap">
               {item}
               <span className="ml-10 text-[#8B6914]">✦</span>
             </span>
@@ -150,14 +150,14 @@ export default function HomePage() {
 
           <AnimateOnScroll direction="right">
             <p className="section-label mb-4">About Sayamwar Hall</p>
-            <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#0C0806] leading-tight mb-4">
+            <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#3D0A0A] leading-tight mb-4">
               Danapur&apos;s Most<br /><span className="gold-shimmer">Loved Venue</span>
             </h2>
             <div className="gold-line-left mb-6" />
-            <p className="text-[#0C0806]/60 text-base leading-relaxed mb-5">
+            <p className="text-[#3D0A0A]/60 text-base leading-relaxed mb-5">
               At Sayamwar Hall &amp; Homestay, we believe every celebration deserves perfection. Our grand AC banquet hall accommodates 200–300 guests with crystal chandeliers, custom LED ambience, and impeccable service.
             </p>
-            <p className="text-[#0C0806]/60 text-base leading-relaxed mb-10">
+            <p className="text-[#3D0A0A]/60 text-base leading-relaxed mb-10">
               From intimate engagements to grand weddings, our expert team handles every detail — décor, catering, entertainment — so you can be present in every moment.
             </p>
             <div className="grid grid-cols-2 gap-5 mb-10">
@@ -168,8 +168,8 @@ export default function HomePage() {
                 ['5★', 'Google Rating'],
               ].map(([n, l]) => (
                 <div key={l} className="border-l-2 border-[#C9A84C] pl-4">
-                  <p className="font-[var(--font-playfair)] text-2xl font-bold text-[#0C0806]">{n}</p>
-                  <p className="text-[#0C0806]/50 text-xs uppercase tracking-widest">{l}</p>
+                  <p className="font-[var(--font-playfair)] text-2xl font-bold text-[#3D0A0A]">{n}</p>
+                  <p className="text-[#3D0A0A]/50 text-xs uppercase tracking-widest">{l}</p>
                 </div>
               ))}
             </div>
@@ -181,15 +181,15 @@ export default function HomePage() {
       {/* ══════════════════════════════════════
           SERVICES — alternating large cards
       ══════════════════════════════════════ */}
-      <section className="bg-[#0C0806]">
+      <section className="bg-[#3D0A0A]">
         {services.map((s, i) => (
           <div key={s.href} className={`max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-0 items-center ${i % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
             {/* Image */}
             <AnimateOnScroll direction={i % 2 === 0 ? 'left' : 'right'} className={`relative h-[420px] ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
               <div className="relative h-full w-full rounded-sm overflow-hidden img-card">
                 <Image src={s.img} alt={s.title} fill className="object-cover" sizes="700px" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <div className="absolute top-5 left-5 bg-[#C9A84C] text-[#0C0806] text-xs font-bold uppercase tracking-widest px-3 py-1.5">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1A0303]/50 to-transparent" />
+                <div className="absolute top-5 left-5 bg-[#C9A84C] text-[#3D0A0A] text-xs font-bold uppercase tracking-widest px-3 py-1.5">
                   {s.tag}
                 </div>
               </div>
@@ -220,10 +220,10 @@ export default function HomePage() {
             { target: 5,   suffix: '★', label: 'Google Rating' },
           ].map((s) => (
             <div key={s.label}>
-              <p className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#0C0806]">
+              <p className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#3D0A0A]">
                 <Counter target={s.target} suffix={s.suffix} />
               </p>
-              <p className="text-[#0C0806]/65 text-xs uppercase tracking-widest mt-2">{s.label}</p>
+              <p className="text-[#3D0A0A]/65 text-xs uppercase tracking-widest mt-2">{s.label}</p>
             </div>
           ))}
         </div>
@@ -232,7 +232,7 @@ export default function HomePage() {
       {/* ══════════════════════════════════════
           WHAT'S INCLUDED
       ══════════════════════════════════════ */}
-      <section className="py-28 px-6 bg-[#0C0806]">
+      <section className="py-28 px-6 bg-[#3D0A0A]">
         <div className="max-w-5xl mx-auto">
           <AnimateOnScroll className="text-center mb-16">
             <p className="section-label mb-4">All Packages Include</p>
@@ -260,7 +260,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <AnimateOnScroll className="text-center mb-16">
             <p className="section-label mb-4">Our Venue</p>
-            <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#0C0806]">A Glimpse of Grandeur</h2>
+            <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#3D0A0A]">A Glimpse of Grandeur</h2>
             <div className="gold-line" />
           </AnimateOnScroll>
 
@@ -268,7 +268,7 @@ export default function HomePage() {
             <AnimateOnScroll className="col-span-12 md:col-span-7 row-span-2" direction="left">
               <div className="relative h-[500px] rounded overflow-hidden img-card">
                 <Image src="/venue-5.jpg" alt="Sayamwar Hall Building" fill className="object-cover" sizes="700px" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1A0303]/60 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6">
                   <p className="section-label mb-1">Our Building</p>
                   <p className="font-[var(--font-playfair)] text-white text-xl font-bold">Sayamwar Hall &amp; Homestay</p>
@@ -314,7 +314,7 @@ export default function HomePage() {
       {/* ══════════════════════════════════════
           TESTIMONIALS
       ══════════════════════════════════════ */}
-      <section className="py-28 px-6 bg-[#120E0A]">
+      <section className="py-28 px-6 bg-[#2D0707]">
         <div className="max-w-6xl mx-auto">
           <AnimateOnScroll className="text-center mb-16">
             <p className="section-label mb-4">Testimonials</p>
@@ -357,9 +357,9 @@ export default function HomePage() {
         <div className="max-w-xl mx-auto">
           <AnimateOnScroll className="text-center mb-12">
             <p className="section-label mb-4">Get in Touch</p>
-            <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#0C0806]">Begin Your Story</h2>
+            <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#3D0A0A]">Begin Your Story</h2>
             <div className="gold-line" />
-            <p className="text-[#0C0806]/50 text-sm mt-5">Tell us about your event and we&apos;ll respond on WhatsApp within minutes</p>
+            <p className="text-[#3D0A0A]/50 text-sm mt-5">Tell us about your event and we&apos;ll respond on WhatsApp within minutes</p>
           </AnimateOnScroll>
           <AnimateOnScroll>
             <div className="bg-white rounded p-10 shadow-2xl border border-[#C9A84C]/10">
@@ -372,7 +372,7 @@ export default function HomePage() {
       {/* ══════════════════════════════════════
           MAP
       ══════════════════════════════════════ */}
-      <section className="py-28 px-6 bg-[#0C0806]">
+      <section className="py-28 px-6 bg-[#3D0A0A]">
         <div className="max-w-5xl mx-auto">
           <AnimateOnScroll className="text-center mb-12">
             <p className="section-label mb-4">Find Us</p>
