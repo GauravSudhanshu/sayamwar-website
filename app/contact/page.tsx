@@ -56,8 +56,11 @@ export default function ContactPage() {
                 <span className="text-3xl">📍</span>
                 <div>
                   <p className="font-bold text-[#7B1818] mb-1">Location</p>
-                  <p className="text-gray-700">Sayamwar Hall &amp; Homestay</p>
-                  <p className="text-gray-500 text-sm">Danapur, Patna, Bihar</p>
+                  <p className="text-gray-700 font-semibold">Sayamwar Hall &amp; Homestay</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">Gola Road, Adarsh Vihar Colony</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">Lane Number 5, near T Point,</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">beside Hotel King Regency,</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">Patna, Bihar 801503</p>
                   <a
                     href="https://www.google.com/maps/place/Sayamwar+Hall+%26+Homestay/@25.6292816,85.0523556,17z/data=!3m1!4b1!4m6!3m5!1s0x39ed570055ae3209:0xecb1a935000a9895!8m2!3d25.6292768!4d85.0549305"
                     target="_blank"

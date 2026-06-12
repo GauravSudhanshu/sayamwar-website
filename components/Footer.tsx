@@ -60,7 +60,7 @@ export default function Footer() {
               target="_blank" rel="noopener noreferrer"
               className="flex items-start gap-3 hover:text-[#C9A84C] transition-colors">
               <span className="mt-0.5">📍</span>
-              <span>Danapur, Patna, Bihar</span>
+              <span>Gola Road, Adarsh Vihar Colony, Lane 5,<br />near T Point, beside Hotel King Regency,<br />Patna, Bihar 801503</span>
             </a>
             <a href="tel:9942972484" className="flex items-center gap-3 hover:text-[#C9A84C] transition-colors">
               <span>📞</span> 9942972484
@@ -80,7 +80,7 @@ export default function Footer() {
       <div className="border-t border-white/5 py-5 px-6">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-white/25 text-xs">© {new Date().getFullYear()} Sayamwar Hall &amp; Homestay. All rights reserved.</p>
-          <p className="text-white/20 text-xs">Danapur, Patna, Bihar</p>
+          <p className="text-white/20 text-xs">Gola Road, Adarsh Vihar Colony, Patna, Bihar 801503</p>
         </div>
       </div>
     </footer>
