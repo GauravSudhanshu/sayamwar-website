@@ -6,7 +6,7 @@ import LeadForm from '@/components/LeadForm'
 export const metadata: Metadata = {
   title: 'Packages & Pricing | Sayamwar Hall & Homestay Patna',
   description: 'View all event packages at Sayamwar Hall & Homestay, Danapur Patna. Wedding ₹1,51,000 | Reception ₹1,00,000 | Birthday ₹85,000 | Engagement ₹85,000. Call 7646028228.',
-  alternates: { canonical: 'https://sayamwarhall.com/packages' },
+  alternates: { canonical: 'https://sayamwar.com/packages' },
 }
 
 const rentalPackages = [

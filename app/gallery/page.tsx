@@ -5,7 +5,7 @@ import AnimateOnScroll from '@/components/AnimateOnScroll'
 export const metadata: Metadata = {
   title: 'Gallery | Sayamwar Hall & Homestay Danapur Patna',
   description: 'View photos of Sayamwar Hall & Homestay — banquet hall, wedding setups, birthday decorations, AC rooms and more. Located in Danapur, Patna.',
-  alternates: { canonical: 'https://sayamwarhall.com/gallery' },
+  alternates: { canonical: 'https://sayamwar.com/gallery' },
 }
 
 const photos = [

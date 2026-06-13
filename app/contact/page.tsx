@@ -4,7 +4,7 @@ import LeadForm from '@/components/LeadForm'
 export const metadata: Metadata = {
   title: 'Contact Us | Sayamwar Hall & Homestay Danapur, Patna',
   description: 'Contact Sayamwar Hall & Homestay in Danapur, Patna. Call 7646028228 or WhatsApp for bookings, inquiries and site visits. We respond within minutes.',
-  alternates: { canonical: 'https://sayamwarhall.com/contact' },
+  alternates: { canonical: 'https://sayamwar.com/contact' },
 }
 
 export default function ContactPage() {

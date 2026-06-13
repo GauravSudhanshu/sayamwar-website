@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Wedding Venue in Patna | Marriage Hall Danapur | Sayamwar Hall',
   description: 'Best wedding venue in Patna & Danapur. Grand marriage hall for 200-300 guests. Complete wedding packages with decor, catering & rooms. Call 7646028228.',
   keywords: 'wedding venue patna, marriage hall patna, wedding hall danapur, shaadi hall patna, vivah venue patna',
-  alternates: { canonical: 'https://sayamwarhall.com/wedding-venue-patna' },
+  alternates: { canonical: 'https://sayamwar.com/wedding-venue-patna' },
 }
 
 const weddingFeatures = [

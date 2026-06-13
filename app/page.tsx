@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Best Banquet Hall in Patna | Banquet Near Me | Sayamwar Hall Danapur',
   description: 'Looking for banquet hall near you in Patna? Sayamwar Hall & Homestay, Danapur is Patna\'s best low budget banquet hall. Weddings from ₹1,51,000 | Birthday from ₹85,000. Call 7646028228.',
   keywords: 'banquet near me, banquet hall in patna, best banquet hall patna, low budget banquet patna, banquet hall danapur, wedding venue patna near me',
-  alternates: { canonical: 'https://sayamwarhall.com/' },
+  alternates: { canonical: 'https://sayamwar.com/' },
 }
 
 const marqueeItems = ['Weddings', 'Birthday Celebrations', 'Receptions', 'Engagements', 'Corporate Events', 'Comfortable Stays', 'Intimate Gatherings', 'Grand Festivities']

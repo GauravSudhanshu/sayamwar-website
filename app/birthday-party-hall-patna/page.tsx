@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Birthday Party Hall in Patna | Danapur | Sayamwar Hall',
   description: 'Book the best birthday party hall in Patna & Danapur. Affordable packages, cake, decor, catering & DJ. Capacity 50–300 guests. Call 7646028228 to book.',
   keywords: 'birthday party hall patna, birthday venue danapur, birthday party hall danapur patna, kids birthday venue patna',
-  alternates: { canonical: 'https://sayamwarhall.com/birthday-party-hall-patna' },
+  alternates: { canonical: 'https://sayamwar.com/birthday-party-hall-patna' },
 }
 
 const packages = [

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Rooms in Danapur Patna | AC & Non-AC Rooms | Sayamwar Homestay',
   description: 'Book comfortable AC and Non-AC rooms at Sayamwar Homestay, Danapur, Patna. Clean, affordable rooms with all amenities. Call 7646028228 or WhatsApp to book.',
   keywords: 'rooms in danapur patna, homestay danapur, ac rooms patna, budget rooms danapur',
-  alternates: { canonical: 'https://sayamwarhall.com/rooms' },
+  alternates: { canonical: 'https://sayamwar.com/rooms' },
 }
 
 const rooms = [

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Banquet Hall in Patna | Best & Low Budget Banquet Near Me | Sayamwar Hall',
   description: 'Best banquet hall in Patna, Danapur. Low budget banquet packages from ₹85,000. AC hall for 200–300 guests. Wedding, birthday, reception venue near you. Call 7646028228.',
   keywords: 'banquet hall in patna, best banquet in patna, low budget banquet patna, banquet near me patna, banquet hall danapur, cheap banquet hall patna, affordable banquet patna, wedding banquet hall patna',
-  alternates: { canonical: 'https://sayamwarhall.com/banquet-hall-patna' },
+  alternates: { canonical: 'https://sayamwar.com/banquet-hall-patna' },
 }
 
 const faqJsonLd = {
