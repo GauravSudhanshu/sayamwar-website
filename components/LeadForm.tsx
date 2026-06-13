@@ -12,7 +12,7 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const msg = `Hello! I want to inquire about Sayamwar Hall & Homestay.%0AName: ${form.name}%0APhone: ${form.phone}%0AEvent: ${form.event}%0ADate: ${form.date}%0AGuests: ${form.guests}%0AMessage: ${form.message}`
-    window.open(`https://wa.me/919942972484?text=${msg}`, '_blank')
+    window.open(`https://wa.me/917646028228?text=${msg}`, '_blank')
     setSubmitted(true)
   }
 
@@ -95,8 +95,8 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
       </button>
       <p className="text-center text-xs text-gray-500">
         Or call us directly:{' '}
-        <a href="tel:9942972484" className="text-[#7B1818] font-bold">
-          9942972484
+        <a href="tel:7646028228" className="text-[#7B1818] font-bold">
+          7646028228
         </a>
       </p>
     </form>

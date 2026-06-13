@@ -56,7 +56,7 @@ export default function Navbar() {
 
         {/* CTA */}
         <div className="hidden lg:flex items-center gap-3">
-          <a href="https://wa.me/919942972484" target="_blank" rel="noopener noreferrer"
+          <a href="https://wa.me/917646028228" target="_blank" rel="noopener noreferrer"
             className="btn-gold text-sm py-2.5 px-5">
             Book Now
           </a>
@@ -81,11 +81,11 @@ export default function Navbar() {
             </Link>
           ))}
           <div className="pt-4 flex flex-col gap-3">
-            <a href="https://wa.me/919942972484" target="_blank" rel="noopener noreferrer" className="btn-gold justify-center text-sm">
+            <a href="https://wa.me/917646028228" target="_blank" rel="noopener noreferrer" className="btn-gold justify-center text-sm">
               💬 Book via WhatsApp
             </a>
-            <a href="tel:9942972484" className="btn-outline justify-center text-sm">
-              <span>📞 9942972484</span>
+            <a href="tel:7646028228" className="btn-outline justify-center text-sm">
+              <span>📞 7646028228</span>
             </a>
           </div>
         </div>

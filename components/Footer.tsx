@@ -22,9 +22,9 @@ export default function Footer() {
             Danapur, Patna&apos;s finest venue for weddings, birthday celebrations, corporate events, and comfortable stays. Every detail crafted for the extraordinary.
           </p>
           <div className="flex gap-3">
-            <a href="https://wa.me/919942972484" target="_blank" rel="noopener noreferrer"
+            <a href="https://wa.me/917646028228" target="_blank" rel="noopener noreferrer"
               className="btn-gold text-xs py-2 px-4">WhatsApp</a>
-            <a href="tel:9942972484"
+            <a href="tel:7646028228"
               className="btn-outline text-xs py-2 px-4"><span>Call Us</span></a>
           </div>
         </div>
@@ -62,10 +62,13 @@ export default function Footer() {
               <span className="mt-0.5">📍</span>
               <span>Gola Road, Adarsh Vihar Colony, Lane 5,<br />near T Point, beside Hotel King Regency,<br />Patna, Bihar 801503</span>
             </a>
-            <a href="tel:9942972484" className="flex items-center gap-3 hover:text-[#C9A84C] transition-colors">
-              <span>📞</span> 9942972484
+            <a href="tel:7646028228" className="flex items-center gap-3 hover:text-[#C9A84C] transition-colors">
+              <span>📞</span> 7646028228
             </a>
-            <a href="https://wa.me/919942972484" target="_blank" rel="noopener noreferrer"
+            <a href="tel:7070486987" className="flex items-center gap-3 hover:text-[#C9A84C] transition-colors">
+              <span>📞</span> 7070486987
+            </a>
+            <a href="https://wa.me/917646028228" target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-3 hover:text-[#C9A84C] transition-colors">
               <span>💬</span> WhatsApp Us
             </a>

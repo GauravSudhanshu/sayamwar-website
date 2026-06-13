@@ -3,7 +3,7 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Banquet Hall in Patna | Best & Low Budget Banquet Near Me | Sayamwar Hall',
-  description: 'Best banquet hall in Patna, Danapur. Low budget banquet packages from ₹85,000. AC hall for 200–300 guests. Wedding, birthday, reception venue near you. Call 9942972484.',
+  description: 'Best banquet hall in Patna, Danapur. Low budget banquet packages from ₹85,000. AC hall for 200–300 guests. Wedding, birthday, reception venue near you. Call 7646028228.',
   keywords: 'banquet hall in patna, best banquet in patna, low budget banquet patna, banquet near me patna, banquet hall danapur, cheap banquet hall patna, affordable banquet patna, wedding banquet hall patna',
   alternates: { canonical: 'https://sayamwarhall.com/banquet-hall-patna' },
 }
@@ -85,14 +85,14 @@ export default function BanquetHallPage() {
         <p className="text-[#C9A227] font-bold mb-8">Packages Starting ₹85,000 · No Hidden Charges</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://wa.me/919942972484?text=Hello!%20I%20want%20to%20book%20Banquet%20Hall%20at%20Sayamwar"
+            href="https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20Banquet%20Hall%20at%20Sayamwar"
             target="_blank" rel="noopener noreferrer"
             className="px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-bold transition-colors"
           >
             💬 Check Availability
           </a>
-          <a href="tel:9942972484" className="px-6 py-3 bg-[#C9A227] text-[#5A0F0F] rounded-lg font-bold hover:bg-[#E8C547] transition-colors">
-            📞 9942972484
+          <a href="tel:7646028228" className="px-6 py-3 bg-[#C9A227] text-[#5A0F0F] rounded-lg font-bold hover:bg-[#E8C547] transition-colors">
+            📞 7646028228
           </a>
         </div>
       </section>

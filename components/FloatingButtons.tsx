@@ -3,7 +3,7 @@ export default function FloatingButtons() {
   return (
     <>
       <a
-        href="https://wa.me/919942972484?text=Hello%2C%20I%20want%20to%20inquire%20about%20Sayamwar%20Hall%20%26%20Homestay"
+        href="https://wa.me/917646028228?text=Hello%2C%20I%20want%20to%20inquire%20about%20Sayamwar%20Hall%20%26%20Homestay"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-float flex items-center justify-center w-14 h-14 bg-green-500 rounded-full text-white shadow-lg hover:bg-green-600 transition-colors"
@@ -15,7 +15,7 @@ export default function FloatingButtons() {
       </a>
 
       <a
-        href="tel:9942972484"
+        href="tel:7646028228"
         className="call-float flex items-center justify-center w-14 h-14 bg-blue-600 rounded-full text-white shadow-lg hover:bg-blue-700 transition-colors"
         aria-label="Call Us"
       >

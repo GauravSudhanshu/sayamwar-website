@@ -5,7 +5,7 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Packages & Pricing | Sayamwar Hall & Homestay Patna',
-  description: 'View all event packages at Sayamwar Hall & Homestay, Danapur Patna. Wedding ₹1,51,000 | Reception ₹1,00,000 | Birthday ₹85,000 | Engagement ₹85,000. Call 9942972484.',
+  description: 'View all event packages at Sayamwar Hall & Homestay, Danapur Patna. Wedding ₹1,51,000 | Reception ₹1,00,000 | Birthday ₹85,000 | Engagement ₹85,000. Call 7646028228.',
   alternates: { canonical: 'https://sayamwarhall.com/packages' },
 }
 
@@ -173,7 +173,7 @@ export default function PackagesPage() {
                     <p className="font-[var(--font-playfair)] text-3xl font-bold text-[#C9A227] text-center mb-2">{pkg.price}</p>
                     <p className="text-gray-500 text-sm text-center leading-relaxed mb-5 flex-1">{pkg.desc}</p>
                     <a
-                      href={`https://wa.me/919942972484?text=Hello!%20I%20want%20to%20book%20the%20${encodeURIComponent(pkg.name)}%20package%20at%20Sayamwar%20Hall`}
+                      href={`https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20the%20${encodeURIComponent(pkg.name)}%20package%20at%20Sayamwar%20Hall`}
                       target="_blank" rel="noopener noreferrer"
                       className="block text-center w-full py-3 bg-[#7B1818] hover:bg-[#5A0F0F] text-white rounded-xl text-sm font-bold transition-all hover:scale-105"
                     >
@@ -291,7 +291,7 @@ export default function PackagesPage() {
                       ))}
                     </ul>
                     <a
-                      href={`https://wa.me/919942972484?text=Hello!%20I%20want%20to%20book%20the%20${encodeURIComponent(pkg.name)}%20food%20package`}
+                      href={`https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20the%20${encodeURIComponent(pkg.name)}%20food%20package`}
                       target="_blank" rel="noopener noreferrer"
                       className="block text-center w-full py-3 border-2 border-[#7B1818] text-[#7B1818] hover:bg-[#7B1818] hover:text-white rounded-xl text-sm font-bold transition-all"
                     >

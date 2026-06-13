@@ -5,7 +5,7 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Rooms in Danapur Patna | AC & Non-AC Rooms | Sayamwar Homestay',
-  description: 'Book comfortable AC and Non-AC rooms at Sayamwar Homestay, Danapur, Patna. Clean, affordable rooms with all amenities. Call 9942972484 or WhatsApp to book.',
+  description: 'Book comfortable AC and Non-AC rooms at Sayamwar Homestay, Danapur, Patna. Clean, affordable rooms with all amenities. Call 7646028228 or WhatsApp to book.',
   keywords: 'rooms in danapur patna, homestay danapur, ac rooms patna, budget rooms danapur',
   alternates: { canonical: 'https://sayamwarhall.com/rooms' },
 }
@@ -56,13 +56,13 @@ export default function RoomsPage() {
             Modern, clean, and affordable rooms — perfect for event guests, travelers, and business visitors.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://wa.me/919942972484?text=Hello!%20I%20want%20to%20book%20a%20room%20at%20Sayamwar%20Homestay"
+            <a href="https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20a%20room%20at%20Sayamwar%20Homestay"
               target="_blank" rel="noopener noreferrer"
               className="px-7 py-3 bg-green-500 hover:bg-green-600 text-white rounded-xl font-bold transition-all hover:scale-105">
               💬 Book via WhatsApp
             </a>
-            <a href="tel:9942972484" className="px-7 py-3 bg-[#C9A227] text-[#3D0A0A] rounded-xl font-bold hover:bg-[#E8C547] transition-all hover:scale-105">
-              📞 Call: 9942972484
+            <a href="tel:7646028228" className="px-7 py-3 bg-[#C9A227] text-[#3D0A0A] rounded-xl font-bold hover:bg-[#E8C547] transition-all hover:scale-105">
+              📞 Call: 7646028228
             </a>
           </div>
         </div>
@@ -98,7 +98,7 @@ export default function RoomsPage() {
                         </li>
                       ))}
                     </ul>
-                    <a href={`https://wa.me/919942972484?text=Hello!%20I%20want%20to%20book%20${encodeURIComponent(room.name)}`}
+                    <a href={`https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20${encodeURIComponent(room.name)}`}
                       target="_blank" rel="noopener noreferrer"
                       className="block text-center w-full py-2.5 bg-[#7B1818] hover:bg-[#5A0F0F] text-white rounded-xl text-sm font-bold transition-colors">
                       Book This Room

@@ -7,7 +7,7 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Best Banquet Hall in Patna | Banquet Near Me | Sayamwar Hall Danapur',
-  description: 'Looking for banquet hall near you in Patna? Sayamwar Hall & Homestay, Danapur is Patna\'s best low budget banquet hall. Weddings from ₹1,51,000 | Birthday from ₹85,000. Call 9942972484.',
+  description: 'Looking for banquet hall near you in Patna? Sayamwar Hall & Homestay, Danapur is Patna\'s best low budget banquet hall. Weddings from ₹1,51,000 | Birthday from ₹85,000. Call 7646028228.',
   keywords: 'banquet near me, banquet hall in patna, best banquet hall patna, low budget banquet patna, banquet hall danapur, wedding venue patna near me',
   alternates: { canonical: 'https://sayamwarhall.com/' },
 }
@@ -105,15 +105,15 @@ export default function HomePage() {
           </p>
 
           <div className="anim-4 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://wa.me/919942972484?text=Hello!%20I%20want%20to%20book%20an%20event%20at%20Sayamwar%20Hall"
+            <a href="https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20an%20event%20at%20Sayamwar%20Hall"
               target="_blank" rel="noopener noreferrer" className="btn-gold text-sm">
               Book Your Event
             </a>
             <Link href="/packages" className="btn-outline text-sm">
               <span>View Packages</span>
             </Link>
-            <a href="tel:9942972484" className="btn-outline text-sm">
-              <span>📞 9942972484</span>
+            <a href="tel:7646028228" className="btn-outline text-sm">
+              <span>📞 7646028228</span>
             </a>
           </div>
         </div>
@@ -407,8 +407,8 @@ export default function HomePage() {
               />
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-              <a href="tel:9942972484" className="btn-gold text-sm justify-center">📞 9942972484</a>
-              <a href="https://wa.me/919942972484" target="_blank" rel="noopener noreferrer"
+              <a href="tel:7646028228" className="btn-gold text-sm justify-center">📞 7646028228</a>
+              <a href="https://wa.me/917646028228" target="_blank" rel="noopener noreferrer"
                 className="btn-outline text-sm justify-center"><span>💬 WhatsApp Us</span></a>
             </div>
           </AnimateOnScroll>

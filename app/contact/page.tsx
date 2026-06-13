@@ -3,7 +3,7 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Contact Us | Sayamwar Hall & Homestay Danapur, Patna',
-  description: 'Contact Sayamwar Hall & Homestay in Danapur, Patna. Call 9942972484 or WhatsApp for bookings, inquiries and site visits. We respond within minutes.',
+  description: 'Contact Sayamwar Hall & Homestay in Danapur, Patna. Call 7646028228 or WhatsApp for bookings, inquiries and site visits. We respond within minutes.',
   alternates: { canonical: 'https://sayamwarhall.com/contact' },
 }
 
@@ -29,8 +29,11 @@ export default function ContactPage() {
                 <span className="text-3xl">📞</span>
                 <div>
                   <p className="font-bold text-[#7B1818] mb-1">Call Us</p>
-                  <a href="tel:9942972484" className="text-lg font-bold text-gray-800 hover:text-[#7B1818] transition-colors">
-                    9942972484
+                  <a href="tel:7646028228" className="text-lg font-bold text-gray-800 hover:text-[#7B1818] transition-colors">
+                    7646028228
+                  </a>
+                  <a href="tel:7070486987" className="block text-base font-semibold text-gray-600 hover:text-[#7B1818] transition-colors mt-1">
+                    7070486987
                   </a>
                   <p className="text-gray-400 text-xs mt-1">Available 9 AM – 9 PM daily</p>
                 </div>
@@ -41,12 +44,12 @@ export default function ContactPage() {
                 <div>
                   <p className="font-bold text-[#7B1818] mb-1">WhatsApp</p>
                   <a
-                    href="https://wa.me/919942972484"
+                    href="https://wa.me/917646028228"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-lg font-bold text-gray-800 hover:text-green-600 transition-colors"
                   >
-                    +91 9942972484
+                    +91 7646028228
                   </a>
                   <p className="text-gray-400 text-xs mt-1">Quick responses, usually within minutes</p>
                 </div>
@@ -85,7 +88,7 @@ export default function ContactPage() {
             {/* Quick action buttons */}
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <a
-                href="https://wa.me/919942972484?text=Hello!%20I%20want%20to%20inquire%20about%20Sayamwar%20Hall"
+                href="https://wa.me/917646028228?text=Hello!%20I%20want%20to%20inquire%20about%20Sayamwar%20Hall"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-bold text-center transition-colors"
@@ -93,7 +96,7 @@ export default function ContactPage() {
                 💬 Chat on WhatsApp
               </a>
               <a
-                href="tel:9942972484"
+                href="tel:7646028228"
                 className="flex-1 py-3 bg-[#7B1818] hover:bg-[#5A0F0F] text-white rounded-lg font-bold text-center transition-colors"
               >
                 📞 Call Now

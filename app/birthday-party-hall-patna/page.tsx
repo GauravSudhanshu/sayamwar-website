@@ -3,7 +3,7 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Birthday Party Hall in Patna | Danapur | Sayamwar Hall',
-  description: 'Book the best birthday party hall in Patna & Danapur. Affordable packages, cake, decor, catering & DJ. Capacity 50–300 guests. Call 9942972484 to book.',
+  description: 'Book the best birthday party hall in Patna & Danapur. Affordable packages, cake, decor, catering & DJ. Capacity 50–300 guests. Call 7646028228 to book.',
   keywords: 'birthday party hall patna, birthday venue danapur, birthday party hall danapur patna, kids birthday venue patna',
   alternates: { canonical: 'https://sayamwarhall.com/birthday-party-hall-patna' },
 }
@@ -50,15 +50,15 @@ export default function BirthdayPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/919942972484?text=Hello!%20I%20want%20to%20book%20a%20Birthday%20Party%20at%20Sayamwar%20Hall"
+              href="https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20a%20Birthday%20Party%20at%20Sayamwar%20Hall"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-bold transition-colors"
             >
               💬 Book via WhatsApp
             </a>
-            <a href="tel:9942972484" className="px-6 py-3 bg-[#C9A227] text-[#5A0F0F] rounded-lg font-bold hover:bg-[#E8C547] transition-colors">
-              📞 9942972484
+            <a href="tel:7646028228" className="px-6 py-3 bg-[#C9A227] text-[#5A0F0F] rounded-lg font-bold hover:bg-[#E8C547] transition-colors">
+              📞 7646028228
             </a>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function BirthdayPage() {
                     ))}
                   </ul>
                   <a
-                    href={`https://wa.me/919942972484?text=Hello!%20I%20want%20to%20book%20${encodeURIComponent(pkg.name)}%20package%20for%20Birthday%20Party`}
+                    href={`https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20${encodeURIComponent(pkg.name)}%20package%20for%20Birthday%20Party`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-center w-full py-3 bg-[#7B1818] hover:bg-[#5A0F0F] text-white rounded-lg text-sm font-bold transition-colors"

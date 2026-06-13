@@ -20,12 +20,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://sayamwarhall.com'),
   title: 'Best Banquet Hall in Patna | Low Budget Banquet Near Me | Sayamwar Hall Danapur',
-  description: 'Sayamwar Hall & Homestay — Best banquet hall in Patna & Danapur. Low budget banquet packages from ₹85,000. AC hall for 200–300 guests. Weddings, birthdays, receptions. Call 9942972484.',
+  description: 'Sayamwar Hall & Homestay — Best banquet hall in Patna & Danapur. Low budget banquet packages from ₹85,000. AC hall for 200–300 guests. Weddings, birthdays, receptions. Call 7646028228.',
   keywords: 'banquet hall in patna, banquet near me, best banquet in patna, low budget banquet patna, banquet hall danapur, wedding hall patna, birthday party hall patna, event hall near me, cheap banquet hall patna, banquet hall gola road patna',
   icons: { icon: '/logo.jpg', apple: '/logo.jpg' },
   openGraph: {
     title: 'Best Banquet Hall in Patna | Low Budget | Sayamwar Hall Danapur',
-    description: 'Best & affordable banquet hall in Patna, Danapur. Packages from ₹85,000. AC hall 200–300 guests. Call 9942972484.',
+    description: 'Best & affordable banquet hall in Patna, Danapur. Packages from ₹85,000. AC hall 200–300 guests. Call 7646028228.',
     type: 'website',
     images: [{ url: '/hero-bg.jpg', width: 1200, height: 630, alt: 'Sayamwar Hall & Homestay Patna' }],
   },
@@ -37,7 +37,7 @@ const jsonLd = {
   name: 'Sayamwar Hall & Homestay',
   description: 'Best banquet hall in Patna and Danapur for weddings, birthday parties, receptions, engagements and corporate events. Low budget packages starting from ₹85,000.',
   url: 'https://sayamwarhall.com',
-  telephone: '+919942972484',
+  telephone: '+917646028228',
   priceRange: '₹₹',
   image: 'https://sayamwarhall.com/hero-bg.jpg',
   address: {

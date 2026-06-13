@@ -3,7 +3,7 @@ import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
   title: 'Wedding Venue in Patna | Marriage Hall Danapur | Sayamwar Hall',
-  description: 'Best wedding venue in Patna & Danapur. Grand marriage hall for 200-300 guests. Complete wedding packages with decor, catering & rooms. Call 9942972484.',
+  description: 'Best wedding venue in Patna & Danapur. Grand marriage hall for 200-300 guests. Complete wedding packages with decor, catering & rooms. Call 7646028228.',
   keywords: 'wedding venue patna, marriage hall patna, wedding hall danapur, shaadi hall patna, vivah venue patna',
   alternates: { canonical: 'https://sayamwarhall.com/wedding-venue-patna' },
 }
@@ -56,15 +56,15 @@ export default function WeddingVenuePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://wa.me/919942972484?text=Hello!%20I%20want%20to%20inquire%20about%20Wedding%20Venue%20at%20Sayamwar%20Hall"
+              href="https://wa.me/917646028228?text=Hello!%20I%20want%20to%20inquire%20about%20Wedding%20Venue%20at%20Sayamwar%20Hall"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 bg-green-500 hover:bg-green-600 text-white rounded-lg font-bold text-lg transition-colors"
             >
               💬 Get Wedding Quote
             </a>
-            <a href="tel:9942972484" className="px-8 py-4 bg-[#C9A227] text-[#5A0F0F] rounded-lg font-bold text-lg hover:bg-[#E8C547] transition-colors">
-              📞 9942972484
+            <a href="tel:7646028228" className="px-8 py-4 bg-[#C9A227] text-[#5A0F0F] rounded-lg font-bold text-lg hover:bg-[#E8C547] transition-colors">
+              📞 7646028228
             </a>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default function WeddingVenuePage() {
                     ))}
                   </ul>
                   <a
-                    href={`https://wa.me/919942972484?text=Hello!%20I%20want%20to%20inquire%20about%20${encodeURIComponent(pkg.name)}%20wedding%20package`}
+                    href={`https://wa.me/917646028228?text=Hello!%20I%20want%20to%20inquire%20about%20${encodeURIComponent(pkg.name)}%20wedding%20package`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-center w-full py-3 bg-[#7B1818] hover:bg-[#5A0F0F] text-white rounded-lg text-sm font-bold transition-colors"

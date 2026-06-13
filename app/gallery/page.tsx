@@ -61,14 +61,14 @@ export default function GalleryPage() {
             <h3 className="font-[var(--font-playfair)] text-2xl font-bold text-white mb-6">Schedule a Free Site Visit</h3>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://wa.me/919942972484?text=Hello!%20I%20want%20to%20schedule%20a%20site%20visit%20to%20Sayamwar%20Hall"
+                href="https://wa.me/917646028228?text=Hello!%20I%20want%20to%20schedule%20a%20site%20visit%20to%20Sayamwar%20Hall"
                 target="_blank" rel="noopener noreferrer"
                 className="px-7 py-3 bg-green-500 hover:bg-green-600 text-white rounded-xl font-bold transition-all hover:scale-105"
               >
                 💬 Schedule via WhatsApp
               </a>
-              <a href="tel:9942972484" className="px-7 py-3 bg-[#C9A227] text-[#3D0A0A] rounded-xl font-bold hover:bg-[#E8C547] transition-all hover:scale-105">
-                📞 Call: 9942972484
+              <a href="tel:7646028228" className="px-7 py-3 bg-[#C9A227] text-[#3D0A0A] rounded-xl font-bold hover:bg-[#E8C547] transition-all hover:scale-105">
+                📞 Call: 7646028228
               </a>
             </div>
           </AnimateOnScroll>
