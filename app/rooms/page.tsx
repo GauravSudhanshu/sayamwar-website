@@ -32,13 +32,6 @@ const rooms = [
     features: ['Air Conditioning', 'King Bed + Sofa', 'LED Ceiling', 'Attached Bathroom', 'Free Wi-Fi', 'Welcome Kit'],
     badge: 'Best Value',
   },
-  {
-    img: '/venue-6.jpg',
-    name: 'Family Suite',
-    price: '₹2,500 / night',
-    features: ['2 Bedrooms', 'Living Area', 'AC', '2 Bathrooms', 'TV', 'Mini Kitchen'],
-    badge: 'For Families',
-  },
 ]
 
 const amenities = [

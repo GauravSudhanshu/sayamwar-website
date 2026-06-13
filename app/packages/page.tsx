@@ -29,7 +29,7 @@ const rentalPackages = [
   {
     img: '/pkg-engagement.jpg',
     name: 'Engagement',
-    price: '₹85,000',
+    price: '₹85,000 – ₹1,25,000',
     highlight: false,
     tag: null,
     desc: 'Beautiful engagement ceremony with mandap, mala, decor & food arrangements.',
@@ -37,7 +37,7 @@ const rentalPackages = [
   {
     img: '/pkg-birthday.jpg',
     name: 'Birthday',
-    price: '₹85,000',
+    price: '₹85,000 – ₹1,00,000',
     highlight: false,
     tag: null,
     desc: 'Custom birthday celebration with theme decor, selfie point, DJ & catering.',
