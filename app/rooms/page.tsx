@@ -69,38 +69,45 @@ export default function RoomsPage() {
       </section>
 
       {/* Room Cards */}
-      <section className="py-16 px-4 bg-[#FDF8F0]">
-        <div className="max-w-6xl mx-auto">
-          <AnimateOnScroll className="text-center mb-12">
-            <p className="text-[#C9A227] text-xs tracking-[0.3em] uppercase font-[var(--font-inter)] mb-2">Accommodation</p>
+      <section className="py-20 px-4 bg-[#FDF8F0]">
+        <div className="max-w-5xl mx-auto">
+          <AnimateOnScroll className="text-center mb-14">
+            <p className="text-[#C9A84C] text-xs tracking-[0.35em] uppercase font-[var(--font-inter)] mb-3">Accommodation</p>
             <h2 className="font-[var(--font-playfair)] text-4xl font-bold text-[#3D0A0A]">Choose Your Room</h2>
             <div className="gold-divider" />
+            <p className="text-gray-500 text-sm mt-4 max-w-lg mx-auto">Each room is thoughtfully furnished for a restful, comfortable stay.</p>
           </AnimateOnScroll>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {rooms.map((room, i) => (
-              <AnimateOnScroll key={room.name} delay={i * 100}>
-                <div className="card-hover bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 relative">
+              <AnimateOnScroll key={room.name} delay={i * 120}>
+                <div className="group bg-white rounded-3xl overflow-hidden shadow-lg border border-[#E8D5A3]/40 hover:shadow-2xl hover:-translate-y-1 transition-all duration-400 relative flex flex-col">
                   {room.badge && (
-                    <div className="absolute top-3 right-3 z-10 bg-[#C9A227] text-[#3D0A0A] text-xs font-bold px-2 py-1 rounded-full">
+                    <div className="absolute top-4 left-4 z-10 bg-[#C9A84C] text-[#3D0A0A] text-[10px] font-bold px-3 py-1 rounded-full tracking-widest uppercase shadow">
                       {room.badge}
                     </div>
                   )}
-                  <div className="relative h-48 img-card group overflow-hidden">
-                    <Image src={room.img} alt={room.name} fill className="object-cover transition-transform duration-500 group-hover:scale-[1.07]" sizes="320px" />
+                  <div className="relative h-56 overflow-hidden">
+                    <Image src={room.img} alt={room.name} fill className="object-cover transition-transform duration-600 group-hover:scale-[1.06]" sizes="420px" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#3D0A0A]/40 to-transparent" />
                   </div>
-                  <div className="p-5">
-                    <h3 className="font-[var(--font-playfair)] font-bold text-[#7B1818] text-lg mb-1">{room.name}</h3>
-                    <p className="text-[#C9A227] font-bold text-xl mb-4">{room.price}</p>
-                    <ul className="space-y-1.5 mb-5">
+                  <div className="p-7 flex flex-col flex-1">
+                    <h3 className="font-[var(--font-playfair)] font-bold text-[#7B1818] text-xl mb-1">{room.name}</h3>
+                    <div className="flex items-baseline gap-1 mb-5">
+                      <span className="text-[#C9A84C] font-bold text-2xl">{room.price.split('/')[0]}</span>
+                      <span className="text-gray-400 text-sm">/ night</span>
+                    </div>
+                    <div className="w-8 h-px bg-[#C9A84C]/40 mb-5" />
+                    <ul className="space-y-2 mb-7 flex-1">
                       {room.features.map((f) => (
-                        <li key={f} className="text-sm text-gray-600 flex items-center gap-2">
-                          <span className="text-green-500">✓</span> {f}
+                        <li key={f} className="text-sm text-gray-600 flex items-center gap-2.5">
+                          <span className="w-4 h-4 rounded-full bg-[#C9A84C]/15 flex items-center justify-center text-[#C9A84C] text-[10px] flex-shrink-0">✓</span>
+                          {f}
                         </li>
                       ))}
                     </ul>
                     <a href={`https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20${encodeURIComponent(room.name)}`}
                       target="_blank" rel="noopener noreferrer"
-                      className="block text-center w-full py-2.5 bg-[#7B1818] hover:bg-[#5A0F0F] text-white rounded-xl text-sm font-bold transition-colors">
+                      className="block text-center w-full py-3 bg-[#7B1818] hover:bg-[#5A0F0F] text-white rounded-xl text-sm font-bold tracking-wide transition-colors shadow-sm">
                       Book This Room
                     </a>
                   </div>
