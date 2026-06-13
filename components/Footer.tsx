@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="md:col-span-2">
           <Link href="/" className="inline-flex items-center gap-4 mb-6 group">
             <div className="relative w-20 h-20 rounded border border-[#C9A84C]/40 overflow-hidden bg-[#F7F2EA] flex-shrink-0">
-              <Image src="/logo.jpg" alt="Sayamwar Hall & Homestay" fill className="object-contain" sizes="80px" />
+              <Image src="/logo.png" alt="Sayamwar Hall & Homestay" fill className="object-contain" sizes="80px" />
             </div>
             <div>
               <p className="font-[var(--font-playfair)] text-[#C9A84C] font-bold text-xl leading-tight">Sayamwar Hall</p>

@@ -37,7 +37,7 @@ export default function Navbar() {
         {/* Logo + Name */}
         <Link href="/" className="flex items-center gap-3 flex-shrink-0">
           <div className="relative w-[80px] h-[72px] rounded-lg overflow-hidden border border-[#C9A84C]/60 bg-[#F7F2EA]">
-            <Image src="/logo.jpg" alt="Sayamwar Hall & Homestay" fill className="object-contain" sizes="80px" priority />
+            <Image src="/logo.png" alt="Sayamwar Hall & Homestay" fill className="object-contain" sizes="80px" priority />
           </div>
           <div className="flex flex-col leading-none">
             <span className="font-[var(--font-playfair)] text-[#C9A84C] font-bold text-lg tracking-wide">Sayamwar</span>
