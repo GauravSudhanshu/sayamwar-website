@@ -6,8 +6,9 @@ import Counter from '@/components/Counter'
 import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
-  title: 'Sayamwar Hall & Homestay | Premier Banquet Hall in Danapur, Patna',
-  description: 'Sayamwar Hall & Homestay — Danapur, Patna\'s finest banquet hall for weddings, birthdays & corporate events. 200–300 guest capacity. Luxury rooms. Call 9942972484.',
+  title: 'Best Banquet Hall in Patna | Banquet Near Me | Sayamwar Hall Danapur',
+  description: 'Looking for banquet hall near you in Patna? Sayamwar Hall & Homestay, Danapur is Patna\'s best low budget banquet hall. Weddings from ₹1,51,000 | Birthday from ₹85,000. Call 9942972484.',
+  keywords: 'banquet near me, banquet hall in patna, best banquet hall patna, low budget banquet patna, banquet hall danapur, wedding venue patna near me',
   alternates: { canonical: 'https://sayamwarhall.com/' },
 }
 
