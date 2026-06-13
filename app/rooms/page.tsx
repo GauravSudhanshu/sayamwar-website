@@ -70,7 +70,7 @@ export default function RoomsPage() {
 
       {/* Room Cards */}
       <section className="py-20 px-4 bg-[#FDF8F0]">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <AnimateOnScroll className="text-center mb-14">
             <p className="text-[#C9A84C] text-xs tracking-[0.35em] uppercase font-[var(--font-inter)] mb-3">Accommodation</p>
             <h2 className="font-[var(--font-playfair)] text-4xl font-bold text-[#3D0A0A]">Choose Your Room</h2>
