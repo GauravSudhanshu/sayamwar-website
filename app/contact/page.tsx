@@ -35,7 +35,7 @@ export default function ContactPage() {
                   <a href="tel:7070486987" className="block text-base font-semibold text-gray-600 hover:text-[#7B1818] transition-colors mt-1">
                     7070486987
                   </a>
-                  <p className="text-gray-400 text-xs mt-1">Available 9 AM – 9 PM daily</p>
+                  <p className="text-gray-400 text-xs mt-1">Available 24 hours, 7 days a week</p>
                 </div>
               </div>
 
@@ -92,9 +92,9 @@ export default function ContactPage() {
               <div className="flex gap-4 bg-white rounded-xl p-5 shadow-sm border border-gray-100">
                 <span className="text-3xl">🕐</span>
                 <div>
-                  <p className="font-bold text-[#7B1818] mb-1">Office Hours</p>
-                  <p className="text-gray-600 text-sm">Monday – Sunday</p>
-                  <p className="text-gray-600 text-sm">9:00 AM – 9:00 PM</p>
+                  <p className="font-bold text-[#7B1818] mb-1">Open Hours</p>
+                  <p className="text-gray-600 text-sm font-semibold">Open 24 Hours, 7 Days</p>
+                  <p className="text-gray-400 text-xs mt-1">Rooms available round the clock</p>
                 </div>
               </div>
             </div>

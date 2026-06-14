@@ -73,7 +73,7 @@ export default function Footer() {
               <span>💬</span> WhatsApp Us
             </a>
             <div className="flex items-center gap-3">
-              <span>🕐</span> 9 AM – 9 PM Daily
+              <span>🕐</span> Open 24 Hours, 7 Days
             </div>
           </div>
         </div>
