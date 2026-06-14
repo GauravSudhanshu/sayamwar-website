@@ -1,292 +1,79 @@
 'use client'
 import Image from 'next/image'
-
-const vegPackages = [
-  {
-    tier: 'Mehfil',
-    price: '₹999',
-    note: 'without LED Counter',
-    items: [
-      { name: 'Starter', qty: 2 },
-      { name: 'Soup / Cold Drink', qty: 1 },
-      { name: 'Coffee / Tea', qty: 1 },
-      { name: 'Hi Tea', qty: 2 },
-      { name: 'Vegetable (Seasonal)', qty: 1 },
-      { name: 'Paneer', qty: 1 },
-      { name: 'Dal', qty: 1 },
-      { name: 'Rice', qty: 1 },
-      { name: 'Curd', qty: 1 },
-      { name: 'Green Salad', qty: null },
-      { name: 'Papad / Chatni / Achar', qty: null },
-      { name: 'Breads', qty: 2 },
-      { name: 'Sweets', qty: 1 },
-      { name: 'Ice Cream', qty: 1 },
-      { name: 'Mineral Water Jar 250ml', qty: null },
-    ],
-  },
-  {
-    tier: 'Jashn',
-    price: '₹1,199',
-    note: 'with LED Counter',
-    items: [
-      { name: 'Starter', qty: 3 },
-      { name: 'Soup / Cold Drink', qty: 1 },
-      { name: 'Coffee', qty: 1 },
-      { name: 'Hi Tea', qty: 3 },
-      { name: 'Vegetable (Seasonal)', qty: 2 },
-      { name: 'Paneer', qty: 1 },
-      { name: 'Dal', qty: 1 },
-      { name: 'Rice', qty: 2 },
-      { name: 'Curd', qty: 1 },
-      { name: 'Green Salad', qty: 1 },
-      { name: 'Papad / Chatni / Achar', qty: null },
-      { name: 'Breads', qty: 3 },
-      { name: 'Sweets', qty: 2 },
-      { name: 'Ice Cream', qty: 1 },
-      { name: 'Mineral Water 200/250ml', qty: null },
-    ],
-  },
-  {
-    tier: 'Shahi',
-    price: '₹1,351',
-    note: 'with LED Counter',
-    items: [
-      { name: 'Starter', qty: 4 },
-      { name: 'Soup', qty: 1 },
-      { name: 'Coffee', qty: 1 },
-      { name: 'Welcome Drink (Mocktail)', qty: 4 },
-      { name: 'Hi Tea', qty: 4 },
-      { name: 'Vegetable (Seasonal)', qty: 2 },
-      { name: 'Paneer', qty: 1 },
-      { name: 'Dal', qty: 2 },
-      { name: 'Rice', qty: 2 },
-      { name: 'Curd', qty: 1 },
-      { name: 'Salad with Fruit Cut', qty: 1 },
-      { name: 'Papad / Chatni / Achar', qty: null },
-      { name: 'Breads', qty: 4 },
-      { name: 'Sweets', qty: 3 },
-      { name: 'Ice Cream', qty: 2 },
-      { name: 'Tawa Garden', qty: 1 },
-      { name: 'Mineral Water 200/250ml', qty: null },
-    ],
-  },
-]
-
-const nonVegPackages = [
-  {
-    tier: 'Mehfil',
-    price: '₹1,199',
-    note: 'without LED Counter',
-    items: [
-      { name: 'Starter', qty: 2 },
-      { name: 'Soup / Cold Drink', qty: 1 },
-      { name: 'Coffee / Tea', qty: 1 },
-      { name: 'Hi Tea', qty: 2 },
-      { name: 'Vegetable (Seasonal)', qty: 1 },
-      { name: 'Paneer', qty: 1 },
-      { name: 'Chicken', qty: 1 },
-      { name: 'Fish', qty: 1 },
-      { name: 'Dal', qty: 1 },
-      { name: 'Rice', qty: 1 },
-      { name: 'Curd', qty: 1 },
-      { name: 'Green Salad', qty: null },
-      { name: 'Papad / Chatni / Achar', qty: null },
-      { name: 'Breads', qty: 2 },
-      { name: 'Sweets', qty: 2 },
-      { name: 'Ice Cream', qty: 1 },
-      { name: 'Mineral Water 20Ltr. & 250ml', qty: null },
-    ],
-  },
-  {
-    tier: 'Jashn',
-    price: '₹1,399',
-    note: 'with LED Counter',
-    items: [
-      { name: 'Starter', qty: 4 },
-      { name: 'Soup / Cold Drink', qty: 1 },
-      { name: 'Coffee / Tea', qty: 1 },
-      { name: 'Hi Tea', qty: 4 },
-      { name: 'Welcome Drink', qty: 2 },
-      { name: 'Vegetable (Seasonal)', qty: 2 },
-      { name: 'Paneer', qty: 1 },
-      { name: 'Chicken', qty: 1 },
-      { name: 'Fish', qty: 1 },
-      { name: 'Dal', qty: 1 },
-      { name: 'Rice', qty: 1 },
-      { name: 'Curd', qty: 1 },
-      { name: 'Salad Bar', qty: null },
-      { name: 'Papad / Chatni / Achar', qty: null },
-      { name: 'Breads', qty: 3 },
-      { name: 'Sweets', qty: 2 },
-      { name: 'Ice Cream', qty: 1 },
-      { name: 'Mineral Water Jar 20Ltr. & 200ml', qty: null },
-    ],
-  },
-  {
-    tier: 'Shahi',
-    price: '₹1,599',
-    note: 'with LED Counter',
-    items: [
-      { name: 'Starter', qty: 5 },
-      { name: 'Soup', qty: 2 },
-      { name: 'Coffee / Tea', qty: 1 },
-      { name: 'Hi Tea', qty: 5 },
-      { name: 'Welcome Drink', qty: 4 },
-      { name: 'Vegetable (Seasonal)', qty: 2 },
-      { name: 'Paneer', qty: 1 },
-      { name: 'Chicken', qty: 1 },
-      { name: 'Mutton', qty: 1 },
-      { name: 'Fish', qty: 1 },
-      { name: 'Dal', qty: 1 },
-      { name: 'Rice', qty: 2 },
-      { name: 'Curd', qty: 1 },
-      { name: 'Salad Bar', qty: null },
-      { name: 'Papad / Chatni / Achar', qty: null },
-      { name: 'Breads', qty: 4 },
-      { name: 'Sweets', qty: 3 },
-      { name: 'Ice Cream', qty: 2 },
-      { name: 'Tawa Garden', qty: null },
-      { name: 'Mineral Water 20Ltr. & 200ml', qty: null },
-    ],
-  },
-]
+import Link from 'next/link'
 
 export default function MenuPage() {
   return (
     <>
-      <style>{`
-        @media print {
-          .no-print { display: none !important; }
-          .print-page { margin: 0; padding: 0; }
-          body { background: white !important; }
-          .print-break { page-break-before: always; }
-        }
-      `}</style>
-
-      {/* Top bar - no print */}
-      <div className="no-print bg-gradient-to-br from-[#5A0F0F] to-[#7B1818] py-10 px-4 text-center text-white">
+      {/* Header */}
+      <section className="bg-gradient-to-br from-[#5A0F0F] to-[#7B1818] py-12 px-4 text-center text-white">
         <p className="text-[#C9A84C] text-xs tracking-[0.35em] uppercase mb-2">Sayamwar Hall & Homestay</p>
-        <h1 className="text-4xl font-bold mb-2">Catering <span className="text-[#C9A84C]">Menu</span></h1>
-        <p className="text-white/60 text-sm mb-6">All prices per person • Extra Menu Charge: ₹75/person</p>
-        <button
-          onClick={() => window.print()}
-          className="inline-flex items-center gap-2 bg-[#C9A84C] hover:bg-[#E8C96A] text-[#3D0A0A] font-bold py-3 px-8 rounded-lg transition-colors text-sm"
-        >
-          ⬇ Download / Print Menu
-        </button>
-      </div>
-
-      {/* PRINTABLE MENU */}
-      <div className="print-page bg-white max-w-5xl mx-auto px-6 py-8">
-
-        {/* Branded Header */}
-        <div className="flex items-center justify-between border-b-2 border-[#C9A84C] pb-5 mb-8">
-          <div className="flex items-center gap-4">
-            <div className="w-16 h-16 relative flex-shrink-0">
-              <Image src="/logo.png" alt="Sayamwar Hall" fill className="object-contain" sizes="64px" />
-            </div>
-            <div>
-              <h2 className="font-bold text-[#7B1818] text-2xl leading-tight">Sayamwar Hall & Homestay</h2>
-              <p className="text-gray-500 text-xs">Gola Road, Adarsh Vihar Colony, Danapur, Patna — 801503</p>
-              <p className="text-[#C9A84C] text-xs font-semibold">📞 7646028228 &nbsp;|&nbsp; sayamwar.com</p>
-            </div>
-          </div>
-          <div className="text-right">
-            <p className="text-[#7B1818] font-bold text-lg">Catering Menu</p>
-            <p className="text-gray-400 text-xs">Per Person Pricing</p>
-            <div className="mt-1 bg-[#7B1818] text-white text-xs font-bold px-3 py-1 rounded">
-              Extra Charge: ₹75/person
-            </div>
-          </div>
+        <h1 className="text-4xl font-bold mb-2">
+          Catering <span className="text-[#C9A84C]">Menu</span>
+        </h1>
+        <p className="text-white/60 text-sm mb-6">Premium Banquet Catering Packages • Per Plate Pricing</p>
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <a
+            href="/menu/sayamwar-menu.jpg"
+            download="Sayamwar-Hall-Menu.jpg"
+            className="inline-flex items-center justify-center gap-2 bg-[#C9A84C] hover:bg-[#E8C96A] text-[#3D0A0A] font-bold py-3 px-8 rounded-lg transition-colors"
+          >
+            ⬇ Download Menu
+          </a>
+          <a
+            href="https://wa.me/917646028228?text=Hello!%20I%20want%20to%20know%20about%20catering%20packages"
+            target="_blank" rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 border border-[#C9A84C] text-[#C9A84C] hover:bg-[#C9A84C] hover:text-[#3D0A0A] font-bold py-3 px-8 rounded-lg transition-colors"
+          >
+            💬 Enquire on WhatsApp
+          </a>
         </div>
+      </section>
 
-        {/* VEG Section */}
-        <div className="mb-8">
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-4 h-4 border-2 border-green-600 rounded-sm flex items-center justify-center">
-              <div className="w-2 h-2 bg-green-600 rounded-full" />
-            </div>
-            <h3 className="font-bold text-green-800 text-lg uppercase tracking-wider">Vegetarian Menu</h3>
+      {/* Menu Image */}
+      <section className="py-10 px-4 bg-[#F7F2EA] flex justify-center">
+        <div className="w-full max-w-2xl">
+          <div className="relative w-full shadow-2xl rounded-2xl overflow-hidden border border-[#C9A84C]/30">
+            <Image
+              src="/menu/sayamwar-menu.jpg"
+              alt="Sayamwar Hall & Homestay Catering Menu — Veg Classic ₹999, Veg Premium ₹1199, Veg Royal ₹1399, Non-Veg Classic ₹1199, Non-Veg Premium ₹1499, Non-Veg Royal ₹1699"
+              width={900}
+              height={1260}
+              className="w-full h-auto"
+              priority
+            />
           </div>
-          <div className="grid grid-cols-3 gap-4">
-            {vegPackages.map((pkg) => (
-              <div key={pkg.tier} className="border border-green-200 rounded-xl overflow-hidden">
-                <div className="bg-green-700 text-white px-4 py-2 flex justify-between items-center">
-                  <div>
-                    <p className="text-[10px] uppercase tracking-widest text-green-200">VEG</p>
-                    <p className="font-bold text-base">[{pkg.tier}]</p>
-                    <p className="text-green-200 text-[10px]">{pkg.note}</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="font-bold text-xl">{pkg.price}</p>
-                    <p className="text-green-200 text-[9px]">per person</p>
-                  </div>
-                </div>
-                <div className="p-3 bg-green-50">
-                  {pkg.items.map((item) => (
-                    <div key={item.name} className="flex justify-between items-center py-0.5 border-b border-green-100 last:border-0">
-                      <span className="text-xs text-gray-700">{item.name}</span>
-                      {item.qty && <span className="text-xs font-bold text-green-700">- {item.qty}</span>}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+
+          <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="/menu/sayamwar-menu.jpg"
+              download="Sayamwar-Hall-Menu.jpg"
+              className="inline-flex items-center justify-center gap-2 bg-[#7B1818] hover:bg-[#5A0F0F] text-white font-bold py-3 px-8 rounded-lg transition-colors"
+            >
+              ⬇ Download Menu
+            </a>
+            <a href="tel:7646028228"
+              className="inline-flex items-center justify-center gap-2 bg-[#C9A84C] hover:bg-[#E8C96A] text-[#3D0A0A] font-bold py-3 px-8 rounded-lg transition-colors"
+            >
+              📞 Call 7646028228
+            </a>
           </div>
+
+          <p className="text-center text-gray-400 text-xs mt-3">
+            Extra Menu Charge: <span className="font-semibold text-[#7B1818]">₹75 per person</span>
+          </p>
         </div>
+      </section>
 
-        {/* NON-VEG Section */}
-        <div>
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-4 h-4 border-2 border-red-700 rounded-sm flex items-center justify-center">
-              <div className="w-2 h-2 bg-red-700 rounded-full" />
-            </div>
-            <h3 className="font-bold text-red-800 text-lg uppercase tracking-wider">Non-Vegetarian Menu</h3>
-          </div>
-          <div className="grid grid-cols-3 gap-4">
-            {nonVegPackages.map((pkg) => (
-              <div key={pkg.tier} className="border border-red-200 rounded-xl overflow-hidden">
-                <div className="bg-red-800 text-white px-4 py-2 flex justify-between items-center">
-                  <div>
-                    <p className="text-[10px] uppercase tracking-widest text-red-200">NON VEG</p>
-                    <p className="font-bold text-base">[{pkg.tier}]</p>
-                    <p className="text-red-200 text-[10px]">{pkg.note}</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="font-bold text-xl">{pkg.price}</p>
-                    <p className="text-red-200 text-[9px]">per person</p>
-                  </div>
-                </div>
-                <div className="p-3 bg-red-50">
-                  {pkg.items.map((item) => (
-                    <div key={item.name} className="flex justify-between items-center py-0.5 border-b border-red-100 last:border-0">
-                      <span className="text-xs text-gray-700">{item.name}</span>
-                      {item.qty && <span className="text-xs font-bold text-red-700">- {item.qty}</span>}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+      {/* Quick links */}
+      <section className="py-8 px-4 bg-[#3D0A0A] text-center">
+        <div className="flex flex-wrap justify-center gap-6 text-sm text-white/50">
+          <Link href="/packages" className="hover:text-[#C9A84C] transition-colors">Event Packages</Link>
+          <Link href="/banquet-hall-patna" className="hover:text-[#C9A84C] transition-colors">Banquet Hall</Link>
+          <Link href="/wedding-venue-patna" className="hover:text-[#C9A84C] transition-colors">Wedding Venue</Link>
+          <Link href="/contact" className="hover:text-[#C9A84C] transition-colors">Contact Us</Link>
         </div>
-
-        {/* Footer */}
-        <div className="mt-8 pt-4 border-t border-[#C9A84C]/40 flex justify-between items-center text-xs text-gray-400">
-          <p>Sayamwar Hall & Homestay • Gola Road, Danapur, Patna 801503</p>
-          <p>📞 7646028228 • sayamwar.com</p>
-        </div>
-      </div>
-
-      {/* Print button bottom - no print */}
-      <div className="no-print py-8 text-center bg-[#F7F2EA]">
-        <button
-          onClick={() => window.print()}
-          className="inline-flex items-center gap-2 bg-[#7B1818] hover:bg-[#5A0F0F] text-white font-bold py-3 px-8 rounded-lg transition-colors"
-        >
-          🖨️ Print / Save as PDF
-        </button>
-        <p className="text-gray-400 text-xs mt-3">Use "Save as PDF" in the print dialog to download</p>
-      </div>
+      </section>
     </>
   )
 }
