@@ -20,7 +20,7 @@ const weddingFeatures = [
 const packages = [
   {
     name: 'Silver Wedding',
-    price: '₹1,25,000',
+    price: '₹1,50,000',
     capacity: '100–150 Guests',
     includes: ['Hall for 1 Day', 'Basic Flower Decor', 'Veg Dinner Buffet', 'Mandap Setup', '2 Guest Rooms'],
   },
