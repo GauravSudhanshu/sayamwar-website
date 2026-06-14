@@ -4,11 +4,12 @@ import { useState, useEffect } from 'react'
 export default function ExitIntentPopup() {
   const [show, setShow] = useState(false)
   const [dismissed, setDismissed] = useState(false)
+  const [eventDate, setEventDate] = useState('')
+  const [guests, setGuests] = useState('')
 
   useEffect(() => {
     if (sessionStorage.getItem('exit_popup_seen')) return
 
-    // Desktop: mouse leaves top of viewport
     const handleMouseLeave = (e: MouseEvent) => {
       if (e.clientY <= 10 && !dismissed) {
         setShow(true)
@@ -16,7 +17,6 @@ export default function ExitIntentPopup() {
       }
     }
 
-    // Mobile: show after 40 seconds on page
     const timer = setTimeout(() => {
       if (!dismissed && !sessionStorage.getItem('exit_popup_seen')) {
         setShow(true)
@@ -36,6 +36,16 @@ export default function ExitIntentPopup() {
     setDismissed(true)
   }
 
+  const handleWhatsApp = () => {
+    const dateText = eventDate ? `Event Date: ${eventDate}` : 'Event Date: Not decided yet'
+    const guestText = guests ? `Number of Guests: ${guests}` : 'Number of Guests: Not sure yet'
+    const msg = encodeURIComponent(
+      `Hello! I want a free quote for my event at Sayamwar Hall & Homestay.\n${dateText}\n${guestText}`
+    )
+    window.open(`https://wa.me/917646028228?text=${msg}`, '_blank')
+    close()
+  }
+
   if (!show) return null
 
   return (
@@ -52,20 +62,45 @@ export default function ExitIntentPopup() {
           <p className="text-white/60 text-sm mt-1">Weddings • Birthdays • Engagements</p>
         </div>
 
-        <div className="p-6 text-center">
-          <p className="text-gray-600 text-sm mb-6">
-            Our team responds instantly on WhatsApp. Tell us your event date and we&apos;ll send you the best package.
+        <div className="p-6">
+          <p className="text-gray-600 text-sm text-center mb-4">
+            Share your event details and we&apos;ll send you the best package instantly on WhatsApp.
           </p>
 
+          <div className="space-y-3 mb-5">
+            <div>
+              <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">
+                Event Date
+              </label>
+              <input
+                type="date"
+                value={eventDate}
+                onChange={(e) => setEventDate(e.target.value)}
+                className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#7B1818]"
+              />
+            </div>
+            <div>
+              <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">
+                Number of Guests
+              </label>
+              <input
+                type="number"
+                placeholder="e.g. 200"
+                min="1"
+                value={guests}
+                onChange={(e) => setGuests(e.target.value)}
+                className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#7B1818]"
+              />
+            </div>
+          </div>
+
           <div className="flex flex-col gap-3">
-            <a
-              href="https://wa.me/917646028228?text=Hello!%20I%20want%20a%20free%20quote%20for%20my%20event%20at%20Sayamwar%20Hall"
-              target="_blank" rel="noopener noreferrer"
-              onClick={close}
-              className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl transition-colors"
+            <button
+              onClick={handleWhatsApp}
+              className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-xl transition-colors w-full"
             >
               💬 Get Free Quote on WhatsApp
-            </a>
+            </button>
             <a
               href="tel:7646028228"
               onClick={close}
@@ -75,7 +110,7 @@ export default function ExitIntentPopup() {
             </a>
           </div>
 
-          <button onClick={close} className="mt-4 text-gray-400 text-xs hover:text-gray-600 transition-colors">
+          <button onClick={close} className="mt-4 w-full text-gray-400 text-xs hover:text-gray-600 transition-colors">
             No thanks, I&apos;ll decide later
           </button>
         </div>
