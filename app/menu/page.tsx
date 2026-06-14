@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const vegPackages = [
   {
-    tier: 'Gold',
+    tier: 'Mehfil',
     price: '₹999',
     note: 'without LED Counter',
     items: [
@@ -25,7 +25,7 @@ const vegPackages = [
     ],
   },
   {
-    tier: 'Platinum',
+    tier: 'Jashn',
     price: '₹1,199',
     note: 'with LED Counter',
     items: [
@@ -47,7 +47,7 @@ const vegPackages = [
     ],
   },
   {
-    tier: 'Luxury',
+    tier: 'Shahi',
     price: '₹1,351',
     note: 'with LED Counter',
     items: [
@@ -74,7 +74,7 @@ const vegPackages = [
 
 const nonVegPackages = [
   {
-    tier: 'Gold',
+    tier: 'Mehfil',
     price: '₹1,199',
     note: 'without LED Counter',
     items: [
@@ -98,7 +98,7 @@ const nonVegPackages = [
     ],
   },
   {
-    tier: 'Platinum',
+    tier: 'Jashn',
     price: '₹1,399',
     note: 'with LED Counter',
     items: [
@@ -123,7 +123,7 @@ const nonVegPackages = [
     ],
   },
   {
-    tier: 'Luxury',
+    tier: 'Shahi',
     price: '₹1,599',
     note: 'with LED Counter',
     items: [
