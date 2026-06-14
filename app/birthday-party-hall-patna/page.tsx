@@ -11,24 +11,24 @@ export const metadata: Metadata = {
 const packages = [
   {
     name: 'Basic Birthday',
-    price: '₹8,000',
+    price: '₹75,000',
     capacity: 'Up to 50 Guests',
-    includes: ['Hall Decoration', 'Birthday Cake (1kg)', 'Snacks & Tea', '2 Hours Slot', 'Basic Sound System'],
+    includes: ['AC Hall', 'Basic Decoration', 'Birthday Cake (1kg)', 'Snacks & Tea', '2 Hours Slot', 'Basic Sound System'],
     color: '#E8C547',
   },
   {
     name: 'Premium Birthday',
-    price: '₹18,000',
+    price: '₹1,00,000',
     capacity: 'Up to 150 Guests',
-    includes: ['Theme Decoration', 'Birthday Cake (2kg)', 'Dinner Buffet', '4 Hours Slot', 'DJ & Lighting', 'Photo Booth'],
+    includes: ['AC Hall', 'Theme Decoration', 'Birthday Cake (2kg)', 'Dinner Buffet', '4 Hours Slot', 'DJ & Lighting', 'Photo Booth'],
     color: '#C9A227',
     popular: true,
   },
   {
     name: 'Grand Birthday',
-    price: '₹35,000',
+    price: '₹1,25,000',
     capacity: 'Up to 300 Guests',
-    includes: ['Premium Theme Decor', 'Custom Birthday Cake', 'Full Dinner Buffet', 'Full Day Slot', 'Professional DJ', 'Photographer', 'Welcome Drink'],
+    includes: ['AC Hall', 'Premium Theme Decor', 'Custom Birthday Cake', 'Full Dinner Buffet', 'Full Day Slot', 'Professional DJ', 'Photographer', 'Welcome Drink'],
     color: '#C9A227',
   },
 ]
