@@ -29,6 +29,7 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
           guests: form.guests,
           message: form.message,
           _subject: `New Inquiry: ${form.event || 'General'} — ${form.name}`,
+          _replyto: 'sayamwarbanquetrooms@gmail.com',
         }),
       })
     } catch (_) {
