@@ -25,9 +25,9 @@ export const metadata: Metadata = {
   keywords: 'banquet hall in patna, banquet near me, best banquet in patna, low budget banquet patna, banquet hall danapur, wedding hall patna, birthday party hall patna, event hall near me, cheap banquet hall patna, banquet hall gola road patna',
   verification: { google: 'google6f2c00ffd72c34ef' },
   icons: {
-    icon: [{ url: '/icon.png', type: 'image/png' }],
-    apple: [{ url: '/icon.png', type: 'image/png' }],
-    shortcut: [{ url: '/icon.png', type: 'image/png' }],
+    icon: [{ url: '/logo.png', type: 'image/png' }],
+    apple: [{ url: '/logo.png', type: 'image/png' }],
+    shortcut: [{ url: '/logo.png', type: 'image/png' }],
   },
   openGraph: {
     title: 'Best Banquet Hall in Patna | Low Budget | Sayamwar Hall Danapur',
