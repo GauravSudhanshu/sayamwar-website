@@ -5,6 +5,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FloatingButtons from '@/components/FloatingButtons'
+import ExitIntentPopup from '@/components/ExitIntentPopup'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -94,6 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1">{children}</main>
         <Footer />
         <FloatingButtons />
+        <ExitIntentPopup />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-VXSY95P5SF" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];

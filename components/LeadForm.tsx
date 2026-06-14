@@ -5,14 +5,41 @@ interface LeadFormProps {
   eventType?: string
 }
 
+const FORMSPREE_ID = 'xyzabcde' // Replace with your Formspree form ID
+
 export default function LeadForm({ eventType = '' }: LeadFormProps) {
   const [form, setForm] = useState({ name: '', phone: '', event: eventType, date: '', guests: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    setLoading(true)
+
+    // Send to Formspree (email backup)
+    try {
+      await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          name: form.name,
+          phone: form.phone,
+          event: form.event,
+          date: form.date,
+          guests: form.guests,
+          message: form.message,
+          _subject: `New Inquiry: ${form.event || 'General'} — ${form.name}`,
+        }),
+      })
+    } catch (_) {
+      // Silent fail — WhatsApp still works
+    }
+
+    // Open WhatsApp
     const msg = `Hello! I want to inquire about Sayamwar Hall & Homestay.%0AName: ${form.name}%0APhone: ${form.phone}%0AEvent: ${form.event}%0ADate: ${form.date}%0AGuests: ${form.guests}%0AMessage: ${form.message}`
     window.open(`https://wa.me/917646028228?text=${msg}`, '_blank')
+
+    setLoading(false)
     setSubmitted(true)
   }
 
@@ -20,8 +47,8 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
     return (
       <div className="text-center py-8">
         <div className="text-5xl mb-3">✅</div>
-        <h3 className="text-xl font-bold text-[#7B1818] mb-2">Thank You!</h3>
-        <p className="text-gray-600 text-sm">We have received your inquiry. Our team will contact you shortly on WhatsApp.</p>
+        <h3 className="text-xl font-bold text-[#7B1818] mb-2">Inquiry Sent!</h3>
+        <p className="text-gray-600 text-sm">Your inquiry has been sent via WhatsApp. We&apos;ll also follow up on your phone number shortly.</p>
         <button
           onClick={() => setSubmitted(false)}
           className="mt-4 text-sm text-[#7B1818] underline"
@@ -47,6 +74,8 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
           required
           type="tel"
           placeholder="Phone Number *"
+          pattern="[0-9]{10}"
+          title="Enter 10-digit phone number"
           value={form.phone}
           onChange={(e) => setForm({ ...form, phone: e.target.value })}
           className="border border-gray-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:border-[#7B1818] w-full"
@@ -89,15 +118,14 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
       />
       <button
         type="submit"
-        className="w-full bg-[#7B1818] hover:bg-[#5A0F0F] text-white py-3 rounded font-bold text-sm transition-colors"
+        disabled={loading}
+        className="w-full bg-[#7B1818] hover:bg-[#5A0F0F] disabled:opacity-60 text-white py-3 rounded font-bold text-sm transition-colors"
       >
-        Send Inquiry via WhatsApp 💬
+        {loading ? 'Sending...' : 'Send Inquiry via WhatsApp 💬'}
       </button>
       <p className="text-center text-xs text-gray-500">
         Or call us directly:{' '}
-        <a href="tel:7646028228" className="text-[#7B1818] font-bold">
-          7646028228
-        </a>
+        <a href="tel:7646028228" className="text-[#7B1818] font-bold">7646028228</a>
       </p>
     </form>
   )
