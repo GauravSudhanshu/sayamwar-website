@@ -20,13 +20,13 @@ const weddingFeatures = [
 const packages = [
   {
     name: 'Silver Wedding',
-    price: '₹50,000',
+    price: '₹1,25,000',
     capacity: '100–150 Guests',
     includes: ['Hall for 1 Day', 'Basic Flower Decor', 'Veg Dinner Buffet', 'Mandap Setup', '2 Guest Rooms'],
   },
   {
     name: 'Gold Wedding',
-    price: '₹1,20,000',
+    price: '₹2,00,000',
     capacity: '150–250 Guests',
     includes: ['Hall for 2 Days', 'Premium Flower Decor', 'Veg + Non-Veg Buffet', 'Stage + Mandap Setup', '4 Guest Rooms', 'DJ + Sound', 'Baraat Welcome'],
     popular: true,
