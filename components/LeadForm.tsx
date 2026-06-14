@@ -5,7 +5,7 @@ interface LeadFormProps {
   eventType?: string
 }
 
-const FORMSPREE_ID = 'xyzabcde' // Replace with your Formspree form ID
+const FORMSPREE_ID = 'xbdeqoln'
 
 export default function LeadForm({ eventType = '' }: LeadFormProps) {
   const [form, setForm] = useState({ name: '', phone: '', event: eventType, date: '', guests: '', message: '' })
