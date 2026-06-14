@@ -11,6 +11,7 @@ const links = [
   { href: '/wedding-venue-patna', label: 'Wedding' },
   { href: '/gallery', label: 'Gallery' },
   { href: '/packages', label: 'Packages' },
+  { href: '/menu', label: 'Menu' },
   { href: '/contact', label: 'Contact' },
 ]
 
