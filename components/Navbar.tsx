@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'
 const links = [
   { href: '/', label: 'Home' },
   { href: '/rooms', label: 'Rooms' },
-  { href: '/banquet-hall-patna', label: 'Banquet Hall' },
+  { href: '/banquet-hall-patna', label: 'Banquet' },
   { href: '/birthday-party-hall-patna', label: 'Birthday' },
   { href: '/wedding-venue-patna', label: 'Wedding' },
   { href: '/gallery', label: 'Gallery' },
@@ -34,32 +34,32 @@ export default function Navbar() {
     }`}
     style={{ backgroundColor: scrolled ? undefined : 'rgba(61,10,10,0.65)', backdropFilter: 'blur(8px)' }}
     >
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-[80px]">
+      <div className="max-w-7xl mx-auto px-4 xl:px-6 flex items-center justify-between h-[72px]">
 
         {/* Logo + Name */}
-        <Link href="/" className="flex items-center gap-3 flex-shrink-0">
-          <div className="relative w-[80px] h-[72px] rounded-lg overflow-hidden border border-[#C9A84C]/60 bg-[#F7F2EA]">
-            <Image src="/logo.png" alt="Sayamwar Hall & Homestay" fill className="object-contain" sizes="80px" priority />
+        <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
+          <div className="relative w-[52px] h-[47px] rounded-md overflow-hidden border border-[#C9A84C]/60 bg-[#F7F2EA]">
+            <Image src="/logo.png" alt="Sayamwar Hall & Homestay" fill className="object-contain" sizes="52px" priority />
           </div>
-          <div className="flex flex-col leading-none">
-            <span className="font-[var(--font-playfair)] text-[#C9A84C] font-bold text-lg tracking-wide">Sayamwar</span>
-            <span className="text-white/60 text-[10px] tracking-[0.25em] uppercase mt-0.5">Hall &amp; Homestay</span>
+          <div className="hidden xl:flex flex-col leading-none">
+            <span className="font-[var(--font-playfair)] text-[#C9A84C] font-bold text-base tracking-wide">Sayamwar</span>
+            <span className="text-white/60 text-[9px] tracking-[0.25em] uppercase mt-0.5">Hall &amp; Homestay</span>
           </div>
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden lg:flex items-center gap-7">
+        <div className="hidden lg:flex items-center gap-4 xl:gap-5">
           {links.map((l) => (
-            <Link key={l.href} href={l.href} className="nav-link">
+            <Link key={l.href} href={l.href} className="nav-link-sm">
               {l.label}
             </Link>
           ))}
         </div>
 
         {/* CTA */}
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden lg:flex items-center">
           <a href="https://wa.me/917646028228" target="_blank" rel="noopener noreferrer"
-            className="btn-gold text-sm py-2.5 px-5">
+            className="btn-gold-sm">
             Book Now
           </a>
         </div>
