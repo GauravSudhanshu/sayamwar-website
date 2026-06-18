@@ -78,49 +78,70 @@ export default function HomePage() {
         <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#1A0303]/40 to-transparent" />
         <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-[#1A0303]/40 to-transparent" />
 
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        <div className="relative z-10 text-center px-5 max-w-4xl mx-auto w-full">
 
           {/* Location tag */}
-          <div className="anim-0 flex items-center justify-center gap-3 mb-8">
-            <div className="h-px w-10 bg-[#C9A84C]/50" />
-            <p className="section-label tracking-[0.4em]">Danapur &nbsp;•&nbsp; Patna &nbsp;•&nbsp; Bihar</p>
-            <div className="h-px w-10 bg-[#C9A84C]/50" />
+          <div className="anim-0 flex items-center justify-center gap-2 mb-5 md:mb-8">
+            <div className="h-px w-6 md:w-10 bg-[#C9A84C]/50" />
+            <p className="section-label tracking-[0.2em] md:tracking-[0.4em]">Danapur • Patna • Bihar</p>
+            <div className="h-px w-6 md:w-10 bg-[#C9A84C]/50" />
           </div>
 
           {/* Main heading */}
-          <h1 className="anim-1 font-[var(--font-playfair)] leading-[1.15] mb-6">
-            <span className="block text-2xl md:text-4xl lg:text-5xl font-normal italic text-white/85 mb-2">Where Celebrations</span>
-            <span className="block text-4xl md:text-6xl lg:text-7xl font-bold gold-shimmer">Become Memories</span>
+          <h1 className="anim-1 font-[var(--font-playfair)] leading-[1.15] mb-4 md:mb-6">
+            <span className="block text-xl sm:text-3xl md:text-4xl lg:text-5xl font-normal italic text-white/85 mb-1 md:mb-2">Where Celebrations</span>
+            <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold gold-shimmer">Become Memories</span>
           </h1>
 
           {/* Brand name with ornamental lines */}
-          <div className="anim-2 flex items-center justify-center gap-5 mb-8">
-            <div className="h-px w-20 bg-gradient-to-r from-transparent to-[#C9A84C]/70" />
-            <span className="text-[#C9A84C] text-[10px] tracking-[0.45em] uppercase font-[var(--font-inter)] font-semibold">Sayamwar Hall &amp; Homestay</span>
-            <div className="h-px w-20 bg-gradient-to-l from-transparent to-[#C9A84C]/70" />
+          <div className="anim-2 flex items-center justify-center gap-3 md:gap-5 mb-4 md:mb-8">
+            <div className="h-px w-10 md:w-20 bg-gradient-to-r from-transparent to-[#C9A84C]/70" />
+            <span className="text-[#C9A84C] text-[9px] md:text-[10px] tracking-[0.3em] md:tracking-[0.45em] uppercase font-[var(--font-inter)] font-semibold">Sayamwar Hall &amp; Homestay</span>
+            <div className="h-px w-10 md:w-20 bg-gradient-to-l from-transparent to-[#C9A84C]/70" />
           </div>
 
-          {/* Description */}
-          <p className="anim-3 font-[var(--font-playfair)] italic text-white/60 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+          {/* Description — hidden on very small screens to keep hero clean */}
+          <p className="anim-3 hidden sm:block font-[var(--font-playfair)] italic text-white/60 text-sm md:text-lg max-w-xl mx-auto mb-8 leading-relaxed">
             Patna&apos;s premier venue for weddings, birthday celebrations,<br className="hidden md:block" /> receptions &amp; comfortable stays — crafted for the extraordinary.
           </p>
 
-          <div className="anim-4 flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20an%20event%20at%20Sayamwar%20Hall"
-              target="_blank" rel="noopener noreferrer" className="btn-gold text-sm">
-              Book Your Event
-            </a>
-            <Link href="/packages" className="btn-outline text-sm">
-              <span>View Packages</span>
-            </Link>
-            <a href="tel:7646028228" className="btn-outline text-sm">
-              <span>📞 7646028228</span>
-            </a>
+          {/* CTA — mobile: 2 side-by-side buttons + text link below */}
+          <div className="anim-4">
+            {/* Mobile layout */}
+            <div className="flex sm:hidden flex-col items-center gap-3">
+              <div className="flex gap-3 w-full max-w-[280px]">
+                <a href="https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20an%20event%20at%20Sayamwar%20Hall"
+                  target="_blank" rel="noopener noreferrer"
+                  className="flex-1 flex items-center justify-center bg-[#C9A84C] hover:bg-[#E8C96A] text-[#3D0A0A] font-bold text-xs py-3 px-2 rounded tracking-wide transition-colors">
+                  💬 Book Now
+                </a>
+                <a href="tel:7646028228"
+                  className="flex-1 flex items-center justify-center border border-[#C9A84C]/70 text-white font-bold text-xs py-3 px-2 rounded tracking-wide hover:bg-[#C9A84C]/10 transition-colors">
+                  📞 Call Us
+                </a>
+              </div>
+              <Link href="/packages" className="text-[#C9A84C]/80 text-[10px] tracking-[0.25em] uppercase hover:text-[#C9A84C] transition-colors">
+                View Packages →
+              </Link>
+            </div>
+            {/* Desktop layout */}
+            <div className="hidden sm:flex flex-row gap-4 justify-center">
+              <a href="https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20an%20event%20at%20Sayamwar%20Hall"
+                target="_blank" rel="noopener noreferrer" className="btn-gold text-sm">
+                Book Your Event
+              </a>
+              <Link href="/packages" className="btn-outline text-sm">
+                <span>View Packages</span>
+              </Link>
+              <a href="tel:7646028228" className="btn-outline text-sm">
+                <span>📞 7646028228</span>
+              </a>
+            </div>
           </div>
         </div>
 
-        {/* Scroll cue */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+        {/* Scroll cue — hidden on mobile (covered by floating button bar) */}
+        <div className="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-2">
           <div className="w-px h-12 bg-gradient-to-b from-transparent via-[#C9A84C]/60 to-[#C9A84C]" />
           <div className="w-1.5 h-1.5 rounded-full bg-[#C9A84C] animate-[pulseDot_1.5s_infinite]" />
         </div>
@@ -147,13 +168,13 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           <AnimateOnScroll direction="left">
             <div className="grid grid-cols-2 gap-3">
-              <div className="relative h-72 rounded overflow-hidden img-card col-span-2">
+              <div className="relative h-48 sm:h-72 rounded overflow-hidden img-card col-span-2">
                 <Image src="/venue-4.jpg" alt="Grand Banquet Hall" fill className="object-cover" sizes="600px" />
               </div>
-              <div className="relative h-44 rounded overflow-hidden img-card">
+              <div className="relative h-32 sm:h-44 rounded overflow-hidden img-card">
                 <Image src="/venue-3.jpg" alt="AC Room" fill className="object-cover" sizes="300px" />
               </div>
-              <div className="relative h-44 rounded overflow-hidden img-card">
+              <div className="relative h-32 sm:h-44 rounded overflow-hidden img-card">
                 <Image src="/venue-7.jpg" alt="Hall Interior" fill className="object-cover" sizes="300px" />
               </div>
             </div>
@@ -161,7 +182,7 @@ export default function HomePage() {
 
           <AnimateOnScroll direction="right">
             <p className="section-label mb-4">About Sayamwar Hall</p>
-            <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#3D0A0A] leading-tight mb-4">
+            <h2 className="font-[var(--font-playfair)] text-3xl md:text-5xl font-bold text-[#3D0A0A] leading-tight mb-4">
               Danapur&apos;s Most<br /><span className="gold-shimmer">Loved Venue</span>
             </h2>
             <div className="gold-line-left mb-6" />
@@ -196,7 +217,7 @@ export default function HomePage() {
         {services.map((s, i) => (
           <div key={s.href} className={`max-w-7xl mx-auto px-6 py-10 md:py-20 grid grid-cols-1 lg:grid-cols-2 gap-0 items-center ${i % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
             {/* Image */}
-            <AnimateOnScroll direction={i % 2 === 0 ? 'left' : 'right'} className={`relative h-[420px] ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
+            <AnimateOnScroll direction={i % 2 === 0 ? 'left' : 'right'} className={`relative h-[240px] sm:h-[320px] lg:h-[420px] ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
               <div className="relative h-full w-full rounded-sm overflow-hidden img-card">
                 <Image src={s.img} alt={s.title} fill className="object-cover" sizes="700px" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1A0303]/50 to-transparent" />
@@ -285,7 +306,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-12 gap-3">
             <AnimateOnScroll className="col-span-12 md:col-span-7 row-span-2" direction="left">
-              <div className="relative h-[500px] rounded overflow-hidden img-card">
+              <div className="relative h-[260px] sm:h-[380px] md:h-[500px] rounded overflow-hidden img-card">
                 <Image src="/venue-5.jpg" alt="Sayamwar Hall Building" fill className="object-cover" sizes="700px" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#1A0303]/60 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6">
@@ -296,29 +317,29 @@ export default function HomePage() {
             </AnimateOnScroll>
 
             <AnimateOnScroll className="col-span-12 md:col-span-5" delay={100}>
-              <div className="relative h-60 rounded overflow-hidden img-card">
+              <div className="relative h-44 sm:h-60 rounded overflow-hidden img-card">
                 <Image src="/venue-4.jpg" alt="Grand Banquet Hall" fill className="object-cover" sizes="500px" />
               </div>
             </AnimateOnScroll>
 
             <AnimateOnScroll className="col-span-12 md:col-span-5" delay={200}>
-              <div className="relative h-60 rounded overflow-hidden img-card">
+              <div className="relative h-44 sm:h-60 rounded overflow-hidden img-card">
                 <Image src="/venue-2.jpg" alt="Birthday Setup" fill className="object-cover" sizes="500px" />
               </div>
             </AnimateOnScroll>
 
             <AnimateOnScroll className="col-span-6 md:col-span-4" delay={150}>
-              <div className="relative h-52 rounded overflow-hidden img-card">
+              <div className="relative h-36 sm:h-52 rounded overflow-hidden img-card">
                 <Image src="/venue-6.jpg" alt="Premium Room" fill className="object-cover" sizes="400px" />
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll className="col-span-6 md:col-span-4" delay={200}>
-              <div className="relative h-52 rounded overflow-hidden img-card">
+              <div className="relative h-36 sm:h-52 rounded overflow-hidden img-card">
                 <Image src="/venue-7.jpg" alt="Hall Interior" fill className="object-cover" sizes="400px" />
               </div>
             </AnimateOnScroll>
             <AnimateOnScroll className="col-span-12 md:col-span-4" delay={250}>
-              <div className="relative h-52 rounded overflow-hidden img-card">
+              <div className="relative h-36 sm:h-52 rounded overflow-hidden img-card">
                 <Image src="/venue-3.jpg" alt="AC Room" fill className="object-cover" sizes="400px" />
               </div>
             </AnimateOnScroll>
