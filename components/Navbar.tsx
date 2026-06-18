@@ -27,12 +27,17 @@ export default function Navbar() {
   }, [])
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      scrolled
-        ? 'bg-[#3D0A0A]/95 backdrop-blur-md border-b border-[#C9A84C]/20 shadow-xl'
-        : 'bg-transparent border-b border-transparent'
-    }`}
-    style={{ backgroundColor: scrolled ? undefined : 'rgba(61,10,10,0.65)', backdropFilter: 'blur(8px)' }}
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? 'bg-[#3D0A0A]/95 backdrop-blur-md border-b border-[#C9A84C]/20 shadow-xl'
+          : 'backdrop-blur-sm border-b border-transparent'
+      }`}
+      style={{
+        backgroundColor: scrolled ? undefined : 'rgba(61,10,10,0.72)',
+        willChange: 'transform',
+        transform: 'translateZ(0)',
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 xl:px-6 flex items-center justify-between h-[72px]">
 
