@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
+import GalleryGrid from '@/components/GalleryGrid'
 
 export const metadata: Metadata = {
   title: 'Gallery | Sayamwar Hall & Homestay Danapur Patna',
@@ -29,32 +29,13 @@ export default function GalleryPage() {
         </h1>
         <div className="w-16 h-px bg-[#C9A227] mx-auto mb-4" />
         <p className="text-white/60 text-base max-w-xl mx-auto">
-          A glimpse of the beautiful moments created at Sayamwar Hall & Homestay
+          A glimpse of the beautiful moments created at Sayamwar Hall &amp; Homestay
         </p>
       </section>
 
       <section className="py-16 px-4 bg-[#FDF8F0]">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 auto-rows-[220px]">
-            {photos.map((p, i) => (
-              <AnimateOnScroll key={p.src} delay={i * 80} className={p.span}>
-                <div className="relative w-full h-full rounded-2xl overflow-hidden img-card group cursor-pointer shadow-md">
-                  <Image
-                    src={p.src}
-                    alt={p.label}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-[1.06]"
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                  />
-                  <div className="overlay" />
-                  <div className="absolute inset-0 flex flex-col justify-end p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <span className="text-[#C9A227] text-xs uppercase tracking-widest font-[var(--font-inter)]">{p.category}</span>
-                    <span className="text-white font-[var(--font-playfair)] font-bold text-base">{p.label}</span>
-                  </div>
-                </div>
-              </AnimateOnScroll>
-            ))}
-          </div>
+          <GalleryGrid photos={photos} />
 
           <AnimateOnScroll className="mt-14 bg-[#3D0A0A] rounded-3xl p-10 text-center">
             <p className="text-[#C9A227] text-xs tracking-widest uppercase font-[var(--font-inter)] mb-2">Visit Us</p>

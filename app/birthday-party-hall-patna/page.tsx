@@ -1,6 +1,38 @@
 import type { Metadata } from 'next'
 import LeadForm from '@/components/LeadForm'
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is the cost of birthday party hall in Patna?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Birthday party hall packages at Sayamwar Hall start from ₹85,000 for up to 150 guests, and go up to ₹1,25,000 for up to 300 guests. Packages include AC hall, theme decoration, DJ, catering and more.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How many guests can attend a birthday party at Sayamwar Hall?',
+      acceptedAnswer: { '@type': 'Answer', text: 'We host birthday parties for 50 to 300 guests in our AC banquet hall in Danapur, Patna. The hall features professional DJ, stage setup, selfie point, and custom theme decoration.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can you arrange custom theme decoration for birthday parties?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes, we offer custom theme birthday decoration including Bollywood, Jungle Safari, Royal Gold, Retro, and Superhero themes. Selfie points, balloon setups and LED stage lighting are included.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is food included in the birthday party package?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes, catering is included. You can choose from Shagun (₹999/plate veg), Vivah (₹1,199/plate veg), or Swayamvar (₹1,399/plate veg) menus with non-veg options also available.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where is the birthday party hall near me in Patna?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Sayamwar Hall is at Gola Road, Adarsh Vihar Colony, Lane 5, near T Point, Danapur, Patna — easily accessible from Danapur, Boring Road, and Patna city centre.' },
+    },
+  ],
+}
+
 export const metadata: Metadata = {
   title: 'Birthday Party Hall in Patna | Danapur | Sayamwar Hall',
   description: 'Book the best birthday party hall in Patna & Danapur. Affordable packages, cake, decor, catering & DJ. Capacity 50–300 guests. Call 7646028228 to book.',
@@ -36,6 +68,7 @@ const packages = [
 export default function BirthdayPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <section className="bg-gradient-to-br from-[#5A0F0F] via-[#7B1818] to-[#9B2222] py-20 px-4 text-center text-white relative overflow-hidden">
         <div className="absolute top-4 left-8 text-6xl opacity-20">🎈</div>
         <div className="absolute top-8 right-12 text-5xl opacity-20">🎂</div>
@@ -126,6 +159,30 @@ export default function BirthdayPage() {
             ))}
           </div>
           <p className="text-center text-gray-400 text-xs mt-6">* Prices are indicative. Contact us for custom quotes.</p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-4 bg-[#FDF8F0]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-[#7B1818] text-center mb-10">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {[
+              { q: 'What is the cost of birthday party hall in Patna?', a: 'Birthday packages at Sayamwar Hall start from ₹85,000 for up to 150 guests, up to ₹1,25,000 for up to 300 guests — including AC hall, theme decoration, DJ, and catering.' },
+              { q: 'How many guests can attend a birthday party here?', a: 'We comfortably host 50 to 300 guests in our AC hall with professional DJ, stage setup, selfie point, and custom theme decoration.' },
+              { q: 'Can you arrange custom theme decoration?', a: 'Yes — Bollywood, Jungle Safari, Royal Gold, Retro, Superhero and more. Selfie points, balloon setups and LED stage lighting are all included.' },
+              { q: 'Is food included in the birthday package?', a: 'Yes. Choose from Shagun (₹999/plate veg), Vivah (₹1,199/plate veg), or Swayamvar (₹1,399/plate veg). Non-veg options are also available.' },
+              { q: 'Where is the birthday party hall near me in Patna?', a: 'Sayamwar Hall is at Gola Road, Adarsh Vihar Colony, Lane 5, near T Point, Danapur — accessible from Danapur, Boring Road, and Patna city centre.' },
+            ].map((item) => (
+              <details key={item.q} className="bg-white rounded-xl shadow-sm border border-gray-100 group">
+                <summary className="px-6 py-4 font-semibold text-[#7B1818] cursor-pointer list-none flex justify-between items-center">
+                  {item.q}
+                  <span className="text-[#C9A84C] group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-3">▼</span>
+                </summary>
+                <p className="px-6 pb-5 text-gray-600 text-sm leading-relaxed">{item.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 

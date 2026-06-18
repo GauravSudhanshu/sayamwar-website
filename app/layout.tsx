@@ -25,11 +25,6 @@ export const metadata: Metadata = {
   description: 'Sayamwar Hall & Homestay — Best banquet hall in Patna & Danapur. Low budget banquet packages from ₹85,000. AC hall for 200–300 guests. Weddings, birthdays, receptions. Call 7646028228.',
   keywords: 'banquet hall in patna, banquet near me, best banquet in patna, low budget banquet patna, banquet hall danapur, wedding hall patna, birthday party hall patna, event hall near me, cheap banquet hall patna, banquet hall gola road patna',
   verification: { google: 'google6f2c00ffd72c34ef' },
-  icons: {
-    icon: [{ url: '/logo.png', type: 'image/png' }],
-    apple: [{ url: '/logo.png', type: 'image/png' }],
-    shortcut: [{ url: '/logo.png', type: 'image/png' }],
-  },
   openGraph: {
     title: 'Best Banquet Hall in Patna | Low Budget | Sayamwar Hall Danapur',
     description: 'Best & affordable banquet hall in Patna, Danapur. Packages from ₹85,000. AC hall 200–300 guests. Call 7646028228.',

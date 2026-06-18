@@ -1,6 +1,38 @@
 import type { Metadata } from 'next'
 import LeadForm from '@/components/LeadForm'
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is the cost of wedding venue in Patna?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Wedding venue packages at Sayamwar Hall in Patna start from ₹1,50,000 (Silver Wedding, 100–150 guests) to ₹2,00,000 (Gold Wedding, 150–250 guests). Platinum packages for up to 300 guests are available on custom quote.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'How many guests can the wedding hall accommodate?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Sayamwar Hall can accommodate 200 to 300 guests for weddings in a fully air-conditioned hall with professional stage setup, mandap, lighting, and DJ.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is catering included in the wedding package?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes, catering is available as part of wedding packages. We offer three menus — Shagun (₹999/plate veg), Vivah (₹1,199/plate veg), and Swayamvar (₹1,399/plate veg) — with non-veg options also available.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are rooms available for the wedding family?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes, all wedding packages include 2–6 on-site guest rooms. Additional AC and non-AC rooms are available from ₹1,500–₹2,500 per night for family and out-of-town guests.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where is the best wedding venue in Danapur, Patna?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Sayamwar Hall & Homestay is at Gola Road, Adarsh Vihar Colony, Lane 5, near T Point, Danapur — 5 minutes from Danapur railway station and 20 minutes from Patna Junction.' },
+    },
+  ],
+}
+
 export const metadata: Metadata = {
   title: 'Wedding Venue in Patna | Marriage Hall Danapur | Sayamwar Hall',
   description: 'Best wedding venue in Patna & Danapur. Grand marriage hall for 200-300 guests. Complete wedding packages with decor, catering & rooms. Call 7646028228.',
@@ -42,6 +74,7 @@ const packages = [
 export default function WeddingVenuePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <section className="bg-gradient-to-br from-[#3D0A0A] via-[#5A0F0F] to-[#7B1818] py-24 px-4 text-center text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='2' fill='%23C9A227'/%3E%3C/svg%3E\")" }} />
         <div className="relative z-10">
@@ -128,6 +161,30 @@ export default function WeddingVenuePage() {
             ))}
           </div>
           <p className="text-center text-gray-400 text-xs mt-6">* All prices are indicative. Final quote depends on date, guest count, and requirements.</p>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-4 bg-[#FDF8F0]">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bold text-[#7B1818] text-center mb-10">Frequently Asked Questions</h2>
+          <div className="space-y-4">
+            {[
+              { q: 'What is the cost of wedding venue in Patna?', a: 'Wedding packages at Sayamwar Hall start from ₹1,50,000 (Silver, 100–150 guests) to ₹2,00,000 (Gold, 150–250 guests). Platinum packages for up to 300 guests are available on custom quote.' },
+              { q: 'How many guests can the wedding hall accommodate?', a: 'Our AC wedding hall comfortably seats 200–300 guests with professional stage, mandap, lighting, and DJ included.' },
+              { q: 'Is catering included in the wedding package?', a: 'Yes. We offer Shagun (₹999/plate veg), Vivah (₹1,199/plate veg), and Swayamvar (₹1,399/plate veg) menus, plus non-veg options. Catering is added to your hall package.' },
+              { q: 'Are rooms available for the wedding family?', a: 'Yes — all packages include 2–6 on-site rooms. Additional rooms are available from ₹1,500/night, keeping the whole family under one roof.' },
+              { q: 'Where is the best wedding venue in Danapur, Patna?', a: 'Sayamwar Hall is at Gola Road, Adarsh Vihar Colony, Lane 5, near T Point, Danapur — 5 min from Danapur railway station and 20 min from Patna Junction.' },
+            ].map((item) => (
+              <details key={item.q} className="bg-white rounded-xl shadow-sm border border-gray-100 group">
+                <summary className="px-6 py-4 font-semibold text-[#7B1818] cursor-pointer list-none flex justify-between items-center">
+                  {item.q}
+                  <span className="text-[#C9A84C] group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-3">▼</span>
+                </summary>
+                <p className="px-6 pb-5 text-gray-600 text-sm leading-relaxed">{item.a}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 

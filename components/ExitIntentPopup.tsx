@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react'
 export default function ExitIntentPopup() {
   const [show, setShow] = useState(false)
   const [dismissed, setDismissed] = useState(false)
+  const [name, setName] = useState('')
+  const [phone, setPhone] = useState('')
   const [eventDate, setEventDate] = useState('')
   const [guests, setGuests] = useState('')
 
@@ -37,10 +39,14 @@ export default function ExitIntentPopup() {
   }
 
   const handleWhatsApp = () => {
-    const dateText = eventDate ? `Event Date: ${eventDate}` : 'Event Date: Not decided yet'
-    const guestText = guests ? `Number of Guests: ${guests}` : 'Number of Guests: Not sure yet'
+    const parts = [
+      name     ? `Name: ${name}`                     : '',
+      phone    ? `Phone: ${phone}`                   : '',
+      eventDate ? `Event Date: ${eventDate}`         : 'Event Date: Not decided yet',
+      guests   ? `Number of Guests: ${guests}`       : 'Number of Guests: Not sure yet',
+    ].filter(Boolean)
     const msg = encodeURIComponent(
-      `Hello! I want a free quote for my event at Sayamwar Hall & Homestay.\n${dateText}\n${guestText}`
+      `Hello! I want a free quote for my event at Sayamwar Hall & Homestay.\n${parts.join('\n')}`
     )
     window.open(`https://wa.me/917646028228?text=${msg}`, '_blank')
     close()
@@ -64,33 +70,53 @@ export default function ExitIntentPopup() {
 
         <div className="p-6">
           <p className="text-gray-600 text-sm text-center mb-4">
-            Share your event details and we&apos;ll send you the best package instantly on WhatsApp.
+            Share your details and we&apos;ll send the best package instantly on WhatsApp.
           </p>
 
           <div className="space-y-3 mb-5">
-            <div>
-              <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">
-                Event Date
-              </label>
-              <input
-                type="date"
-                value={eventDate}
-                onChange={(e) => setEventDate(e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#7B1818]"
-              />
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Your Name</label>
+                <input
+                  type="text"
+                  placeholder="e.g. Rahul"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#7B1818]"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Phone</label>
+                <input
+                  type="tel"
+                  placeholder="10-digit"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#7B1818]"
+                />
+              </div>
             </div>
-            <div>
-              <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">
-                Number of Guests
-              </label>
-              <input
-                type="number"
-                placeholder="e.g. 200"
-                min="1"
-                value={guests}
-                onChange={(e) => setGuests(e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-[#7B1818]"
-              />
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Event Date</label>
+                <input
+                  type="date"
+                  value={eventDate}
+                  onChange={(e) => setEventDate(e.target.value)}
+                  className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#7B1818]"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Guests</label>
+                <input
+                  type="number"
+                  placeholder="e.g. 200"
+                  min="1"
+                  value={guests}
+                  onChange={(e) => setGuests(e.target.value)}
+                  className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm focus:outline-none focus:border-[#7B1818]"
+                />
+              </div>
             </div>
           </div>
 
