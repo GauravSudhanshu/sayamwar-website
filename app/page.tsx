@@ -4,6 +4,7 @@ import Link from 'next/link'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import Counter from '@/components/Counter'
 import LeadForm from '@/components/LeadForm'
+import { posts } from './blog/posts'
 
 export const metadata: Metadata = {
   title: 'Best Banquet Hall in Patna | Banquet Near Me | Sayamwar Hall Danapur',
@@ -87,9 +88,9 @@ export default function HomePage() {
           </div>
 
           {/* Main heading */}
-          <h1 className="anim-1 font-[var(--font-playfair)] leading-[1.2] mb-6">
-            <span className="block text-3xl md:text-4xl lg:text-5xl font-normal italic text-white/85 mb-1">Where Celebrations</span>
-            <span className="block text-4xl md:text-5xl lg:text-6xl font-bold gold-shimmer">Become Memories</span>
+          <h1 className="anim-1 font-[var(--font-playfair)] leading-[1.15] mb-6">
+            <span className="block text-3xl md:text-4xl lg:text-5xl font-normal italic text-white/85 mb-2">Where Celebrations</span>
+            <span className="block text-5xl md:text-6xl lg:text-7xl font-bold gold-shimmer">Become Memories</span>
           </h1>
 
           {/* Brand name with ornamental lines */}
@@ -325,6 +326,65 @@ export default function HomePage() {
 
           <AnimateOnScroll className="text-center mt-10">
             <Link href="/gallery" className="btn-gold text-sm">View Full Gallery →</Link>
+          </AnimateOnScroll>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════
+          BLOG PREVIEW
+      ══════════════════════════════════════ */}
+      <section className="py-28 px-6 bg-[#F7F2EA]">
+        <div className="max-w-6xl mx-auto">
+          <AnimateOnScroll className="text-center mb-16">
+            <p className="section-label mb-4">Tips & Guides</p>
+            <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#3D0A0A]">From Our Blog</h2>
+            <div className="gold-line" />
+            <p className="text-[#3D0A0A]/50 text-sm mt-5 max-w-lg mx-auto">
+              Expert advice on planning events, weddings, and stays in Patna & Danapur.
+            </p>
+          </AnimateOnScroll>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
+            {posts.slice(0, 3).map((post, i) => (
+              <AnimateOnScroll key={post.slug} delay={i * 100}>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-md border border-[#C9A84C]/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full"
+                >
+                  <div className="relative h-48 overflow-hidden">
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.06]"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#1A0303]/55 to-transparent" />
+                    <div className="absolute top-4 left-4 bg-[#C9A84C] text-[#3D0A0A] text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+                      {post.category}
+                    </div>
+                  </div>
+                  <div className="p-6 flex flex-col flex-1">
+                    <h3 className="font-[var(--font-playfair)] text-lg font-bold text-[#3D0A0A] leading-snug mb-3 group-hover:text-[#7B1818] transition-colors">
+                      {post.title}
+                    </h3>
+                    <p className="text-[#3D0A0A]/55 text-sm leading-relaxed mb-5 flex-1 line-clamp-3">
+                      {post.excerpt}
+                    </p>
+                    <div className="flex items-center justify-between pt-4 border-t border-[#C9A84C]/15">
+                      <span className="text-[#3D0A0A]/40 text-xs">{post.readTime}</span>
+                      <span className="text-[#C9A84C] text-xs font-bold group-hover:text-[#8B6914] transition-colors">
+                        Read More →
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              </AnimateOnScroll>
+            ))}
+          </div>
+
+          <AnimateOnScroll className="text-center mt-10">
+            <Link href="/blog" className="btn-gold text-sm">View All Articles →</Link>
           </AnimateOnScroll>
         </div>
       </section>

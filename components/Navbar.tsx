@@ -12,6 +12,7 @@ const links = [
   { href: '/gallery', label: 'Gallery' },
   { href: '/packages', label: 'Packages' },
   { href: '/menu', label: 'Menu' },
+  { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
 ]
 

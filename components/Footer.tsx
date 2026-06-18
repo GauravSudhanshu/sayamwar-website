@@ -40,6 +40,7 @@ export default function Footer() {
               { href: '/wedding-venue-patna', label: 'Wedding Venue' },
               { href: '/packages', label: 'Packages & Pricing' },
               { href: '/gallery', label: 'Gallery' },
+              { href: '/blog', label: 'Blog & Tips' },
               { href: '/contact', label: 'Contact Us' },
             ].map((l) => (
               <li key={l.href}>
