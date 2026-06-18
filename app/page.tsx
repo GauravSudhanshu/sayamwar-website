@@ -70,7 +70,7 @@ export default function HomePage() {
       {/* ══════════════════════════════════════
           HERO — Full screen cinematic
       ══════════════════════════════════════ */}
-      <section className="relative h-screen min-h-[680px] flex items-center justify-center overflow-hidden -mt-[80px]">
+      <section className="relative h-screen min-h-[620px] flex items-center justify-center overflow-hidden -mt-[72px]">
         <Image src="/hero-bg.jpg" alt="Sayamwar Hall" fill className="object-cover object-center" priority sizes="100vw" />
         {/* Deep luxury overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#1A0303]/80 via-[#1A0303]/55 to-[#1A0303]/85" />
@@ -89,8 +89,8 @@ export default function HomePage() {
 
           {/* Main heading */}
           <h1 className="anim-1 font-[var(--font-playfair)] leading-[1.15] mb-6">
-            <span className="block text-3xl md:text-4xl lg:text-5xl font-normal italic text-white/85 mb-2">Where Celebrations</span>
-            <span className="block text-5xl md:text-6xl lg:text-7xl font-bold gold-shimmer">Become Memories</span>
+            <span className="block text-2xl md:text-4xl lg:text-5xl font-normal italic text-white/85 mb-2">Where Celebrations</span>
+            <span className="block text-4xl md:text-6xl lg:text-7xl font-bold gold-shimmer">Become Memories</span>
           </h1>
 
           {/* Brand name with ornamental lines */}
@@ -143,8 +143,8 @@ export default function HomePage() {
       {/* ══════════════════════════════════════
           INTRO — ABOUT
       ══════════════════════════════════════ */}
-      <section className="py-28 px-6 bg-[#F7F2EA]">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <section className="py-14 md:py-28 px-6 bg-[#F7F2EA]">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
           <AnimateOnScroll direction="left">
             <div className="grid grid-cols-2 gap-3">
               <div className="relative h-72 rounded overflow-hidden img-card col-span-2">
@@ -194,7 +194,7 @@ export default function HomePage() {
       ══════════════════════════════════════ */}
       <section className="bg-[#3D0A0A]">
         {services.map((s, i) => (
-          <div key={s.href} className={`max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-2 gap-0 items-center ${i % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+          <div key={s.href} className={`max-w-7xl mx-auto px-6 py-10 md:py-20 grid grid-cols-1 lg:grid-cols-2 gap-0 items-center ${i % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
             {/* Image */}
             <AnimateOnScroll direction={i % 2 === 0 ? 'left' : 'right'} className={`relative h-[420px] ${i % 2 === 1 ? 'lg:order-2' : ''}`}>
               <div className="relative h-full w-full rounded-sm overflow-hidden img-card">
@@ -243,9 +243,9 @@ export default function HomePage() {
       {/* ══════════════════════════════════════
           WHAT'S INCLUDED
       ══════════════════════════════════════ */}
-      <section className="py-28 px-6 bg-[#3D0A0A]">
+      <section className="py-14 md:py-28 px-6 bg-[#3D0A0A]">
         <div className="max-w-5xl mx-auto">
-          <AnimateOnScroll className="text-center mb-16">
+          <AnimateOnScroll className="text-center mb-10 md:mb-16">
             <p className="section-label mb-6">All Packages Include</p>
             <h2 className="font-[var(--font-playfair)] text-4xl md:text-6xl font-bold text-white leading-tight">
               Everything <span className="gold-shimmer">Arranged</span>
@@ -262,7 +262,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-px bg-[#C9A84C]/10">
             {whatsIncluded.map((item, i) => (
               <AnimateOnScroll key={item.label} delay={i * 50}>
-                <div className="glass hover:bg-white/10 transition-all duration-500 p-8 text-center group cursor-default">
+                <div className="glass hover:bg-white/10 transition-all duration-500 p-5 md:p-8 text-center group cursor-default">
                   <p className="text-[#C9A84C]/60 text-base mb-2 group-hover:text-[#C9A84C] transition-colors duration-300">✦</p>
                   <p className="font-[var(--font-playfair)] text-white font-semibold text-sm md:text-base leading-snug tracking-wide group-hover:text-[#C9A84C] transition-colors duration-300">{item.label}</p>
                 </div>
@@ -275,9 +275,9 @@ export default function HomePage() {
       {/* ══════════════════════════════════════
           GALLERY
       ══════════════════════════════════════ */}
-      <section className="py-28 px-6 bg-[#F7F2EA]">
+      <section className="py-14 md:py-28 px-6 bg-[#F7F2EA]">
         <div className="max-w-6xl mx-auto">
-          <AnimateOnScroll className="text-center mb-16">
+          <AnimateOnScroll className="text-center mb-10 md:mb-16">
             <p className="section-label mb-4">Our Venue</p>
             <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#3D0A0A]">A Glimpse of Grandeur</h2>
             <div className="gold-line" />
@@ -333,9 +333,9 @@ export default function HomePage() {
       {/* ══════════════════════════════════════
           BLOG PREVIEW
       ══════════════════════════════════════ */}
-      <section className="py-28 px-6 bg-[#F7F2EA]">
+      <section className="py-14 md:py-28 px-6 bg-[#F7F2EA]">
         <div className="max-w-6xl mx-auto">
-          <AnimateOnScroll className="text-center mb-16">
+          <AnimateOnScroll className="text-center mb-10 md:mb-16">
             <p className="section-label mb-4">Tips & Guides</p>
             <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#3D0A0A]">From Our Blog</h2>
             <div className="gold-line" />
@@ -392,9 +392,9 @@ export default function HomePage() {
       {/* ══════════════════════════════════════
           TESTIMONIALS
       ══════════════════════════════════════ */}
-      <section className="py-28 px-6 bg-[#2D0707]">
+      <section className="py-14 md:py-28 px-6 bg-[#2D0707]">
         <div className="max-w-6xl mx-auto">
-          <AnimateOnScroll className="text-center mb-16">
+          <AnimateOnScroll className="text-center mb-10 md:mb-16">
             <p className="section-label mb-4">Testimonials</p>
             <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-white">Voices of Our Guests</h2>
             <div className="gold-line" />
@@ -403,7 +403,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {reviews.map((r, i) => (
               <AnimateOnScroll key={r.name} delay={i * 120}>
-                <div className="glass rounded p-8 hover:border-[#C9A84C]/40 transition-all duration-500 group">
+                <div className="glass rounded p-5 md:p-8 hover:border-[#C9A84C]/40 transition-all duration-500 group">
                   <div className="flex items-center gap-1 mb-5">
                     {Array.from({ length: r.rating }).map((_, j) => (
                       <span key={j} className="text-[#C9A84C] text-sm">★</span>
@@ -431,16 +431,16 @@ export default function HomePage() {
       {/* ══════════════════════════════════════
           INQUIRY FORM
       ══════════════════════════════════════ */}
-      <section className="py-28 px-6 bg-[#F7F2EA]">
+      <section className="py-14 md:py-28 px-6 bg-[#F7F2EA]">
         <div className="max-w-xl mx-auto">
-          <AnimateOnScroll className="text-center mb-12">
+          <AnimateOnScroll className="text-center mb-8 md:mb-12">
             <p className="section-label mb-4">Get in Touch</p>
             <h2 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#3D0A0A]">Begin Your Story</h2>
             <div className="gold-line" />
             <p className="text-[#3D0A0A]/50 text-sm mt-5">Tell us about your event and we&apos;ll respond on WhatsApp within minutes</p>
           </AnimateOnScroll>
           <AnimateOnScroll>
-            <div className="bg-white rounded p-10 shadow-2xl border border-[#C9A84C]/10">
+            <div className="bg-white rounded p-5 md:p-10 shadow-2xl border border-[#C9A84C]/10">
               <LeadForm />
             </div>
           </AnimateOnScroll>
@@ -450,9 +450,9 @@ export default function HomePage() {
       {/* ══════════════════════════════════════
           MAP
       ══════════════════════════════════════ */}
-      <section className="py-28 px-6 bg-[#3D0A0A]">
+      <section className="py-14 md:py-28 px-6 bg-[#3D0A0A]">
         <div className="max-w-5xl mx-auto">
-          <AnimateOnScroll className="text-center mb-12">
+          <AnimateOnScroll className="text-center mb-8 md:mb-12">
             <p className="section-label mb-4">Find Us</p>
             <h2 className="font-[var(--font-playfair)] text-4xl font-bold text-white">Our Location</h2>
             <div className="gold-line" />

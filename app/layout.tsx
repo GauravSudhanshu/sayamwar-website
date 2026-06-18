@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   keywords: 'banquet hall in patna, banquet near me, best banquet in patna, low budget banquet patna, banquet hall danapur, wedding hall patna, birthday party hall patna, event hall near me, cheap banquet hall patna, banquet hall gola road patna',
   verification: { google: 'google6f2c00ffd72c34ef' },
   icons: {
-    icon: [{ url: '/icon.jpg', type: 'image/jpeg' }],
-    apple: [{ url: '/icon.jpg', type: 'image/jpeg' }],
-    shortcut: [{ url: '/icon.jpg', type: 'image/jpeg' }],
+    icon: [{ url: '/logo.png', type: 'image/png' }],
+    apple: [{ url: '/logo.png', type: 'image/png' }],
+    shortcut: [{ url: '/logo.png', type: 'image/png' }],
   },
   openGraph: {
     title: 'Best Banquet Hall in Patna | Low Budget | Sayamwar Hall Danapur',
@@ -92,8 +92,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="min-h-full flex flex-col bg-[#F7F2EA] font-[var(--font-inter)]">
         <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <main className="flex-1 pt-[72px]">{children}</main>
+        <Footer className="pb-16 md:pb-0" />
         <FloatingButtons />
         <ExitIntentPopup />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-VXSY95P5SF" strategy="afterInteractive" />

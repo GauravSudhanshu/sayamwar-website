@@ -1,4 +1,3 @@
-'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -6,7 +5,7 @@ export default function MenuPage() {
   return (
     <>
       {/* Header */}
-      <section className="bg-gradient-to-br from-[#5A0F0F] to-[#7B1818] py-12 px-4 text-center text-white">
+      <section className="bg-gradient-to-br from-[#5A0F0F] to-[#7B1818] py-14 px-4 text-center text-white">
         <p className="text-[#C9A84C] text-xs tracking-[0.35em] uppercase mb-2">Sayamwar Hall & Homestay</p>
         <h1 className="text-4xl font-bold mb-2">
           Catering <span className="text-[#C9A84C]">Menu</span>
