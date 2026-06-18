@@ -46,13 +46,16 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
 
   if (submitted) {
     return (
-      <div className="text-center py-8">
-        <div className="text-5xl mb-3">✅</div>
-        <h3 className="text-xl font-bold text-[#7B1818] mb-2">Inquiry Sent!</h3>
-        <p className="text-gray-600 text-sm">Your inquiry has been sent via WhatsApp. We&apos;ll also follow up on your phone number shortly.</p>
+      <div className="text-center py-10">
+        <div className="w-16 h-16 rounded-full bg-[#C9A84C]/15 flex items-center justify-center mx-auto mb-5 border border-[#C9A84C]/30">
+          <span className="text-[#C9A84C] text-2xl">✦</span>
+        </div>
+        <h3 className="font-[var(--font-playfair)] text-2xl font-bold text-[#3D0A0A] mb-2">Inquiry Received</h3>
+        <div className="w-10 h-px bg-[#C9A84C] mx-auto mb-4" />
+        <p className="text-[#3D0A0A]/55 text-sm leading-relaxed">Your inquiry has been sent via WhatsApp. We&apos;ll respond within minutes.</p>
         <button
           onClick={() => setSubmitted(false)}
-          className="mt-4 text-sm text-[#7B1818] underline"
+          className="mt-6 text-xs text-[#C9A84C] tracking-widest uppercase hover:text-[#8B6914] transition-colors"
         >
           Submit another inquiry
         </button>
@@ -69,7 +72,7 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
           placeholder="Your Name *"
           value={form.name}
           onChange={(e) => setForm({ ...form, name: e.target.value })}
-          className="border border-gray-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:border-[#7B1818] w-full"
+          className="luxury-input"
         />
         <input
           required
@@ -79,14 +82,14 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
           title="Enter 10-digit phone number"
           value={form.phone}
           onChange={(e) => setForm({ ...form, phone: e.target.value })}
-          className="border border-gray-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:border-[#7B1818] w-full"
+          className="luxury-input"
         />
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <select
           value={form.event}
           onChange={(e) => setForm({ ...form, event: e.target.value })}
-          className="border border-gray-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:border-[#7B1818] w-full text-gray-600"
+          className="luxury-input"
         >
           <option value="">Select Event Type</option>
           <option value="Wedding">Wedding</option>
@@ -100,7 +103,7 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
           type="date"
           value={form.date}
           onChange={(e) => setForm({ ...form, date: e.target.value })}
-          className="border border-gray-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:border-[#7B1818] w-full"
+          className="luxury-input"
         />
       </div>
       <input
@@ -108,25 +111,25 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
         placeholder="Number of Guests"
         value={form.guests}
         onChange={(e) => setForm({ ...form, guests: e.target.value })}
-        className="border border-gray-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:border-[#7B1818] w-full"
+        className="luxury-input"
       />
       <textarea
         rows={3}
         placeholder="Additional requirements or message..."
         value={form.message}
         onChange={(e) => setForm({ ...form, message: e.target.value })}
-        className="border border-gray-300 rounded px-4 py-2.5 text-sm focus:outline-none focus:border-[#7B1818] w-full resize-none"
+        className="luxury-input resize-none"
       />
       <button
         type="submit"
         disabled={loading}
-        className="w-full bg-[#7B1818] hover:bg-[#5A0F0F] disabled:opacity-60 text-white py-3 rounded font-bold text-sm transition-colors"
+        className="btn-gold w-full justify-center text-sm disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none"
       >
-        {loading ? 'Sending...' : 'Send Inquiry via WhatsApp 💬'}
+        {loading ? 'Sending…' : '💬 Send Inquiry via WhatsApp'}
       </button>
-      <p className="text-center text-xs text-gray-500">
-        Or call us directly:{' '}
-        <a href="tel:7646028228" className="text-[#7B1818] font-bold">7646028228</a>
+      <p className="text-center text-xs text-[#3D0A0A]/40 tracking-wide">
+        Or call:{' '}
+        <a href="tel:7646028228" className="text-[#C9A84C] font-semibold hover:text-[#8B6914] transition-colors">7646028228</a>
       </p>
     </form>
   )

@@ -49,7 +49,7 @@ export default function ExitIntentPopup() {
   if (!show) return null
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4" onClick={close}>
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4" onClick={close} role="dialog" aria-modal="true" aria-labelledby="exit-popup-title">
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       <div
         className="relative bg-white rounded-2xl shadow-2xl max-w-sm w-full overflow-hidden"
@@ -58,7 +58,7 @@ export default function ExitIntentPopup() {
         {/* Top banner */}
         <div className="bg-gradient-to-r from-[#5A0F0F] to-[#7B1818] px-6 py-5 text-center">
           <p className="text-[#C9A84C] text-xs tracking-widest uppercase mb-1">Wait! Don&apos;t Miss Out</p>
-          <h2 className="text-white font-bold text-xl leading-tight">Get a FREE Quote in 10 Minutes</h2>
+          <h2 id="exit-popup-title" className="text-white font-bold text-xl leading-tight">Get a FREE Quote in 10 Minutes</h2>
           <p className="text-white/60 text-sm mt-1">Weddings • Birthdays • Engagements</p>
         </div>
 
@@ -110,7 +110,7 @@ export default function ExitIntentPopup() {
             </a>
           </div>
 
-          <button onClick={close} className="mt-4 w-full text-gray-400 text-xs hover:text-gray-600 transition-colors">
+          <button onClick={close} aria-label="Close popup" className="mt-4 w-full text-gray-400 text-xs hover:text-gray-600 transition-colors">
             No thanks, I&apos;ll decide later
           </button>
         </div>
