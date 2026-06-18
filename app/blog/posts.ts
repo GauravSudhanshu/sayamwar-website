@@ -45,7 +45,7 @@ export const posts: BlogPost[] = [
         'Birthday / Engagement: ₹85,000 – ₹1,25,000',
         'Wedding / Reception: ₹1,25,000 – ₹2,50,000',
         'Corporate Events: ₹50,000 – ₹1,00,000 (half day)',
-        'Food (per plate): ₹999 – ₹1,551 depending on menu tier',
+        'Food (per plate): ₹999 – ₹1,699 depending on menu tier',
       ]},
       { type: 'p', text: 'All-inclusive packages — where hall, decoration, DJ, and catering are bundled — offer better value and fewer surprises than piecemeal booking.' },
       { type: 'h2', text: 'Why Sayamwar Hall is Patna\'s Best Banquet Hall' },
@@ -53,7 +53,7 @@ export const posts: BlogPost[] = [
       { type: 'ul', items: [
         'Fully air-conditioned hall for 200–300 guests with crystal chandeliers and LED ambience',
         'All-inclusive packages from ₹85,000 — stage decoration, mandap, DJ, guard, night coffee, and 4 rooms included',
-        'Three professional food menus (Shagun, Vivah, Swayamvar) at ₹999–₹1,551 per plate',
+        'Three professional food menus (Shagun, Vivah, Swayamvar) at ₹999–₹1,699 per plate',
         'On-site AC and non-AC rooms for family stays',
         'Open 24 hours, 7 days — no time restrictions on events',
         'Located just 5 minutes from Danapur railway station',

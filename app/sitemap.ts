@@ -3,7 +3,21 @@ import { posts } from './blog/posts'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://sayamwar.com'
-  const pages = ['', '/rooms', '/rooms-in-patna', '/banquet-hall-patna', '/banquet-hall-danapur', '/cheap-banquet-hall-patna', '/birthday-party-hall-patna', '/wedding-venue-patna', '/gallery', '/packages', '/menu', '/contact', '/blog']
+  const pages = [
+    '',
+    '/rooms',
+    '/rooms-in-patna',
+    '/banquet-hall-patna',
+    '/banquet-hall-danapur',
+    '/cheap-banquet-hall-patna',
+    '/birthday-party-hall-patna',
+    '/wedding-venue-patna',
+    '/gallery',
+    '/packages',
+    '/menu',
+    '/contact',
+    '/blog',
+  ]
 
   const staticUrls: MetadataRoute.Sitemap = pages.map((path) => ({
     url: `${base}${path}`,

@@ -51,7 +51,7 @@ const foodPackages = [
     color: 'from-[#5A0F0F] to-[#7B1818]',
     desc: 'Traditional auspicious menu — perfect for engagements & small ceremonies',
     vegPrice: '₹999',
-    nonVegPrice: '₹1,151',
+    nonVegPrice: '₹1,199',
     items: [
       'Welcome Drink',
       'Starters (Veg & Non-Veg)',
@@ -67,8 +67,8 @@ const foodPackages = [
     icon: '💒',
     color: 'from-[#7B1818] to-[#9B2222]',
     desc: 'Premium wedding feast — our most popular full-course marriage menu',
-    vegPrice: '₹1,151',
-    nonVegPrice: '₹1,351',
+    vegPrice: '₹1,199',
+    nonVegPrice: '₹1,499',
     items: [
       'Welcome Drink + Mocktail',
       'Live Snacks Counter',
@@ -87,8 +87,8 @@ const foodPackages = [
     icon: '👑',
     color: 'from-[#3D0A0A] to-[#5A0F0F]',
     desc: 'Royal grand feast — the ultimate premium experience for your special day',
-    vegPrice: '₹1,351',
-    nonVegPrice: '₹1,551',
+    vegPrice: '₹1,399',
+    nonVegPrice: '₹1,699',
     items: [
       'Royal Welcome Drink',
       'Live Starters Counter',
@@ -236,9 +236,9 @@ export default function PackagesPage() {
               </thead>
               <tbody>
                 {[
-                  { name: 'Shagun Package', veg: '₹999', nonveg: '₹1,151' },
-                  { name: 'Vivah Package',  veg: '₹1,151', nonveg: '₹1,351' },
-                  { name: 'Swayamvar Package', veg: '₹1,351', nonveg: '₹1,551' },
+                  { name: 'Shagun Package', veg: '₹999', nonveg: '₹1,199' },
+                  { name: 'Vivah Package',  veg: '₹1,199', nonveg: '₹1,499' },
+                  { name: 'Swayamvar Package', veg: '₹1,399', nonveg: '₹1,699' },
                 ].map((r, i) => (
                   <tr key={r.name} className={i % 2 === 0 ? 'bg-[#FDF8F0]' : 'bg-white'}>
                     <td className="py-3 px-5 font-semibold text-[#7B1818]">{r.name}</td>

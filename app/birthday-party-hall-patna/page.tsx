@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const packages = [
   {
     name: 'Basic Birthday',
-    price: '₹75,000',
+    price: '₹85,000',
     capacity: 'Up to 50 Guests',
     includes: ['AC Hall', 'Basic Decoration', 'Birthday Cake (1kg)', 'Snacks & Tea', '2 Hours Slot', 'Basic Sound System'],
     color: '#E8C547',
