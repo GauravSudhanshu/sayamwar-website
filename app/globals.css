@@ -324,3 +324,31 @@ body {
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(201,168,76,0.4), transparent);
 }
+
+/* ── GOLD DIVIDER (centered, used on interior pages) ── */
+.gold-divider {
+  width: 48px;
+  height: 1px;
+  background: var(--gold);
+  margin: 16px auto;
+}
+
+/* ── CARD HOVER (lift + shadow) ── */
+.card-hover {
+  transition: transform 0.4s cubic-bezier(0.16,1,0.3,1), box-shadow 0.4s ease;
+}
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.14);
+}
+
+/* ── GALLERY OVERLAY (darkens image on group hover) ── */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26,3,3,0);
+  transition: background 0.4s ease;
+}
+.group:hover .overlay {
+  background: rgba(26,3,3,0.45);
+}
