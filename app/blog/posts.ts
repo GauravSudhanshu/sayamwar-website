@@ -93,7 +93,7 @@ export const posts: BlogPost[] = [
       ]},
       { type: 'p', text: 'Choosing an all-inclusive hall package in Patna can save you ₹50,000–₹1,00,000 compared to booking decoration, DJ, and catering separately.' },
       { type: 'h2', text: 'Choose an All-Inclusive Wedding Venue' },
-      { type: 'p', text: 'The biggest savings come from choosing a venue that bundles everything. Look for banquet halls in Patna that include stage decoration, mandap, DJ, security, and rooms in the base price. Sayamwar Hall\'s Silver Wedding package at ₹1,50,000 includes all of these for up to 150 guests — making it one of the best budget options in Patna.' },
+      { type: 'p', text: 'The biggest savings come from choosing a venue that bundles everything. Look for banquet halls in Patna that include stage decoration, mandap, DJ, security, and rooms in the base price. Sayamwar Hall\'s Silver Wedding package at ₹1,51,000 includes all of these for up to 150 guests — making it one of the best budget options in Patna.' },
       { type: 'h2', text: 'Tips to Save on Wedding Food in Patna' },
       { type: 'ul', items: [
         'Choose veg menus — they\'re ₹150–₹200 cheaper per plate than non-veg',
@@ -114,7 +114,7 @@ export const posts: BlogPost[] = [
         'Ask about advance payment terms and cancellation policy',
         'Plan décor around the venue\'s existing setup to reduce extra costs',
       ]},
-      { type: 'cta', text: 'See Sayamwar Hall\'s all-inclusive wedding packages starting at ₹1,50,000.', href: '/wedding-venue-patna', label: 'View Wedding Packages' },
+      { type: 'cta', text: 'See Sayamwar Hall\'s all-inclusive wedding packages starting at ₹1,51,000.', href: '/wedding-venue-patna', label: 'View Wedding Packages' },
     ],
   },
   {
