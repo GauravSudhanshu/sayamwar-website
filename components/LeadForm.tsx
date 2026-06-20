@@ -37,7 +37,9 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
     }
 
     // Open WhatsApp
-    const msg = `Hello! I want to inquire about Sayamwar Hall & Homestay.%0AName: ${form.name}%0APhone: ${form.phone}%0AEvent: ${form.event}%0ADate: ${form.date}%0AGuests: ${form.guests}%0AMessage: ${form.message}`
+    const msg = encodeURIComponent(
+      `Hello! I want to inquire about Sayamwar Hall & Homestay.\nName: ${form.name}\nPhone: ${form.phone}\nEvent: ${form.event}\nDate: ${form.date}\nGuests: ${form.guests}\nMessage: ${form.message}`
+    )
     window.open(`https://wa.me/917646028228?text=${msg}`, '_blank')
 
     setLoading(false)

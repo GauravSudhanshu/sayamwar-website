@@ -23,11 +23,11 @@ export default function GalleryPage() {
   return (
     <>
       <section className="bg-gradient-to-br from-[#3D0A0A] via-[#5A0F0F] to-[#7B1818] py-20 px-4 text-center text-white">
-        <p className="text-[#C9A227] text-xs tracking-[0.35em] uppercase font-[var(--font-inter)] mb-3">Our Venue</p>
+        <p className="text-[#C9A84C] text-xs tracking-[0.35em] uppercase font-[var(--font-inter)] mb-3">Our Venue</p>
         <h1 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold mb-4">
-          Photo <span className="text-[#C9A227]">Gallery</span>
+          Photo <span className="text-[#C9A84C]">Gallery</span>
         </h1>
-        <div className="w-16 h-px bg-[#C9A227] mx-auto mb-4" />
+        <div className="w-16 h-px bg-[#C9A84C] mx-auto mb-4" />
         <p className="text-white/60 text-base max-w-xl mx-auto">
           A glimpse of the beautiful moments created at Sayamwar Hall &amp; Homestay
         </p>
@@ -38,7 +38,7 @@ export default function GalleryPage() {
           <GalleryGrid photos={photos} />
 
           <AnimateOnScroll className="mt-14 bg-[#3D0A0A] rounded-3xl p-10 text-center">
-            <p className="text-[#C9A227] text-xs tracking-widest uppercase font-[var(--font-inter)] mb-2">Visit Us</p>
+            <p className="text-[#C9A84C] text-xs tracking-widest uppercase font-[var(--font-inter)] mb-2">Visit Us</p>
             <h3 className="font-[var(--font-playfair)] text-2xl font-bold text-white mb-6">Schedule a Free Site Visit</h3>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -48,7 +48,7 @@ export default function GalleryPage() {
               >
                 💬 Schedule via WhatsApp
               </a>
-              <a href="tel:7646028228" className="px-7 py-3 bg-[#C9A227] text-[#3D0A0A] rounded-xl font-bold hover:bg-[#E8C547] transition-all hover:scale-105">
+              <a href="tel:7646028228" className="px-7 py-3 bg-[#C9A84C] text-[#3D0A0A] rounded-xl font-bold hover:bg-[#E8C547] transition-all hover:scale-105">
                 📞 Call: 7646028228
               </a>
             </div>

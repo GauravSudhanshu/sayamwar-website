@@ -125,11 +125,11 @@ export default function PackagesPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#3D0A0A] via-[#5A0F0F] to-[#7B1818] py-20 px-4 text-center text-white">
         <AnimateOnScroll>
-          <p className="text-[#C9A227] text-xs tracking-[0.35em] uppercase font-[var(--font-inter)] mb-3">Transparent Pricing</p>
+          <p className="text-[#C9A84C] text-xs tracking-[0.35em] uppercase font-[var(--font-inter)] mb-3">Transparent Pricing</p>
           <h1 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold mb-4">
-            Packages &amp; <span className="text-[#C9A227]">Pricing</span>
+            Packages &amp; <span className="text-[#C9A84C]">Pricing</span>
           </h1>
-          <div className="w-16 h-px bg-[#C9A227] mx-auto mb-5" />
+          <div className="w-16 h-px bg-[#C9A84C] mx-auto mb-5" />
           <p className="text-white/65 text-base max-w-xl mx-auto">
             All-inclusive packages — no hidden charges. Everything you need for a perfect celebration.
           </p>
@@ -140,7 +140,7 @@ export default function PackagesPage() {
       <section className="py-20 px-4 bg-[#FDF8F0]">
         <div className="max-w-6xl mx-auto">
           <AnimateOnScroll className="text-center mb-14">
-            <p className="text-[#C9A227] text-xs tracking-[0.3em] uppercase font-[var(--font-inter)] mb-2">Hall Rental</p>
+            <p className="text-[#C9A84C] text-xs tracking-[0.3em] uppercase font-[var(--font-inter)] mb-2">Hall Rental</p>
             <h2 className="font-[var(--font-playfair)] text-4xl font-bold text-[#3D0A0A]">Event Packages</h2>
             <div className="gold-divider" />
           </AnimateOnScroll>
@@ -148,9 +148,9 @@ export default function PackagesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {rentalPackages.map((pkg, i) => (
               <AnimateOnScroll key={pkg.name} delay={i * 100}>
-                <div className={`card-hover relative bg-white rounded-2xl overflow-hidden shadow-md border-2 ${pkg.highlight ? 'border-[#C9A227]' : 'border-gray-100'} flex flex-col h-full`}>
+                <div className={`card-hover relative bg-white rounded-2xl overflow-hidden shadow-md border-2 ${pkg.highlight ? 'border-[#C9A84C]' : 'border-gray-100'} flex flex-col h-full`}>
                   {pkg.tag && (
-                    <div className="absolute top-0 left-0 right-0 z-10 bg-[#C9A227] text-[#3D0A0A] text-center text-xs font-bold py-1.5 font-[var(--font-inter)] tracking-wide">
+                    <div className="absolute top-0 left-0 right-0 z-10 bg-[#C9A84C] text-[#3D0A0A] text-center text-xs font-bold py-1.5 font-[var(--font-inter)] tracking-wide">
                       ⭐ {pkg.tag}
                     </div>
                   )}
@@ -170,7 +170,7 @@ export default function PackagesPage() {
                   </div>
 
                   <div className="px-5 py-5 flex flex-col flex-1">
-                    <p className="font-[var(--font-playfair)] text-3xl font-bold text-[#C9A227] text-center mb-2">{pkg.price}</p>
+                    <p className="font-[var(--font-playfair)] text-3xl font-bold text-[#C9A84C] text-center mb-2">{pkg.price}</p>
                     <p className="text-gray-500 text-sm text-center leading-relaxed mb-5 flex-1">{pkg.desc}</p>
                     <a
                       href={`https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20the%20${encodeURIComponent(pkg.name)}%20package%20at%20Sayamwar%20Hall`}
@@ -195,7 +195,7 @@ export default function PackagesPage() {
       <section className="py-20 px-4 bg-[#3D0A0A]">
         <div className="max-w-5xl mx-auto">
           <AnimateOnScroll className="text-center mb-14">
-            <p className="text-[#C9A227] text-xs tracking-[0.3em] uppercase font-[var(--font-inter)] mb-2">Everything Arranged</p>
+            <p className="text-[#C9A84C] text-xs tracking-[0.3em] uppercase font-[var(--font-inter)] mb-2">Everything Arranged</p>
             <h2 className="font-[var(--font-playfair)] text-4xl font-bold text-white">What&apos;s Included</h2>
             <div className="gold-divider" />
             <p className="text-white/50 text-sm mt-4">All packages include these services — nothing extra to arrange</p>
@@ -204,9 +204,9 @@ export default function PackagesPage() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {includedServices.map((s, i) => (
               <AnimateOnScroll key={s.name} delay={i * 60}>
-                <div className="bg-white/8 border border-white/10 rounded-2xl p-5 text-center hover:bg-white/14 hover:border-[#C9A227]/40 transition-all group">
+                <div className="bg-white/8 border border-white/10 rounded-2xl p-5 text-center hover:bg-white/14 hover:border-[#C9A84C]/40 transition-all group">
                   <div className="text-3xl mb-2">{s.icon}</div>
-                  <p className="text-white/80 text-sm font-medium group-hover:text-[#C9A227] transition-colors">{s.name}</p>
+                  <p className="text-white/80 text-sm font-medium group-hover:text-[#C9A84C] transition-colors">{s.name}</p>
                 </div>
               </AnimateOnScroll>
             ))}
@@ -218,7 +218,7 @@ export default function PackagesPage() {
       <section className="py-20 px-4 bg-[#FDF8F0]">
         <div className="max-w-5xl mx-auto">
           <AnimateOnScroll className="text-center mb-14">
-            <p className="text-[#C9A227] text-xs tracking-[0.3em] uppercase font-[var(--font-inter)] mb-2">Catering Menus</p>
+            <p className="text-[#C9A84C] text-xs tracking-[0.3em] uppercase font-[var(--font-inter)] mb-2">Catering Menus</p>
             <h2 className="font-[var(--font-playfair)] text-4xl font-bold text-[#3D0A0A]">Food Packages</h2>
             <div className="gold-divider" />
             <p className="text-gray-400 text-sm mt-4">Choose the menu that suits your occasion</p>
@@ -253,9 +253,9 @@ export default function PackagesPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {foodPackages.map((pkg, i) => (
               <AnimateOnScroll key={pkg.name} delay={i * 120}>
-                <div className={`card-hover relative bg-white rounded-2xl overflow-hidden shadow-md border-2 ${pkg.popular ? 'border-[#C9A227]' : 'border-gray-100'} flex flex-col h-full`}>
+                <div className={`card-hover relative bg-white rounded-2xl overflow-hidden shadow-md border-2 ${pkg.popular ? 'border-[#C9A84C]' : 'border-gray-100'} flex flex-col h-full`}>
                   {pkg.popular && (
-                    <div className="bg-[#C9A227] text-[#3D0A0A] text-center text-xs font-bold py-1.5 tracking-wide font-[var(--font-inter)]">
+                    <div className="bg-[#C9A84C] text-[#3D0A0A] text-center text-xs font-bold py-1.5 tracking-wide font-[var(--font-inter)]">
                       ⭐ MOST POPULAR
                     </div>
                   )}
@@ -286,7 +286,7 @@ export default function PackagesPage() {
                     <ul className="space-y-2 my-4 flex-1">
                       {pkg.items.map((item) => (
                         <li key={item} className="text-sm text-gray-600 flex items-center gap-2">
-                          <span className="text-[#C9A227] font-bold">✦</span> {item}
+                          <span className="text-[#C9A84C] font-bold">✦</span> {item}
                         </li>
                       ))}
                     </ul>
@@ -309,7 +309,7 @@ export default function PackagesPage() {
       <section className="py-16 px-4 bg-[#5A0F0F]">
         <div className="max-w-4xl mx-auto">
           <AnimateOnScroll className="text-center mb-10">
-            <p className="text-[#C9A227] text-xs tracking-[0.3em] uppercase font-[var(--font-inter)] mb-2">Stay With Us</p>
+            <p className="text-[#C9A84C] text-xs tracking-[0.3em] uppercase font-[var(--font-inter)] mb-2">Stay With Us</p>
             <h2 className="font-[var(--font-playfair)] text-3xl font-bold text-white">Room Rates</h2>
             <div className="gold-divider" />
           </AnimateOnScroll>
@@ -320,9 +320,9 @@ export default function PackagesPage() {
               { name: 'Premium AC Suite', price: '₹2,500 / night', note: 'AC, King Bed, Sofa, LED Ceiling' },
             ].map((r, i) => (
               <AnimateOnScroll key={r.name} delay={i * 100}>
-                <div className="bg-white/8 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/12 hover:border-[#C9A227]/50 transition-all">
+                <div className="bg-white/8 border border-white/10 rounded-2xl p-6 text-center hover:bg-white/12 hover:border-[#C9A84C]/50 transition-all">
                   <h3 className="font-[var(--font-playfair)] font-bold text-white text-lg mb-2">{r.name}</h3>
-                  <p className="text-[#C9A227] font-bold text-2xl mb-2">{r.price}</p>
+                  <p className="text-[#C9A84C] font-bold text-2xl mb-2">{r.price}</p>
                   <p className="text-white/50 text-xs">{r.note}</p>
                 </div>
               </AnimateOnScroll>
@@ -335,7 +335,7 @@ export default function PackagesPage() {
       <section className="py-20 px-4 bg-[#FDF8F0]">
         <div className="max-w-2xl mx-auto">
           <AnimateOnScroll className="text-center mb-10">
-            <p className="text-[#C9A227] text-xs tracking-[0.3em] uppercase font-[var(--font-inter)] mb-2">Get a Quote</p>
+            <p className="text-[#C9A84C] text-xs tracking-[0.3em] uppercase font-[var(--font-inter)] mb-2">Get a Quote</p>
             <h2 className="font-[var(--font-playfair)] text-4xl font-bold text-[#3D0A0A]">Book Your Event</h2>
             <div className="gold-divider" />
             <p className="text-gray-400 text-sm mt-4">Tell us your requirements and we&apos;ll send a custom quote on WhatsApp</p>

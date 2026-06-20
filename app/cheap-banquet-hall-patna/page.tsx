@@ -65,7 +65,7 @@ export default function CheapBanquetHallPatnaPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-[#5A0F0F] to-[#7B1818] py-20 px-4 text-center text-white">
         <p className="text-[#C9A84C] text-xs tracking-[0.3em] uppercase mb-4">Affordable • Quality • Memorable</p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+        <h1 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold mb-4 leading-tight">
           Cheap Banquet Hall in <span className="text-[#C9A84C]">Patna</span>
         </h1>
         <p className="text-white/70 text-lg max-w-2xl mx-auto mb-6">
@@ -150,7 +150,7 @@ export default function CheapBanquetHallPatnaPage() {
               <details key={faq.name} className="bg-[#F7F2EA] rounded-xl border border-[#C9A84C]/20 group">
                 <summary className="p-5 font-semibold text-[#7B1818] cursor-pointer list-none flex justify-between items-center">
                   {faq.name}
-                  <span className="text-[#C9A84C] text-xl group-open:rotate-45 transition-transform duration-200">+</span>
+                  <span className="text-[#C9A84C] group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-3">▼</span>
                 </summary>
                 <p className="px-5 pb-5 text-gray-600 text-sm leading-relaxed">{faq.acceptedAnswer.text}</p>
               </details>

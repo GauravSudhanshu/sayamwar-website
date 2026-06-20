@@ -11,8 +11,8 @@ export default function ContactPage() {
   return (
     <>
       <section className="bg-gradient-to-br from-[#5A0F0F] to-[#7B1818] py-20 px-4 text-center text-white">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Contact <span className="text-[#C9A227]">Us</span>
+        <h1 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold mb-4">
+          Contact <span className="text-[#C9A84C]">Us</span>
         </h1>
         <p className="text-white/70 text-lg max-w-xl mx-auto">
           We&apos;re here to help. Reach us via call, WhatsApp, or fill the form below.

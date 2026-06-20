@@ -19,7 +19,7 @@ const rooms = [
     badge: null,
   },
   {
-    img: '/venue-3.jpg',
+    img: '/venue-6.jpg',
     name: 'Deluxe AC Room',
     price: '₹1,800 / night',
     features: ['Air Conditioning', 'Double Bed', 'TV', 'Attached Bathroom', 'Free Wi-Fi', 'Room Service'],
@@ -47,11 +47,11 @@ export default function RoomsPage() {
         <Image src="/venue-6.jpg" alt="Rooms" fill className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#1A0303]/70 via-[#1A0303]/60 to-[#1A0303]/80" />
         <div className="relative z-10">
-          <p className="text-[#C9A227] text-xs tracking-[0.35em] uppercase font-[var(--font-inter)] mb-3">Comfortable Stay</p>
+          <p className="text-[#C9A84C] text-xs tracking-[0.35em] uppercase font-[var(--font-inter)] mb-3">Comfortable Stay</p>
           <h1 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold mb-4">
-            Rooms &amp; Homestay in <span className="text-[#C9A227]">Danapur, Patna</span>
+            Rooms &amp; Homestay in <span className="text-[#C9A84C]">Danapur, Patna</span>
           </h1>
-          <div className="w-16 h-px bg-[#C9A227] mx-auto mb-6" />
+          <div className="w-16 h-px bg-[#C9A84C] mx-auto mb-6" />
           <p className="text-white/70 text-lg max-w-2xl mx-auto mb-8">
             Modern, clean, and affordable rooms — perfect for event guests, travelers, and business visitors.
           </p>
@@ -61,7 +61,7 @@ export default function RoomsPage() {
               className="px-7 py-3 bg-green-500 hover:bg-green-600 text-white rounded-xl font-bold transition-all hover:scale-105">
               💬 Book via WhatsApp
             </a>
-            <a href="tel:7646028228" className="px-7 py-3 bg-[#C9A227] text-[#3D0A0A] rounded-xl font-bold hover:bg-[#E8C547] transition-all hover:scale-105">
+            <a href="tel:7646028228" className="px-7 py-3 bg-[#C9A84C] text-[#3D0A0A] rounded-xl font-bold hover:bg-[#E8C547] transition-all hover:scale-105">
               📞 Call: 7646028228
             </a>
           </div>

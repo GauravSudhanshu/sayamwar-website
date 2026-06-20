@@ -53,7 +53,7 @@ const packages = [
     price: '₹1,00,000',
     capacity: 'Up to 150 Guests',
     includes: ['AC Hall', 'Theme Decoration', 'Birthday Cake (2kg)', 'Dinner Buffet', '4 Hours Slot', 'DJ & Lighting', 'Photo Booth'],
-    color: '#C9A227',
+    color: '#C9A84C',
     popular: true,
   },
   {
@@ -61,7 +61,7 @@ const packages = [
     price: '₹1,25,000',
     capacity: 'Up to 300 Guests',
     includes: ['AC Hall', 'Premium Theme Decor', 'Custom Birthday Cake', 'Full Dinner Buffet', 'Full Day Slot', 'Professional DJ', 'Photographer', 'Welcome Drink'],
-    color: '#C9A227',
+    color: '#C9A84C',
   },
 ]
 
@@ -74,9 +74,9 @@ export default function BirthdayPage() {
         <div className="absolute top-8 right-12 text-5xl opacity-20">🎂</div>
         <div className="absolute bottom-8 left-16 text-5xl opacity-20">🎉</div>
         <div className="relative z-10">
-          <p className="text-[#C9A227] text-sm tracking-widest uppercase mb-3">Celebrate in Style</p>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Birthday Party Hall in <span className="text-[#C9A227]">Patna & Danapur</span>
+          <p className="text-[#C9A84C] text-sm tracking-widest uppercase mb-3">Celebrate in Style</p>
+          <h1 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold mb-4">
+            Birthday Party Hall in <span className="text-[#C9A84C]">Patna & Danapur</span>
           </h1>
           <p className="text-white/70 text-lg max-w-2xl mx-auto mb-8">
             Make every birthday unforgettable! Spacious halls, stunning decor, delicious food, and great entertainment — all at one place.
@@ -90,7 +90,7 @@ export default function BirthdayPage() {
             >
               💬 Book via WhatsApp
             </a>
-            <a href="tel:7646028228" className="px-6 py-3 bg-[#C9A227] text-[#5A0F0F] rounded-lg font-bold hover:bg-[#E8C547] transition-colors">
+            <a href="tel:7646028228" className="px-6 py-3 bg-[#C9A84C] text-[#5A0F0F] rounded-lg font-bold hover:bg-[#E8C547] transition-colors">
               📞 7646028228
             </a>
           </div>
@@ -128,16 +128,16 @@ export default function BirthdayPage() {
             {packages.map((pkg) => (
               <div
                 key={pkg.name}
-                className={`card-hover bg-white rounded-2xl shadow-md overflow-hidden border-2 ${pkg.popular ? 'border-[#C9A227]' : 'border-gray-100'} relative`}
+                className={`card-hover bg-white rounded-2xl shadow-md overflow-hidden border-2 ${pkg.popular ? 'border-[#C9A84C]' : 'border-gray-100'} relative`}
               >
                 {pkg.popular && (
-                  <div className="absolute top-0 left-0 right-0 bg-[#C9A227] text-[#5A0F0F] text-center text-xs font-bold py-1">
+                  <div className="absolute top-0 left-0 right-0 bg-[#C9A84C] text-[#5A0F0F] text-center text-xs font-bold py-1">
                     MOST POPULAR
                   </div>
                 )}
                 <div className={`${pkg.popular ? 'mt-6' : ''} p-6`}>
                   <h3 className="font-bold text-[#7B1818] text-xl mb-1">{pkg.name}</h3>
-                  <p className="text-3xl font-bold text-[#C9A227] mb-1">{pkg.price}</p>
+                  <p className="text-3xl font-bold text-[#C9A84C] mb-1">{pkg.price}</p>
                   <p className="text-gray-500 text-sm mb-5">{pkg.capacity}</p>
                   <ul className="space-y-2 mb-6">
                     {pkg.includes.map((item) => (

@@ -1,5 +1,12 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+
+export const metadata: Metadata = {
+  title: 'Catering Menu | Sayamwar Hall & Homestay Patna',
+  description: 'View our catering menu packages — Shagun ₹999, Vivah ₹1,199, Swayamvar ₹1,399 per plate. Veg & non-veg options available. Download menu or call 7646028228.',
+  alternates: { canonical: 'https://sayamwar.com/menu' },
+}
 
 export default function MenuPage() {
   return (

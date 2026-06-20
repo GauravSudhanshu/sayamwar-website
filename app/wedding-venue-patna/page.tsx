@@ -8,7 +8,7 @@ const faqJsonLd = {
     {
       '@type': 'Question',
       name: 'What is the cost of wedding venue in Patna?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Wedding venue packages at Sayamwar Hall in Patna start from ₹1,50,000 (Silver Wedding, 100–150 guests) to ₹2,00,000 (Gold Wedding, 150–250 guests). Platinum packages for up to 300 guests are available on custom quote.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Wedding venue packages at Sayamwar Hall in Patna start from ₹1,51,000 (Silver Wedding, 100–150 guests) to ₹2,00,000 (Gold Wedding, 150–250 guests). Platinum packages for up to 300 guests are available on custom quote.' },
     },
     {
       '@type': 'Question',
@@ -52,7 +52,7 @@ const weddingFeatures = [
 const packages = [
   {
     name: 'Silver Wedding',
-    price: '₹1,50,000',
+    price: '₹1,51,000',
     capacity: '100–150 Guests',
     includes: ['Hall for 1 Day', 'Basic Flower Decor', 'Veg Dinner Buffet', 'Mandap Setup', '2 Guest Rooms'],
   },
@@ -78,9 +78,9 @@ export default function WeddingVenuePage() {
       <section className="bg-gradient-to-br from-[#3D0A0A] via-[#5A0F0F] to-[#7B1818] py-24 px-4 text-center text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='2' fill='%23C9A227'/%3E%3C/svg%3E\")" }} />
         <div className="relative z-10">
-          <p className="text-[#C9A227] text-sm tracking-widest uppercase mb-3">Your Dream Wedding Awaits</p>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Wedding Venue in <span className="text-[#C9A227]">Patna</span>
+          <p className="text-[#C9A84C] text-sm tracking-widest uppercase mb-3">Your Dream Wedding Awaits</p>
+          <h1 className="font-[var(--font-playfair)] text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Wedding Venue in <span className="text-[#C9A84C]">Patna</span>
             <br />
             <span className="text-3xl md:text-4xl text-white/80">Danapur&apos;s Most Loved Marriage Hall</span>
           </h1>
@@ -96,7 +96,7 @@ export default function WeddingVenuePage() {
             >
               💬 Get Wedding Quote
             </a>
-            <a href="tel:7646028228" className="px-8 py-4 bg-[#C9A227] text-[#5A0F0F] rounded-lg font-bold text-lg hover:bg-[#E8C547] transition-colors">
+            <a href="tel:7646028228" className="px-8 py-4 bg-[#C9A84C] text-[#5A0F0F] rounded-lg font-bold text-lg hover:bg-[#E8C547] transition-colors">
               📞 7646028228
             </a>
           </div>
@@ -130,16 +130,16 @@ export default function WeddingVenuePage() {
             {packages.map((pkg) => (
               <div
                 key={pkg.name}
-                className={`card-hover bg-white rounded-2xl shadow-md overflow-hidden border-2 ${pkg.popular ? 'border-[#C9A227]' : 'border-gray-100'} relative`}
+                className={`card-hover bg-white rounded-2xl shadow-md overflow-hidden border-2 ${pkg.popular ? 'border-[#C9A84C]' : 'border-gray-100'} relative`}
               >
                 {pkg.popular && (
-                  <div className="bg-[#C9A227] text-[#5A0F0F] text-center text-xs font-bold py-1.5">
+                  <div className="bg-[#C9A84C] text-[#5A0F0F] text-center text-xs font-bold py-1.5">
                     ⭐ MOST POPULAR
                   </div>
                 )}
                 <div className="p-6">
                   <h3 className="font-bold text-[#7B1818] text-xl mb-1">{pkg.name}</h3>
-                  <p className="text-3xl font-bold text-[#C9A227] mb-1">{pkg.price}</p>
+                  <p className="text-3xl font-bold text-[#C9A84C] mb-1">{pkg.price}</p>
                   <p className="text-gray-500 text-sm mb-5">{pkg.capacity}</p>
                   <ul className="space-y-2 mb-6">
                     {pkg.includes.map((item) => (
@@ -170,7 +170,7 @@ export default function WeddingVenuePage() {
           <h2 className="text-3xl font-bold text-[#7B1818] text-center mb-10">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {[
-              { q: 'What is the cost of wedding venue in Patna?', a: 'Wedding packages at Sayamwar Hall start from ₹1,50,000 (Silver, 100–150 guests) to ₹2,00,000 (Gold, 150–250 guests). Platinum packages for up to 300 guests are available on custom quote.' },
+              { q: 'What is the cost of wedding venue in Patna?', a: 'Wedding packages at Sayamwar Hall start from ₹1,51,000 (Silver, 100–150 guests) to ₹2,00,000 (Gold, 150–250 guests). Platinum packages for up to 300 guests are available on custom quote.' },
               { q: 'How many guests can the wedding hall accommodate?', a: 'Our AC wedding hall comfortably seats 200–300 guests with professional stage, mandap, lighting, and DJ included.' },
               { q: 'Is catering included in the wedding package?', a: 'Yes. We offer Shagun (₹999/plate veg), Vivah (₹1,199/plate veg), and Swayamvar (₹1,399/plate veg) menus, plus non-veg options. Catering is added to your hall package.' },
               { q: 'Are rooms available for the wedding family?', a: 'Yes — all packages include 2–6 on-site rooms. Additional rooms are available from ₹1,500/night, keeping the whole family under one roof.' },

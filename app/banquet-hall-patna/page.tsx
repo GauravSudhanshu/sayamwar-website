@@ -75,14 +75,14 @@ export default function BanquetHallPage() {
       />
 
       <section className="bg-gradient-to-br from-[#5A0F0F] to-[#7B1818] py-20 px-4 text-center text-white">
-        <p className="text-[#C9A227] text-sm tracking-widest uppercase mb-3">Danapur · Patna · Bihar</p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Best Banquet Hall in <span className="text-[#C9A227]">Patna</span>
+        <p className="text-[#C9A84C] text-sm tracking-widest uppercase mb-3">Danapur · Patna · Bihar</p>
+        <h1 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold mb-4">
+          Best Banquet Hall in <span className="text-[#C9A84C]">Patna</span>
         </h1>
         <p className="text-white/80 text-lg max-w-2xl mx-auto mb-2">
           Low budget banquet hall near you — AC hall for 200–300 guests with full decoration, catering & DJ.
         </p>
-        <p className="text-[#C9A227] font-bold mb-8">Packages Starting ₹85,000 · No Hidden Charges</p>
+        <p className="text-[#C9A84C] font-bold mb-8">Packages Starting ₹85,000 · No Hidden Charges</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20Banquet%20Hall%20at%20Sayamwar"
@@ -91,7 +91,7 @@ export default function BanquetHallPage() {
           >
             💬 Check Availability
           </a>
-          <a href="tel:7646028228" className="px-6 py-3 bg-[#C9A227] text-[#5A0F0F] rounded-lg font-bold hover:bg-[#E8C547] transition-colors">
+          <a href="tel:7646028228" className="px-6 py-3 bg-[#C9A84C] text-[#5A0F0F] rounded-lg font-bold hover:bg-[#E8C547] transition-colors">
             📞 7646028228
           </a>
         </div>
@@ -112,7 +112,7 @@ export default function BanquetHallPage() {
               { n: '5★', l: 'Google Rating' },
             ].map((s) => (
               <div key={s.l} className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
-                <p className="text-3xl font-bold text-[#C9A227]">{s.n}</p>
+                <p className="text-3xl font-bold text-[#C9A84C]">{s.n}</p>
                 <p className="text-gray-500 text-xs uppercase tracking-wide mt-1">{s.l}</p>
               </div>
             ))}
@@ -195,7 +195,7 @@ export default function BanquetHallPage() {
               <details key={item.q} className="bg-white rounded-xl shadow-sm border border-gray-100 group">
                 <summary className="px-6 py-4 font-semibold text-[#7B1818] cursor-pointer list-none flex justify-between items-center">
                   {item.q}
-                  <span className="text-[#C9A227] group-open:rotate-180 transition-transform duration-300">▼</span>
+                  <span className="text-[#C9A84C] group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-3">▼</span>
                 </summary>
                 <p className="px-6 pb-5 text-gray-600 text-sm leading-relaxed">{item.a}</p>
               </details>
