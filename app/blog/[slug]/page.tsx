@@ -2,19 +2,23 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { posts, getPostBySlug, type ContentBlock } from '../posts'
+import { posts } from '../posts'
+import { getPostBySlugDynamic, getAllPosts, type ContentBlock } from '@/lib/blog'
+
+export const revalidate = 300
 
 interface Props {
   params: Promise<{ slug: string }>
 }
 
 export async function generateStaticParams() {
-  return posts.map((p) => ({ slug: p.slug }))
+  const all = await getAllPosts()
+  return all.map((p) => ({ slug: p.slug }))
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
-  const post = getPostBySlug(slug)
+  const post = await getPostBySlugDynamic(slug)
   if (!post) return {}
   return {
     title: `${post.title} | Sayamwar Hall Blog`,
@@ -80,11 +84,12 @@ function renderBlock(block: ContentBlock, index: number) {
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params
-  const post = getPostBySlug(slug)
+  const post = await getPostBySlugDynamic(slug)
   if (!post) notFound()
 
-  const related = posts.filter((p) => p.slug !== post.slug && p.category === post.category).slice(0, 2)
-  const others = posts.filter((p) => p.slug !== post.slug).slice(0, 2 - related.length)
+  const allPosts = await getAllPosts()
+  const related = allPosts.filter(p => p.slug !== post.slug && p.category === post.category).slice(0, 2)
+  const others = allPosts.filter(p => p.slug !== post.slug).slice(0, 2 - related.length)
   const relatedPosts = [...related, ...others].slice(0, 2)
 
   const articleJsonLd = {

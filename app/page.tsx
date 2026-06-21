@@ -4,7 +4,9 @@ import Link from 'next/link'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import Counter from '@/components/Counter'
 import LeadForm from '@/components/LeadForm'
-import { posts } from './blog/posts'
+import { getAllPosts } from '@/lib/blog'
+
+export const revalidate = 300
 
 export const metadata: Metadata = {
   title: 'Best Banquet Hall in Patna | Banquet Near Me | Sayamwar Hall Danapur',
@@ -64,7 +66,8 @@ const reviews = [
   { name: 'Sunita Devi', event: 'Reception', text: 'The hall looked breathtaking. Premium décor and delicious food. Highly recommend to everyone.', rating: 5 },
 ]
 
-export default function HomePage() {
+export default async function HomePage() {
+  const posts = await getAllPosts()
   return (
     <>
       {/* ══════════════════════════════════════

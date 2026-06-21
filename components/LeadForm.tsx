@@ -16,9 +16,14 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
     e.preventDefault()
     setLoading(true)
 
-    // Send to Formspree (email backup)
-    try {
-      await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+    // Save to admin dashboard + Formspree (both fire-and-forget)
+    await Promise.allSettled([
+      fetch('/api/inquiries', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...form, source: 'lead-form' }),
+      }),
+      fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
@@ -31,10 +36,8 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
           _subject: `New Inquiry: ${form.event || 'General'} — ${form.name}`,
           _replyto: 'sayamwarbanquetrooms@gmail.com',
         }),
-      })
-    } catch (_) {
-      // Silent fail — WhatsApp still works
-    }
+      }),
+    ])
 
     // Open WhatsApp
     const msg = encodeURIComponent(

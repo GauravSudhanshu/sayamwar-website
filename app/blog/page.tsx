@@ -1,7 +1,9 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { posts } from './posts'
+import { getAllPosts } from '@/lib/blog'
+
+export const revalidate = 300
 
 export const metadata: Metadata = {
   title: 'Blog | Banquet Hall & Wedding Tips | Sayamwar Hall Patna',
@@ -22,7 +24,8 @@ function formatDate(dateStr: string) {
   return new Date(dateStr).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })
 }
 
-export default function BlogPage() {
+export default async function BlogPage() {
+  const posts = await getAllPosts()
   const [featured, ...rest] = posts
 
   return (

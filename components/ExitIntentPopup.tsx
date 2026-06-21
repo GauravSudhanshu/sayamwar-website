@@ -45,6 +45,13 @@ export default function ExitIntentPopup() {
       eventDate ? `Event Date: ${eventDate}`         : 'Event Date: Not decided yet',
       guests   ? `Number of Guests: ${guests}`       : 'Number of Guests: Not sure yet',
     ].filter(Boolean)
+    // Save to admin dashboard (fire-and-forget)
+    fetch('/api/inquiries', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, phone, date: eventDate, guests, event: '', message: '', source: 'exit-popup' }),
+    }).catch(() => {})
+
     const msg = encodeURIComponent(
       `Hello! I want a free quote for my event at Sayamwar Hall & Homestay.\n${parts.join('\n')}`
     )
