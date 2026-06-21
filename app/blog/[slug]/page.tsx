@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { posts } from '../posts'
 import { getPostBySlugDynamic, getAllPosts, type ContentBlock } from '@/lib/blog'
+import ShareButtons from '@/components/ShareButtons'
 
 export const revalidate = 300
 
@@ -113,9 +114,20 @@ export default async function BlogPostPage({ params }: Props) {
     mainEntityOfPage: { '@type': 'WebPage', '@id': `https://sayamwar.com/blog/${post.slug}` },
   }
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sayamwar.com' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sayamwar.com/blog' },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `https://sayamwar.com/blog/${post.slug}` },
+    ],
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
 
       {/* Hero */}
       <section className="relative h-[420px] md:h-[520px] flex items-end overflow-hidden">
@@ -166,8 +178,10 @@ export default async function BlogPostPage({ params }: Props) {
             {post.content.map((block, i) => renderBlock(block, i))}
           </div>
 
-          {/* Bottom share strip */}
-          <div className="mt-14 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <ShareButtons title={post.title} slug={post.slug} />
+
+          {/* Bottom strip */}
+          <div className="mt-8 pt-8 border-t border-gray-100 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
               <p className="text-xs text-gray-400 uppercase tracking-widest mb-1">Published by</p>
               <p className="font-semibold text-[#3D0A0A]">Sayamwar Hall & Homestay</p>

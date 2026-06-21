@@ -8,6 +8,61 @@ import { getAllPosts } from '@/lib/blog'
 
 export const revalidate = 300
 
+const homeFaqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What is the best banquet hall in Patna?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sayamwar Hall & Homestay in Danapur, Patna is one of the best banquet halls — a fully AC hall for 200–300 guests with crystal chandeliers, professional stage decoration, catering, DJ, and on-site rooms. Packages start from ₹85,000.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the cost of a banquet hall in Patna?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Banquet hall packages in Patna at Sayamwar Hall start at ₹85,000 for birthday and engagement events, and ₹1,51,000 for weddings. All packages are all-inclusive with no hidden charges.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Where is Sayamwar Hall located?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sayamwar Hall & Homestay is at Gola Road, Adarsh Vihar Colony, Lane 5, near T Point, beside Hotel King Regency, Danapur, Patna, Bihar 801503. Just 5 minutes from Danapur railway station.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How many guests can the hall accommodate?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sayamwar Hall can comfortably accommodate 200 to 300 guests in a fully air-conditioned setup with professional lighting and a complete sound system.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are rooms available at Sayamwar Hall for guests?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, Sayamwar Hall & Homestay has on-site AC and non-AC rooms starting from ₹1,500 per night. All wedding packages include 4 rooms. Additional rooms can be booked for out-of-town family and guests.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is catering included in the banquet packages?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes, catering is available with all packages. Menus include Shagun (₹999/plate veg), Vivah (₹1,199/plate veg), and Swayamvar (₹1,399/plate veg), with non-veg options also available.',
+      },
+    },
+  ],
+}
+
 export const metadata: Metadata = {
   title: 'Best Banquet Hall in Patna | Banquet Near Me | Sayamwar Hall Danapur',
   description: 'Looking for banquet hall near you in Patna? Sayamwar Hall & Homestay, Danapur is Patna\'s best low budget banquet hall. Weddings from ₹1,51,000 | Birthday from ₹85,000. Call 7646028228.',
@@ -70,6 +125,7 @@ export default async function HomePage() {
   const posts = await getAllPosts()
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeFaqJsonLd) }} />
       {/* ══════════════════════════════════════
           HERO — Full screen cinematic
       ══════════════════════════════════════ */}
