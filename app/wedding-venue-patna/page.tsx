@@ -1,6 +1,15 @@
 import type { Metadata } from 'next'
 import LeadForm from '@/components/LeadForm'
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sayamwar.com' },
+    { '@type': 'ListItem', position: 2, name: 'Wedding Venue in Patna', item: 'https://sayamwar.com/wedding-venue-patna' },
+  ],
+}
+
 const faqJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -34,9 +43,9 @@ const faqJsonLd = {
 }
 
 export const metadata: Metadata = {
-  title: 'Wedding Venue in Patna | Marriage Hall Danapur | Sayamwar Hall',
-  description: 'Best wedding venue in Patna & Danapur. Grand marriage hall for 200-300 guests. Complete wedding packages with decor, catering & rooms. Call 7646028228.',
-  keywords: 'wedding venue patna, marriage hall patna, wedding hall danapur, shaadi hall patna, vivah venue patna',
+  title: 'Wedding Venue in Patna | Marriage Hall Danapur | From ₹1,51,000 | Sayamwar Hall',
+  description: 'Best wedding venue in Patna & Danapur. Grand marriage hall for 200–300 guests. All-inclusive wedding packages from ₹1,51,000 with decor, catering, DJ & on-site rooms. Call 7646028228.',
+  keywords: 'wedding venue patna, marriage hall patna, wedding hall danapur, shaadi hall patna, vivah venue patna, best wedding venue patna, wedding hall near me patna, shaadi hall near me patna, affordable wedding venue patna, wedding reception venue patna, marriage function hall patna, vivah hall patna, wedding hall patna near me, low budget wedding hall patna, wedding venue danapur patna',
   alternates: { canonical: 'https://sayamwar.com/wedding-venue-patna' },
 }
 
@@ -74,6 +83,7 @@ const packages = [
 export default function WeddingVenuePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <section className="bg-gradient-to-br from-[#3D0A0A] via-[#5A0F0F] to-[#7B1818] py-24 px-4 text-center text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Ccircle cx='40' cy='40' r='2' fill='%23C9A227'/%3E%3C/svg%3E\")" }} />

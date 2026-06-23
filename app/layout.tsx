@@ -71,6 +71,13 @@ const jsonLd = {
     'https://www.justdial.com/Patna/Sayamwar-Hall-Homestay-Gola-Road-Danapur/0612PX612-X612-231025153512-D1K5_BZDET',
   ],
   hasMap: 'https://www.google.com/maps/place/Sayamwar+Hall+%26+Homestay/@25.6292816,85.0523556,17z',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.8',
+    reviewCount: '17',
+    bestRating: '5',
+    worstRating: '1',
+  },
   amenityFeature: [
     { '@type': 'LocationFeatureSpecification', name: 'Air Conditioning', value: true },
     { '@type': 'LocationFeatureSpecification', name: 'Parking', value: true },
@@ -105,6 +112,91 @@ const orgJsonLd = {
   ],
 }
 
+const localBusinessJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Sayamwar Hall & Homestay',
+  description: 'Best banquet hall and homestay in Patna & Danapur. Low budget event packages for weddings, receptions, birthdays, engagements and corporate events. AC hall for 200–300 guests. On-site guest rooms from ₹1,500/night.',
+  url: 'https://sayamwar.com',
+  telephone: '+917646028228',
+  email: 'sayamwarhall@gmail.com',
+  priceRange: '₹₹',
+  image: [
+    'https://sayamwar.com/hero-bg.jpg',
+    'https://sayamwar.com/venue-4.jpg',
+    'https://sayamwar.com/venue-5.jpg',
+  ],
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Gola Road, Adarsh Vihar Colony, Lane Number 5, near T Point, beside Hotel King Regency',
+    addressLocality: 'Danapur',
+    addressRegion: 'Bihar',
+    postalCode: '801503',
+    addressCountry: 'IN',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 25.6292816,
+    longitude: 85.0523556,
+  },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'],
+      opens: '00:00',
+      closes: '23:59',
+    },
+  ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.8',
+    reviewCount: '17',
+    bestRating: '5',
+    worstRating: '1',
+  },
+  review: [
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Rajesh Kumar' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Every detail was perfection. The décor, the food, the service — our guests are still talking about it. Best wedding venue in Danapur.',
+      datePublished: '2025-11-10',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Priya Singh' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Best birthday venue in Danapur. The team went above and beyond. Absolutely memorable evening.',
+      datePublished: '2025-12-05',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Amit Sharma' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'Professional, punctual, and flawless execution. Our annual gathering was a grand success.',
+      datePublished: '2026-01-15',
+    },
+    {
+      '@type': 'Review',
+      author: { '@type': 'Person', name: 'Sunita Devi' },
+      reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+      reviewBody: 'The hall looked breathtaking. Premium décor and delicious food. Highly recommend to everyone looking for a banquet hall in Patna.',
+      datePublished: '2026-02-20',
+    },
+  ],
+  hasMap: 'https://www.google.com/maps/place/Sayamwar+Hall+%26+Homestay/@25.6292816,85.0523556,17z',
+  sameAs: [
+    'https://www.google.com/maps/place/Sayamwar+Hall+%26+Homestay/@25.6292816,85.0523556,17z',
+    'https://www.facebook.com/sayamwarhall',
+    'https://www.instagram.com/sayamwarhall',
+  ],
+  areaServed: [
+    { '@type': 'City', name: 'Patna' },
+    { '@type': 'City', name: 'Danapur' },
+  ],
+  keywords: 'banquet hall patna, wedding venue patna, birthday party hall patna, engagement hall patna, reception hall patna, cheap banquet hall patna, banquet hall danapur, rooms in patna',
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable} h-full`}>
@@ -116,6 +208,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-[#F7F2EA] font-[var(--font-inter)]">

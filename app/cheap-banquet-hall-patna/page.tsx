@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://sayamwar.com/cheap-banquet-hall-patna' },
 }
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sayamwar.com' },
+    { '@type': 'ListItem', position: 2, name: 'Cheap Banquet Hall in Patna', item: 'https://sayamwar.com/cheap-banquet-hall-patna' },
+  ],
+}
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -60,6 +69,7 @@ const packages = [
 export default function CheapBanquetHallPatnaPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Hero */}

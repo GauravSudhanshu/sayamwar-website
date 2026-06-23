@@ -2,10 +2,19 @@ import type { Metadata } from 'next'
 import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
-  title: 'Banquet Hall in Patna | Best & Low Budget Banquet Near Me | Sayamwar Hall',
-  description: 'Best banquet hall in Patna, Danapur. Low budget banquet packages from ₹85,000. AC hall for 200–300 guests. Wedding, birthday, reception venue near you. Call 7646028228.',
-  keywords: 'banquet hall in patna, best banquet in patna, low budget banquet patna, banquet near me patna, banquet hall danapur, cheap banquet hall patna, affordable banquet patna, wedding banquet hall patna',
+  title: 'Best Banquet Hall in Patna | Low Budget | AC Hall for 300 Guests | Sayamwar Hall',
+  description: 'Best banquet hall in Patna & Danapur. Low budget packages from ₹85,000. Fully AC hall for 200–300 guests. Best venue for weddings, birthdays & receptions near you. Call 7646028228.',
+  keywords: 'best banquet hall in patna, banquet hall in patna, banquet near me patna, low budget banquet patna, top banquet hall patna, banquet hall danapur, cheap banquet hall patna, affordable banquet patna, wedding banquet hall patna, best banquet hall near me patna, banquet hall for 300 guests patna, ac banquet hall patna, banquet hall gola road patna',
   alternates: { canonical: 'https://sayamwar.com/banquet-hall-patna' },
+}
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sayamwar.com' },
+    { '@type': 'ListItem', position: 2, name: 'Banquet Hall in Patna', item: 'https://sayamwar.com/banquet-hall-patna' },
+  ],
 }
 
 const faqJsonLd = {
@@ -69,6 +78,7 @@ const events = [
 export default function BanquetHallPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
@@ -109,7 +119,7 @@ export default function BanquetHallPage() {
               { n: '200+', l: 'Events Hosted' },
               { n: '300', l: 'Guest Capacity' },
               { n: '₹85K', l: 'Starts From' },
-              { n: '5★', l: 'Google Rating' },
+              { n: '4.8★', l: 'Google Rating' },
             ].map((s) => (
               <div key={s.l} className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
                 <p className="text-3xl font-bold text-[#C9A84C]">{s.n}</p>

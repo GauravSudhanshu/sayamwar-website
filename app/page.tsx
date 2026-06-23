@@ -256,7 +256,7 @@ export default async function HomePage() {
                 ['200+', 'Events Hosted'],
                 ['300', 'Guest Capacity'],
                 ['3', 'Food Menus'],
-                ['5★', 'Google Rating'],
+                ['4.8★', 'Google Rating'],
               ].map(([n, l]) => (
                 <div key={l} className="border-l-2 border-[#C9A84C] pl-4">
                   <p className="font-[var(--font-playfair)] text-2xl font-bold text-[#3D0A0A]">{n}</p>
@@ -308,7 +308,6 @@ export default async function HomePage() {
             { target: 200, suffix: '+', label: 'Events Hosted' },
             { target: 300, suffix: '+', label: 'Guest Capacity' },
             { target: 10,  suffix: '+', label: 'Room Options' },
-            { target: 5,   suffix: '★', label: 'Google Rating' },
           ].map((s) => (
             <div key={s.label}>
               <p className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#3D0A0A]">
@@ -317,6 +316,10 @@ export default async function HomePage() {
               <p className="text-[#3D0A0A]/65 text-xs uppercase tracking-widest mt-2">{s.label}</p>
             </div>
           ))}
+          <div>
+            <p className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold text-[#3D0A0A]">4.8★</p>
+            <p className="text-[#3D0A0A]/65 text-xs uppercase tracking-widest mt-2">Google Rating</p>
+          </div>
         </div>
       </section>
 

@@ -1,6 +1,15 @@
 import type { Metadata } from 'next'
 import LeadForm from '@/components/LeadForm'
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sayamwar.com' },
+    { '@type': 'ListItem', position: 2, name: 'Birthday Party Hall in Patna', item: 'https://sayamwar.com/birthday-party-hall-patna' },
+  ],
+}
+
 const faqJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -34,9 +43,9 @@ const faqJsonLd = {
 }
 
 export const metadata: Metadata = {
-  title: 'Birthday Party Hall in Patna | Danapur | Sayamwar Hall',
-  description: 'Book the best birthday party hall in Patna & Danapur. Affordable packages, cake, decor, catering & DJ. Capacity 50–300 guests. Call 7646028228 to book.',
-  keywords: 'birthday party hall patna, birthday venue danapur, birthday party hall danapur patna, kids birthday venue patna',
+  title: 'Birthday Party Hall in Patna | From ₹85,000 | Danapur | Sayamwar Hall',
+  description: 'Best birthday party hall in Patna & Danapur. Affordable packages from ₹85,000 with theme decor, cake, catering & DJ. 50–300 guests. Call 7646028228 to book.',
+  keywords: 'birthday party hall patna, birthday venue danapur, birthday party hall danapur patna, kids birthday venue patna, birthday party venue near me patna, birthday hall near me danapur, adult birthday party hall patna, birthday celebration hall patna, best birthday party venue patna, birthday party organizer patna, birthday function hall patna, birthday party near me patna, birthday party hall booking patna',
   alternates: { canonical: 'https://sayamwar.com/birthday-party-hall-patna' },
 }
 
@@ -68,6 +77,7 @@ const packages = [
 export default function BirthdayPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <section className="bg-gradient-to-br from-[#5A0F0F] via-[#7B1818] to-[#9B2222] py-20 px-4 text-center text-white relative overflow-hidden">
         <div className="absolute top-4 left-8 text-6xl opacity-20">🎈</div>

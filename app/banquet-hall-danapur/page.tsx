@@ -8,6 +8,15 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://sayamwar.com/banquet-hall-danapur' },
 }
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sayamwar.com' },
+    { '@type': 'ListItem', position: 2, name: 'Banquet Hall in Danapur', item: 'https://sayamwar.com/banquet-hall-danapur' },
+  ],
+}
+
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -47,6 +56,7 @@ const features = [
 export default function BanquetHallDanpurPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       {/* Hero */}

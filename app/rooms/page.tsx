@@ -4,10 +4,98 @@ import AnimateOnScroll from '@/components/AnimateOnScroll'
 import LeadForm from '@/components/LeadForm'
 
 export const metadata: Metadata = {
-  title: 'Rooms in Danapur Patna | AC & Non-AC Rooms | Sayamwar Homestay',
-  description: 'Book comfortable AC and Non-AC rooms at Sayamwar Homestay, Danapur, Patna. Clean, affordable rooms with all amenities. Call 7646028228 or WhatsApp to book.',
-  keywords: 'rooms in danapur patna, homestay danapur, ac rooms patna, budget rooms danapur',
+  title: 'Rooms in Patna | Best Budget Stay in Danapur | Sayamwar Homestay',
+  description: 'Best budget rooms & homestay in Danapur, Patna. Clean AC & non-AC rooms from ₹1,500/night. 24-hour check-in, free parking, Wi-Fi. Ideal for event guests & travelers. Call 7646028228.',
+  keywords: 'rooms in patna, budget stay patna, homestay danapur patna, ac rooms danapur, rooms near danapur station, cheap rooms patna, best homestay patna, budget hotel patna, stay in danapur, rooms for event guests patna, overnight stay danapur, accommodation near banquet hall patna',
   alternates: { canonical: 'https://sayamwar.com/rooms' },
+}
+
+const lodgingJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LodgingBusiness',
+  name: 'Sayamwar Homestay',
+  description: 'Best budget homestay in Danapur, Patna. Clean AC and non-AC rooms from ₹1,500/night. Ideal for event guests, travelers, and business visitors.',
+  url: 'https://sayamwar.com/rooms',
+  telephone: '+917646028228',
+  image: 'https://sayamwar.com/venue-6.jpg',
+  priceRange: '₹',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Gola Road, Adarsh Vihar Colony, Lane Number 5, near T Point, beside Hotel King Regency',
+    addressLocality: 'Danapur, Patna',
+    addressRegion: 'Bihar',
+    postalCode: '801503',
+    addressCountry: 'IN',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 25.6292816,
+    longitude: 85.0523556,
+  },
+  checkinTime: '00:00',
+  checkoutTime: '23:59',
+  amenityFeature: [
+    { '@type': 'LocationFeatureSpecification', name: 'Free Wi-Fi', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Air Conditioning', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Free Parking', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Hot Water', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'CCTV Security', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Power Backup', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Daily Housekeeping', value: true },
+  ],
+  containsPlace: [
+    {
+      '@type': 'HotelRoom',
+      name: 'Standard Room',
+      description: 'Clean standard room with ceiling fan, double bed, TV, and attached bathroom.',
+      occupancy: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 2 },
+      offers: {
+        '@type': 'Offer',
+        price: '1500',
+        priceCurrency: 'INR',
+        availability: 'https://schema.org/InStock',
+      },
+    },
+    {
+      '@type': 'HotelRoom',
+      name: 'Deluxe AC Room',
+      description: 'Air-conditioned deluxe room with double bed, TV, free Wi-Fi, and room service.',
+      occupancy: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 2 },
+      offers: {
+        '@type': 'Offer',
+        price: '1800',
+        priceCurrency: 'INR',
+        availability: 'https://schema.org/InStock',
+      },
+    },
+    {
+      '@type': 'HotelRoom',
+      name: 'Premium AC Suite',
+      description: 'Premium AC suite with king bed, sofa, LED ceiling, free Wi-Fi, and welcome kit.',
+      occupancy: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 3 },
+      offers: {
+        '@type': 'Offer',
+        price: '2500',
+        priceCurrency: 'INR',
+        availability: 'https://schema.org/InStock',
+      },
+    },
+  ],
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '4.8',
+    reviewCount: '17',
+    bestRating: '5',
+  },
+}
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sayamwar.com' },
+    { '@type': 'ListItem', position: 2, name: 'Rooms & Homestay', item: 'https://sayamwar.com/rooms' },
+  ],
 }
 
 const rooms = [
@@ -42,6 +130,8 @@ const amenities = [
 export default function RoomsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(lodgingJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Hero */}
       <section className="relative py-28 px-4 text-center text-white overflow-hidden">
         <Image src="/venue-6.jpg" alt="Rooms" fill className="object-cover" sizes="100vw" />
