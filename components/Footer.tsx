@@ -4,7 +4,7 @@ import Image from 'next/image'
 const socialLinks = [
   {
     label: 'Facebook',
-    href: 'https://www.facebook.com/sayamwarhall',
+    href: 'https://www.facebook.com/profile.php?id=61590307323528',
     icon: (
       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -145,7 +145,7 @@ export default function Footer({ className = '' }: { className?: string }) {
             {[
               { label: 'Google Maps', href: 'https://www.google.com/maps/place/Sayamwar+Hall+%26+Homestay/@25.6292816,85.0523556,17z' },
               { label: 'JustDial', href: 'https://www.justdial.com/Patna/Sayamwar-Hall-Homestay-Gola-Road-Danapur/0612PX612-X612-231025153512-D1K5_BZDET' },
-              { label: 'Facebook', href: 'https://www.facebook.com/sayamwarhall' },
+              { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61590307323528' },
               { label: 'Instagram', href: 'https://www.instagram.com/sayamwar_hall_homestay/' },
               { label: 'WhatsApp', href: 'https://wa.me/917646028228' },
             ].map((d) => (

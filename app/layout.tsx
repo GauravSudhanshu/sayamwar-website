@@ -65,7 +65,7 @@ const jsonLd = {
   ],
   sameAs: [
     'https://www.google.com/maps/place/Sayamwar+Hall+%26+Homestay/@25.6292816,85.0523556,17z',
-    'https://www.facebook.com/sayamwarhall',
+    'https://www.facebook.com/profile.php?id=61590307323528',
     'https://www.instagram.com/sayamwar_hall_homestay/',
     'https://wa.me/917646028228',
     'https://www.justdial.com/Patna/Sayamwar-Hall-Homestay-Gola-Road-Danapur/0612PX612-X612-231025153512-D1K5_BZDET',
@@ -106,7 +106,7 @@ const orgJsonLd = {
   },
   sameAs: [
     'https://www.google.com/maps/place/Sayamwar+Hall+%26+Homestay/@25.6292816,85.0523556,17z',
-    'https://www.facebook.com/sayamwarhall',
+    'https://www.facebook.com/profile.php?id=61590307323528',
     'https://www.instagram.com/sayamwar_hall_homestay/',
     'https://wa.me/917646028228',
     'https://www.justdial.com/Patna/Sayamwar-Hall-Homestay-Gola-Road-Danapur/0612PX612-X612-231025153512-D1K5_BZDET',
@@ -188,7 +188,7 @@ const localBusinessJsonLd = {
   hasMap: 'https://www.google.com/maps/place/Sayamwar+Hall+%26+Homestay/@25.6292816,85.0523556,17z',
   sameAs: [
     'https://www.google.com/maps/place/Sayamwar+Hall+%26+Homestay/@25.6292816,85.0523556,17z',
-    'https://www.facebook.com/sayamwarhall',
+    'https://www.facebook.com/profile.php?id=61590307323528',
     'https://www.instagram.com/sayamwar_hall_homestay/',
   ],
   areaServed: [
