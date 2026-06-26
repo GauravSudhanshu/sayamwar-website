@@ -969,6 +969,87 @@ export const posts: BlogPost[] = [
       { type: 'cta', text: 'Book an event or stay at Sayamwar Hall — Danapur\'s best-connected venue on Gola Road, just 5 minutes from Danapur station.', href: '/contact', label: 'Check Availability' },
     ],
   },
+  {
+    slug: 'wedding-package-150000-patna-luxury-decoration-homestay',
+    title: 'Wedding Package at ₹1,50,000 in Patna – Luxury Decoration, Best Banquet Hall & Homestay',
+    excerpt: 'Sayamwar Hall is offering a complete wedding package at ₹1,50,000 — luxury stage decoration, grand AC banquet hall for 200–300 guests, full catering, DJ, and on-site homestay rooms. Best banquet in Patna, Danapur.',
+    date: '2026-06-26',
+    readTime: '5 min read',
+    category: 'Wedding',
+    image: '/gallery-indoor-mandap.jpg',
+    keywords: 'wedding package patna 150000, best banquet hall patna offer, luxury decoration wedding patna, wedding hall with homestay patna, affordable wedding venue danapur, sayamwar hall wedding offer, banquet hall offer patna, cheap wedding hall patna with decoration',
+    content: [
+      { type: 'p', text: 'Planning a wedding in Patna does not have to cost a fortune. At Sayamwar Hall & Homestay in Danapur, we are offering a complete, all-inclusive wedding package at ₹1,50,000 — covering the grand AC banquet hall, luxury stage and mandap decoration, full dinner catering, DJ and sound system, and on-site homestay rooms for your family. Everything in one place, at one honest price.' },
+
+      { type: 'h2', text: 'What Is Included in the ₹1,50,000 Wedding Package?' },
+      { type: 'p', text: 'This is a full wedding package — not a hall-only booking. Here is exactly what you get:' },
+      { type: 'ul', items: [
+        'Grand AC banquet hall for 200–300 guests — crystal chandeliers, LED ambience lighting, fully air-conditioned',
+        'Luxury stage decoration — premium floral stage backdrop, full mandap setup with fresh and artificial flowers',
+        'Lawn and entrance decoration — decorated gate, barat mala, samdhi mala, var badhu mala',
+        'Selfie point setup — custom floral backdrop with the couple\'s name for guest photos',
+        'Food counter decoration — beautifully decorated buffet counter area',
+        'Full dinner buffet — veg menu (₹999/plate Shagun menu) for your guest count',
+        'Professional DJ and sound system — full evening music coverage',
+        'Security / guard — event staff for smooth guest management',
+        'Night coffee / welcome drinks station',
+        '4 on-site homestay rooms included — for the bride, groom, and close family',
+      ]},
+      { type: 'p', text: 'No hidden charges. No last-minute additions. Everything listed above is delivered as written. This is the same transparency that has made Sayamwar Hall Patna\'s most trusted banquet hall.' },
+
+      { type: 'h2', text: 'Luxury Decoration — What Does It Look Like?' },
+      { type: 'p', text: 'When we say luxury decoration, we mean a setup that photographs beautifully and leaves your guests impressed the moment they walk in. At Sayamwar Hall, the decoration includes:' },
+      { type: 'ul', items: [
+        'Grand mandap — a full four-pillar mandap with floral canopy, draped fabric, and phera platform with ritual space for the couple and pandit',
+        'Stage backdrop — a large, dramatic backdrop with layered flowers, LED framing, and the couple\'s name element',
+        'Barat welcome arch — a decorated entrance arch for the groom\'s procession arrival',
+        'Selfie corner — a flower wall or balloon arrangement with the couple\'s name in cut letters — one of the most-photographed spots at every event',
+        'Ambient hall lighting — warm LED fills that complement the decoration and make the entire hall feel premium',
+      ]},
+      { type: 'p', text: 'The decoration is set up 4–6 hours before the event so your family arrives to a hall that is already wedding-ready.' },
+
+      { type: 'h2', text: 'Why Sayamwar Hall is the Best Banquet in Patna' },
+      { type: 'p', text: 'Patna has dozens of banquet halls — but very few deliver the complete experience: great hall quality, genuine decoration, honest pricing, and on-site accommodation together. Here is what makes Sayamwar Hall stand out:' },
+      { type: 'ul', items: [
+        '4.8 ★ Google rating — verified by real families from Patna, Danapur, and across Bihar',
+        'Full AC hall — industrial-grade air conditioning for the entire hall, with generator backup',
+        'Crystal chandeliers and LED stage lighting — creates a grand, premium atmosphere',
+        'In-house catering — three menus from ₹999 to ₹1,399 per plate, prepared fresh on-site',
+        '500+ events successfully hosted — weddings, receptions, engagements, birthdays, corporate events',
+        'Open 24 hours — no time restrictions on your event',
+        'Located on Gola Road, Danapur — 5 minutes from Danapur railway station, 20 minutes from Patna Junction',
+      ]},
+
+      { type: 'h2', text: 'Homestay Rooms — Keep the Whole Family Together' },
+      { type: 'p', text: 'One of the biggest advantages of Sayamwar Hall is the attached homestay. The ₹1,50,000 wedding package includes 4 rooms — and additional rooms are available at preferential rates for event families:' },
+      { type: 'ul', items: [
+        'Standard Room — ₹1,500/night: Double bed, fan, TV, attached bathroom, clean linen',
+        'Deluxe AC Room — ₹1,800/night: AC, double bed, Wi-Fi, room service',
+        'Premium AC Suite — ₹2,500/night: King bed, sofa, LED ceiling, Wi-Fi, welcome kit',
+      ]},
+      { type: 'p', text: 'With the family staying on-site, the bride and groom can get ready in a room and walk directly to the hall — no stressful travel in wedding attire through Patna traffic. Out-of-town relatives from Muzaffarpur, Ara, Bhagalpur, or other Bihar districts have a comfortable, affordable place to stay right next to the venue.' },
+
+      { type: 'h2', text: 'Who Is This Package Perfect For?' },
+      { type: 'ul', items: [
+        'Families hosting 100–200 guests who want a grand setting without overspending',
+        'Couples who want luxury decoration without the stress of coordinating separate vendors',
+        'Families with out-of-town relatives who need on-site accommodation',
+        'Anyone looking for the best banquet hall in Patna at an honest, fixed price',
+      ]},
+
+      { type: 'h2', text: 'How to Book This Offer' },
+      { type: 'p', text: 'This package is available on selected dates — and peak season dates (October–February) fill up months in advance. To check if your preferred date is available:' },
+      { type: 'ul', items: [
+        'WhatsApp us at 7646028228 with your event date and approximate guest count',
+        'Or call directly: 7646028228 or 7070486987',
+        'We will confirm availability and send you the full written package details within the hour',
+        'A small advance secures your date — no date is confirmed without it',
+      ]},
+      { type: 'p', text: 'Dates go fast during wedding muhurat windows. If you have an auspicious date in mind, check availability today rather than waiting.' },
+
+      { type: 'cta', text: 'Book the ₹1,50,000 all-inclusive wedding package at Sayamwar Hall, Danapur — luxury decoration, best banquet in Patna, homestay included.', href: '/wedding-venue-patna', label: 'Check Date Availability' },
+    ],
+  },
 ]
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
