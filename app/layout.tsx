@@ -214,7 +214,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-[#F7F2EA] font-[var(--font-inter)]">
+      <body className="min-h-full flex flex-col bg-[rgb(249,246,225)] font-[var(--font-inter)]">
         <Navbar />
         <main className="flex-1 pt-[72px]">{children}</main>
         <Footer className="pb-16 md:pb-0" />
