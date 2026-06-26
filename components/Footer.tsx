@@ -42,17 +42,17 @@ const socialLinks = [
 
 export default function Footer({ className = '' }: { className?: string }) {
   return (
-    <footer className={`bg-[#270606] text-white border-t border-[#C9A84C]/15 ${className}`}>
+    <footer className={`bg-[var(--black-2)] text-white border-t border-[var(--gold)]/15 ${className}`}>
       <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-4 gap-12">
 
         {/* Brand */}
         <div className="md:col-span-2">
           <Link href="/" className="inline-flex items-center gap-4 mb-6 group">
-            <div className="relative w-20 h-20 rounded border border-[#C9A84C]/40 overflow-hidden bg-[#F7F2EA] flex-shrink-0">
+            <div className="relative w-20 h-20 rounded border border-[var(--gold)]/40 overflow-hidden bg-[var(--ivory)] flex-shrink-0">
               <Image src="/logo.png" alt="Sayamwar Hall & Homestay" fill className="object-contain" sizes="80px" />
             </div>
             <div>
-              <p className="font-[var(--font-playfair)] text-[#C9A84C] font-bold text-xl leading-tight">Sayamwar Hall</p>
+              <p className="font-[var(--font-playfair)] text-[var(--gold)] font-bold text-xl leading-tight">Sayamwar Hall</p>
               <p className="text-white/40 text-xs tracking-[0.25em] uppercase mt-1">&amp; Homestay</p>
               <p className="text-white/25 text-[10px] tracking-widest mt-1">Celebrate • Stay • Memories</p>
             </div>
@@ -75,7 +75,7 @@ export default function Footer({ className = '' }: { className?: string }) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={s.label}
-                className="w-9 h-9 flex items-center justify-center rounded-full border border-[#C9A84C]/25 text-white/40 hover:text-[#C9A84C] hover:border-[#C9A84C]/60 transition-colors duration-300"
+                className="w-9 h-9 flex items-center justify-center rounded-full border border-[var(--gold)]/25 text-white/40 hover:text-[var(--gold)] hover:border-[var(--gold)]/60 transition-colors duration-300"
               >
                 {s.icon}
               </a>
@@ -101,8 +101,8 @@ export default function Footer({ className = '' }: { className?: string }) {
               { href: '/contact', label: 'Contact Us' },
             ].map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className="text-white/45 hover:text-[#C9A84C] text-sm transition-colors duration-300 flex items-center gap-2 group">
-                  <span className="w-0 group-hover:w-4 h-px bg-[#C9A84C] transition-all duration-300 inline-block" />
+                <Link href={l.href} className="text-white/45 hover:text-[var(--gold)] text-sm transition-colors duration-300 flex items-center gap-2 group">
+                  <span className="w-0 group-hover:w-4 h-px bg-[var(--gold)] transition-all duration-300 inline-block" />
                   {l.label}
                 </Link>
               </li>
@@ -116,18 +116,18 @@ export default function Footer({ className = '' }: { className?: string }) {
           <div className="space-y-4 text-sm text-white/45">
             <a href="https://www.google.com/maps/place/Sayamwar+Hall+%26+Homestay/@25.6292816,85.0523556,17z/data=!3m1!4b1!4m6!3m5!1s0x39ed570055ae3209:0xecb1a935000a9895!8m2!3d25.6292768!4d85.0549305"
               target="_blank" rel="noopener noreferrer"
-              className="flex items-start gap-3 hover:text-[#C9A84C] transition-colors">
+              className="flex items-start gap-3 hover:text-[var(--gold)] transition-colors">
               <span className="mt-0.5">📍</span>
               <span>Gola Road, Adarsh Vihar Colony, Lane 5,<br />near T Point, beside Hotel King Regency,<br />Patna, Bihar 801503</span>
             </a>
-            <a href="tel:7646028228" className="flex items-center gap-3 hover:text-[#C9A84C] transition-colors">
+            <a href="tel:7646028228" className="flex items-center gap-3 hover:text-[var(--gold)] transition-colors">
               <span>📞</span> 7646028228
             </a>
-            <a href="tel:7070486987" className="flex items-center gap-3 hover:text-[#C9A84C] transition-colors">
+            <a href="tel:7070486987" className="flex items-center gap-3 hover:text-[var(--gold)] transition-colors">
               <span>📞</span> 7070486987
             </a>
             <a href="https://wa.me/917646028228" target="_blank" rel="noopener noreferrer"
-              className="flex items-center gap-3 hover:text-[#C9A84C] transition-colors">
+              className="flex items-center gap-3 hover:text-[var(--gold)] transition-colors">
               <span>💬</span> WhatsApp Us
             </a>
             <div className="flex items-center gap-3">
@@ -148,13 +148,16 @@ export default function Footer({ className = '' }: { className?: string }) {
               { label: 'Facebook', href: 'https://www.facebook.com/sayamwarhall' },
               { label: 'Instagram', href: 'https://www.instagram.com/sayamwarhall' },
               { label: 'WhatsApp', href: 'https://wa.me/917646028228' },
+              { label: 'WedMeGood', href: 'https://www.wedmegood.com/search/Banquet-Halls-in-Patna' },
+              { label: 'Sulekha', href: 'https://www.sulekha.com/banquet-halls/patna' },
+              { label: 'ShaadiSaga', href: 'https://www.shaadisaga.com/patna/banquet-halls' },
             ].map((d) => (
               <a
                 key={d.label}
                 href={d.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/25 hover:text-[#C9A84C] text-xs transition-colors duration-300"
+                className="text-white/25 hover:text-[var(--gold)] text-xs transition-colors duration-300"
               >
                 {d.label}
               </a>

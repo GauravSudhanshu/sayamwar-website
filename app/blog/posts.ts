@@ -705,6 +705,270 @@ export const posts: BlogPost[] = [
       { type: 'cta', text: 'Planning a corporate event in Patna? Check availability at Sayamwar Hall — flexible slots, in-house catering, AC hall for 50–300 guests.', href: '/contact', label: 'Enquire for Corporate Event' },
     ],
   },
+  {
+    slug: 'wedding-vendor-guide-patna',
+    title: 'Complete Wedding Vendor Guide for Patna – Photographers, Decorators & More',
+    excerpt: 'Who do you need to hire for a wedding in Patna? This complete vendor guide covers every role — from decorators and photographers to caterers, DJs, and makeup artists — with tips on hiring each one right.',
+    date: '2026-06-25',
+    readTime: '8 min read',
+    category: 'Wedding',
+    image: '/pkg-wedding.jpg',
+    keywords: 'wedding vendors patna, wedding photographer patna, wedding decorator patna, wedding caterer patna, wedding dj patna, wedding planner patna, mehendi artist patna, makeup artist patna',
+    content: [
+      { type: 'p', text: 'A wedding in Patna involves coordinating 6–10 different vendors — each with their own pricing, availability, and quality range. Hiring the right team makes the difference between a smooth, memorable celebration and a stressful, patchwork event. This guide covers every key vendor you need and exactly what to check before hiring them.' },
+
+      { type: 'h2', text: '1. Wedding Venue / Banquet Hall' },
+      { type: 'p', text: 'Your venue is the most important booking — everything else is arranged around it. Book 4–8 months in advance for peak season (October–February). Key checks: seated capacity, full AC, on-site rooms, all-inclusive packages with no hidden charges, and generator backup. Sayamwar Hall in Danapur offers all-inclusive wedding packages from ₹1,51,000 for 200–300 guests — covering decoration, catering, DJ, and 4 rooms.' },
+
+      { type: 'h2', text: '2. Wedding Photographer & Videographer' },
+      { type: 'p', text: 'Photography is the one element you cannot redo. For Patna weddings, look for photographers who have experience shooting in banquet halls (indoor lighting) and at outdoor mandaps. Key checks:' },
+      { type: 'ul', items: [
+        'Review at least 3 full wedding albums — not just highlight reels',
+        'Confirm coverage: pre-wedding, wedding day, and reception all need separate hours',
+        'Clarify deliverables — edited photos, raw footage, highlight reel, and delivery timeline',
+        'Confirm the photographer attending is the one whose portfolio you reviewed',
+        'Budget: ₹15,000–₹25,000 for decent coverage; ₹40,000–₹80,000 for cinematic videography + photography',
+        'Book 3–4 months ahead — good Patna photographers fill up fast during peak season',
+      ]},
+
+      { type: 'h2', text: '3. Wedding Decorator / Florist' },
+      { type: 'p', text: 'Decoration transforms a hall into a dream wedding setting. Most quality banquet halls in Patna include basic decoration in their packages — but you can upgrade or hire an independent decorator for premium floral work. What to check:' },
+      { type: 'ul', items: [
+        'Ask to see the decorator\'s portfolio specifically from the venue you\'ve booked — hall size and lighting affect how decoration looks',
+        'Clarify: fresh flowers vs. artificial flowers vs. mixed. Fresh flowers are significantly more expensive but far more beautiful.',
+        'Confirm setup time — decorators need 4–8 hours before the event. Does your venue allow that access?',
+        'Get the color scheme and specific elements (arch, centrepieces, selfie point) agreed in writing',
+        'Budget: Basic decoration ₹20,000–₹50,000; Premium floral ₹80,000–₹2,00,000+',
+        'Note: All Sayamwar Hall packages include full stage, mandap, lawn decoration, and selfie point as standard',
+      ]},
+
+      { type: 'h2', text: '4. Catering / Caterer' },
+      { type: 'p', text: 'Food is what your guests remember most. At Patna weddings, the caterer either comes with the hall (all-inclusive package) or is arranged separately. In-house catering at a quality banquet hall is almost always the better choice — lower coordination overhead and accountability for the food quality sits with one vendor. Checks:' },
+      { type: 'ul', items: [
+        'Request a tasting session — most reputable caterers offer this',
+        'Confirm the minimum guarantee guest count and what happens if attendance is higher or lower',
+        'Ask specifically about live counters (chaat, tandoor) — they are charged extra at many venues',
+        'Confirm experience at your event size — a caterer comfortable at 150 guests may struggle at 300',
+        'Budget: ₹999–₹1,699/plate depending on menu tier (veg vs. non-veg, menu richness)',
+      ]},
+
+      { type: 'h2', text: '5. DJ & Sound System' },
+      { type: 'p', text: 'A great DJ controls the energy of the entire event. In Patna, most banquet hall packages include a DJ — but quality varies. If your venue offers a DJ, ask to hear a recent event playlist or speak to past clients. For an independent DJ hire:' },
+      { type: 'ul', items: [
+        'Confirm they own professional sound equipment — not borrowed gear',
+        'Share your must-play and do-not-play list at least 1 week before the event',
+        'Check that their speaker system is sized for your hall capacity — undersized audio is a common complaint',
+        'Confirm setup time and what electrical load they need — venues must confirm generator support',
+        'Budget: ₹8,000–₹25,000 for an experienced DJ with quality equipment',
+      ]},
+
+      { type: 'h2', text: '6. Mehendi Artist' },
+      { type: 'p', text: 'Mehendi is a pre-wedding essential at Patna celebrations. Book your mehendi artist 2–3 months in advance for peak season dates. For a full bridal mehendi (both hands + feet), allocate 3–4 hours. Check:' },
+      { type: 'ul', items: [
+        'Review their portfolio for rajasthani vs. Arabic vs. modern fusion styles',
+        'Confirm they use natural henna — not chemical compounds that cause skin reactions',
+        'Discuss the design in advance, especially if you want a specific motif or portrait element',
+        'Budget: Bridal mehendi ₹3,000–₹12,000; Guests ₹200–₹800/hand',
+      ]},
+
+      { type: 'h2', text: '7. Makeup Artist & Hairdresser' },
+      { type: 'p', text: 'A skilled makeup artist for the bride is non-negotiable. Patna has a growing number of professional bridal makeup artists — book the best ones 4–6 months ahead. Essential checks:' },
+      { type: 'ul', items: [
+        'Trial session 1–2 months before: See exactly how the final look will appear before the wedding day',
+        'Confirm they use professional, long-lasting products — not drugstore brands that fade in 2 hours',
+        'Airbrush makeup lasts significantly longer than traditional — especially important for summer weddings',
+        'Confirm the artist will be personally present on the wedding day, not a junior substitute',
+        'Budget: ₹8,000–₹25,000 for bridal makeup; ₹2,000–₹5,000 for family members',
+      ]},
+
+      { type: 'h2', text: '8. Pandit / Priest for Ceremony' },
+      { type: 'p', text: 'For the core wedding rituals, a qualified and reliable pandit is essential. Family pandits passed down through generations are common in Bihar — but if you need to hire one independently, ask for recommendations from the venue or family connections. Confirm the exact muhurat timing and required puja samagri well in advance.' },
+
+      { type: 'h2', text: '9. Invitation Designer & Printer' },
+      { type: 'p', text: 'Digital invitations via WhatsApp and Instagram save cost and are increasingly accepted — but for elders and formal invitations, printed cards remain standard in Patna. Key tips:' },
+      { type: 'ul', items: [
+        'Order printed invitations at least 6 weeks before the event for delivery + distribution time',
+        'Proofread: names, dates, times, venue address, RSVP contact — errors are impossible to fix once printed',
+        'WhatsApp digital invites: Send 4–6 weeks before for weekends, 3–4 weeks for weekdays',
+        'Budget: ₹15–₹60/card for printed invitations depending on design and paper quality',
+      ]},
+
+      { type: 'h2', text: 'Wedding Vendor Booking Timeline for Patna Families' },
+      { type: 'ul', items: [
+        '8–10 months before: Book venue, confirm muhurat date',
+        '6–8 months before: Book photographer, videographer, makeup artist (peak season only)',
+        '4–6 months before: Book DJ, decorator (if not included with venue), caterer (if separate)',
+        '2–3 months before: Book mehendi artist, order printed invitations',
+        '1 month before: Trial session with makeup artist, invitation distribution begins',
+        '1 week before: Final confirmations with every vendor — timing, requirements, emergency contacts',
+        'Day before: Brief coordinator on arrival order: decorator first, then DJ, then catering team',
+      ]},
+
+      { type: 'cta', text: 'Sayamwar Hall bundles decoration, catering, DJ, and rooms in every package — simplifying your vendor coordination significantly.', href: '/packages', label: 'View All-Inclusive Packages' },
+    ],
+  },
+  {
+    slug: 'wedding-stage-decoration-ideas-patna',
+    title: 'Wedding Stage & Mandap Decoration Ideas for Patna Halls – 2026 Trends',
+    excerpt: 'Discover the most popular wedding stage and mandap decoration styles in Patna banquet halls for 2026 — from royal floral mandaps to LED backdrops and selfie-point setups.',
+    date: '2026-06-24',
+    readTime: '6 min read',
+    category: 'Décor',
+    image: '/gallery-indoor-mandap.jpg',
+    keywords: 'wedding decoration patna, mandap decoration patna, stage decoration patna banquet hall, wedding backdrop patna, floral mandap patna, wedding decor ideas bihar, selfie point decoration patna',
+    content: [
+      { type: 'p', text: 'Wedding decoration in Patna has evolved significantly — couples are moving beyond generic setups toward personalized, Instagrammable spaces that reflect their personality. Here are the most requested stage and mandap decoration styles at Patna banquet halls in 2026, with practical guidance on what works best in each space.' },
+
+      { type: 'h2', text: '1. Royal Floral Mandap (Most Popular)' },
+      { type: 'p', text: 'Fresh flower mandaps remain the most-requested decoration style at Patna weddings. The classic setup uses a ceiling canopy of white or pastel flowers (roses, carnations, chrysanthemums) with hanging strands and a decorated phera platform beneath. Key variants:' },
+      { type: 'ul', items: [
+        'White + Gold: The most elegant combination. White flowers with gold fabric draping and gold-tone lighting.',
+        'Pastel Pink + Ivory: Romantic and soft. Popular for daytime and indoor evening weddings.',
+        'Royal Marigold: A Bihar tradition — vibrant orange and yellow marigolds in a full canopy. High-energy and festive.',
+        'Mixed Fresh + Artificial: A budget-conscious hybrid that uses artificial flowers for the canopy and fresh flowers for close-up areas like the stage front and garland stations.',
+        'Cost: Fresh flower mandap ₹40,000–₹1,50,000+ depending on flower volume and hall size',
+      ]},
+
+      { type: 'h2', text: '2. LED Backdrop Stage' },
+      { type: 'p', text: 'LED panel backdrops are increasingly popular for Patna wedding stages — particularly for receptions and engagement ceremonies. A large LED screen can display the couple\'s name, photo slideshow, or animated floral backgrounds. Benefits:' },
+      { type: 'ul', items: [
+        'Creates dramatic, high-contrast photos even in non-ideal lighting conditions',
+        'Flexible — the display can change for different ceremonies (engagement, wedding, reception)',
+        'Pairs well with a simpler physical stage setup — the screen itself becomes the focal point',
+        'Cost: ₹20,000–₹60,000 for LED backdrop rental including content design',
+      ]},
+
+      { type: 'h2', text: '3. Floral Arch Entrance' },
+      { type: 'p', text: 'The entrance arch is the first decoration guests see — and one of the most photographed spots. Popular styles at Patna banquet halls:' },
+      { type: 'ul', items: [
+        'Full floral arch: Fresh or artificial flowers in the couple\'s color theme, framing the hall entrance',
+        'LED + flower combination: An arch frame lit with warm LED lights and flowers — looks stunning at night',
+        'Name arch: The couple\'s initials or names formed in flowers — a personalized touch that drives social media shares',
+        'Cost: ₹15,000–₹50,000 for a full entrance arch',
+      ]},
+
+      { type: 'h2', text: '4. Selfie Points & Photo Zones' },
+      { type: 'p', text: 'Selfie points have become a standard inclusion at Patna weddings — and for good reason. A well-designed selfie corner generates dozens of photos per event, giving the couple organic social media coverage from guests. At Sayamwar Hall, every wedding package includes a dedicated selfie point. Popular styles:' },
+      { type: 'ul', items: [
+        'Floral wall with couple\'s name: A backdrop of artificial or fresh flowers with cut-out name letters',
+        'Neon sign setup: The couple\'s name or a phrase like "Happily Ever After" in neon light against a dark floral wall',
+        'Balloon arch corner: A colorful balloon garland arch — cost-effective and highly photogenic',
+        'Ring light + backdrop: Simple backdrop with a professional ring light — popular for late-evening receptions',
+      ]},
+
+      { type: 'h2', text: '5. Table & Hall Decoration' },
+      { type: 'p', text: 'Beyond the stage, guest tables and the overall hall ambience matter greatly. Popular table decoration choices for Patna banquet halls:' },
+      { type: 'ul', items: [
+        'Centrepiece flowers: A small floral arrangement at each guest table — elevates the overall look significantly',
+        'LED fairy lights: Draped along ceiling, pillars, and tables — creates a warm, intimate glow',
+        'Tablecloths and sashes: Coordinated cloth colors that match the decoration theme',
+        'Chair covers: White or colored covers with sash ties — affordable way to transform basic banquet chairs',
+        'Cost: Table + hall decoration ₹20,000–₹60,000 depending on guest count and decoration density',
+      ]},
+
+      { type: 'h2', text: '6. Barat Welcome Decoration (Outdoor / Lawn)' },
+      { type: 'p', text: 'The barat (groom\'s wedding procession) arrival is a high-energy moment. Outdoor decoration for the barat welcome at Patna venues typically includes:' },
+      { type: 'ul', items: [
+        'Decorated gate/entrance with flowers and lighting',
+        'Welcome arch for the groom\'s entry — often with a flower shower or petal rain moment',
+        'Lawn lighting with floor-level lights, torches, or fairy string lights',
+        'Marigold garlands for the barat mala exchange — included in most Patna banquet hall packages',
+        'Flower rain setup: Compressed-air confetti or real petal rain — very popular and budget-friendly at ₹5,000–₹15,000',
+      ]},
+
+      { type: 'h2', text: 'How to Choose Decoration That Works in Your Hall' },
+      { type: 'p', text: 'Not all decoration styles work equally well in every hall. Practical advice before finalising:' },
+      { type: 'ul', items: [
+        'Visit the hall at night with event lighting on before choosing your decoration — the colour scheme looks completely different under LED lights vs. daytime',
+        'Ask your decorator which mandap styles they have most experience with in that specific venue',
+        'High-ceiling halls (like Sayamwar Hall) suit large canopy mandaps better than low-ceiling halls',
+        'Confirm setup time — fresh flower mandaps require 6–8 hours; artificial setups can be done in 3–4 hours',
+        'Get photos of the decorator\'s previous work in the same venue — not just their general portfolio',
+      ]},
+
+      { type: 'h2', text: 'Decoration Budget Guide for Patna Weddings (2026)' },
+      { type: 'ul', items: [
+        'Basic package (included with most Patna banquet halls): Stage decoration, mandap, selfie point — ₹0 additional if bundled',
+        'Upgrade to fresh flower mandap: ₹40,000–₹80,000 additional',
+        'LED backdrop + stage: ₹20,000–₹50,000',
+        'Full hall table decoration: ₹20,000–₹40,000',
+        'Entrance arch + barat welcome: ₹15,000–₹35,000',
+        'Premium full-venue decoration (fresh flowers throughout): ₹1,50,000–₹3,00,000+',
+      ]},
+
+      { type: 'cta', text: 'Sayamwar Hall packages include stage decoration, mandap, selfie point, and barat mala as standard. Ask about floral upgrade options.', href: '/wedding-venue-patna', label: 'View Wedding Packages' },
+    ],
+  },
+  {
+    slug: 'danapur-patna-event-venue-area-guide',
+    title: 'Danapur, Patna – Why It\'s Bihar\'s Best Location for Events & Stays',
+    excerpt: 'Planning an event or stay in the Patna area? Danapur offers better access, lower costs, and more options than central Patna. Here\'s a complete local guide to Danapur as an event hub.',
+    date: '2026-06-23',
+    readTime: '5 min read',
+    category: 'Local Guide',
+    image: '/gallery-banquet-hall-main.jpg',
+    keywords: 'danapur patna event venue, banquet hall danapur, danapur railway station, rooms near danapur, event hall near danapur, danapur patna guide, gola road danapur, adarsh vihar danapur',
+    content: [
+      { type: 'p', text: 'When families in Bihar start planning a major event — wedding, reception, birthday, or corporate gathering — they typically think of Patna city first. But Danapur, just 15 km west of central Patna, has quietly become one of Bihar\'s best-connected and most cost-effective event destinations. Here\'s why.' },
+
+      { type: 'h2', text: 'Where is Danapur?' },
+      { type: 'p', text: 'Danapur (also spelled Dinapur) is a city and municipal area in Patna district, Bihar. It sits along the Ganga riverbank, immediately west of Patna city, connected by NH-30 and Gola Road. Administratively, Danapur Cantonment and Danapur civil area together form a major urban hub with its own railway station, markets, hospitals, and growing infrastructure.' },
+
+      { type: 'h2', text: 'Transport Access: Why Danapur Works for All Guests' },
+      { type: 'p', text: 'One of the biggest advantages of holding events in Danapur is transport access for guests arriving from across Bihar:' },
+      { type: 'ul', items: [
+        'Danapur Railway Station: One of Bihar\'s most connected stations — direct trains from Muzaffarpur, Chapra, Siwan, Ara, Buxar, Gaya, Bhagalpur, and Varanasi stop here. Guests from these districts need not travel into central Patna at all.',
+        'Patna Junction: 20–25 minutes by road — accessible for guests arriving at the main Patna terminal.',
+        'Patna Airport: 25–30 minutes via NH-30 — convenient for guests flying in from Delhi, Mumbai, or Kolkata.',
+        'NH-30 (National Highway): Connects Danapur directly to western Bihar — Ara, Buxar, Sasaram, and beyond. Car-travel guests face no urban traffic.',
+        'Patna City & Boring Road: 20–30 minutes via the riverfront road — city-based guests can reach Danapur without entering peak-hour congestion areas.',
+      ]},
+
+      { type: 'h2', text: 'Why Danapur is Better Than Central Patna for Large Events' },
+      { type: 'ul', items: [
+        'Space: Event venues in Danapur have larger parking areas and grounds than comparable inner-city venues — critical for 200–300 guest events.',
+        'Price: Banquet halls in Danapur offer similar or better quality than central Patna venues at 20–30% lower rates due to lower real estate costs.',
+        'Access: Wide roads like Gola Road and Boring Road extension handle vehicle convoys without the bottlenecks of central Patna lanes.',
+        'Noise regulations: Danapur\'s event venues operate with more flexibility than venues in densely residential central Patna areas.',
+        'Guest stays: Homestays and budget accommodations near Danapur railway station are cheaper and more available than Patna hotel inventory during event season.',
+      ]},
+
+      { type: 'h2', text: 'Gola Road, Danapur – The Heart of the Event Corridor' },
+      { type: 'p', text: 'Gola Road is Danapur\'s main commercial and event corridor. It runs from Danapur railway station through Adarsh Vihar Colony and connects to Boring Road and the outer ring road. Event venues, hotels, and service providers cluster along this road because of its accessibility and visibility.' },
+      { type: 'ul', items: [
+        'Adarsh Vihar Colony: A well-planned residential and commercial area off Gola Road, home to several quality event venues.',
+        'Markets: Daily markets and catering supplies on Gola Road make last-minute event requirements manageable.',
+        'Hotels and guest houses: Several budget hotels and guest houses within 500m–1km of Gola Road venues.',
+        'ATMs and banking: Multiple branches on Gola Road — practical for large-scale payment and vendor management.',
+      ]},
+
+      { type: 'h2', text: 'Nearest Landmarks to Event Venues on Gola Road' },
+      { type: 'ul', items: [
+        'Danapur Railway Station: ~2 km (5 minutes by auto)',
+        'Danapur Bus Stand: ~1.5 km',
+        'Hotel King Regency (reference point): Adjacent to Sayamwar Hall',
+        'T Point (junction): Immediate landmark for Sayamwar Hall\'s lane',
+        'Boring Road (Patna): ~8 km (15 minutes via the connecting road)',
+        'Patna Junction: ~20 km (25–30 minutes by car)',
+        'Jay Prakash Narayan International Airport, Patna: ~23 km (30 minutes via NH-30)',
+      ]},
+
+      { type: 'h2', text: 'What to Know When Planning an Event in Danapur' },
+      { type: 'ul', items: [
+        'Guest pickup points: Danapur railway station and Danapur bus stand are the most convenient pickup points for out-of-town guests.',
+        'Auto-rickshaw availability: Autos are easily available from Danapur station to Gola Road venues — ₹30–₹50 per ride.',
+        'Parking: Most venues on Gola Road have dedicated parking lots. For very large events (300+ guests), confirm parking capacity in advance.',
+        'Accommodation: Book on-site rooms or nearby guest houses at least 3–4 weeks ahead during peak event season (October–February).',
+        'Medical facilities: Patna Medical College (PMCH) and several private hospitals are 20–25 minutes away.',
+        'Weather: Danapur shares Patna\'s climate — events in April–June require strong AC; October–February is ideal for events with outdoor elements.',
+      ]},
+
+      { type: 'h2', text: 'Sayamwar Hall & Homestay – Danapur\'s Premier Event Venue' },
+      { type: 'p', text: 'Located at Gola Road, Adarsh Vihar Colony, Lane 5 — near T Point, beside Hotel King Regency — Sayamwar Hall & Homestay is one of Danapur\'s top-rated event venues. The full address: Gola Road, Adarsh Vihar Colony, Lane Number 5, near T Point, beside Hotel King Regency, Danapur, Patna, Bihar 801503. Open 24 hours, 7 days. Call: 7646028228.' },
+
+      { type: 'cta', text: 'Book an event or stay at Sayamwar Hall — Danapur\'s best-connected venue on Gola Road, just 5 minutes from Danapur station.', href: '/contact', label: 'Check Availability' },
+    ],
+  },
 ]
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
