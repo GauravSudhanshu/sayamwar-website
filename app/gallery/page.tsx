@@ -17,6 +17,14 @@ const photos = [
   { src: '/gallery-banquet-interior.jpg', label: 'Banquet Hall Interior', category: 'Banquet Hall', span: 'col-span-2' },
   { src: '/gallery-lawn.jpg', label: 'Banquet Hall Lawn', category: 'Venue', span: '' },
   { src: '/gallery-outside-stage.jpg', label: 'Outside Stage', category: 'Venue', span: '' },
+  { src: '/venue-5.jpg', label: 'Our Building', category: 'Venue', span: 'col-span-2 row-span-2' },
+  { src: '/venue-4.jpg', label: 'Grand Banquet Hall', category: 'Banquet Hall', span: '' },
+  { src: '/venue-7.jpg', label: 'Hall Interior & Chandeliers', category: 'Banquet Hall', span: '' },
+  { src: '/venue-1.jpg', label: 'Hall Lounge Area', category: 'Banquet Hall', span: '' },
+  { src: '/venue-8.jpg', label: 'Event Hall', category: 'Banquet Hall', span: '' },
+  { src: '/venue-2.jpg', label: 'Birthday Party Setup', category: 'Birthday Events', span: 'col-span-2' },
+  { src: '/venue-3.jpg', label: 'Deluxe AC Room', category: 'Rooms', span: '' },
+  { src: '/venue-6.jpg', label: 'Premium AC Room', category: 'Rooms', span: '' },
 ]
 
 export default function GalleryPage() {
