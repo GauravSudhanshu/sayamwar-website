@@ -148,9 +148,6 @@ export default function Footer({ className = '' }: { className?: string }) {
               { label: 'Facebook', href: 'https://www.facebook.com/sayamwarhall' },
               { label: 'Instagram', href: 'https://www.instagram.com/sayamwarhall' },
               { label: 'WhatsApp', href: 'https://wa.me/917646028228' },
-              { label: 'WedMeGood', href: 'https://www.wedmegood.com/search/Banquet-Halls-in-Patna' },
-              { label: 'Sulekha', href: 'https://www.sulekha.com/banquet-halls/patna' },
-              { label: 'ShaadiSaga', href: 'https://www.shaadisaga.com/patna/banquet-halls' },
             ].map((d) => (
               <a
                 key={d.label}
