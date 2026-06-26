@@ -1050,6 +1050,159 @@ export const posts: BlogPost[] = [
       { type: 'cta', text: 'Book the ₹1,50,000 all-inclusive wedding package at Sayamwar Hall, Danapur — luxury decoration, best banquet in Patna, homestay included.', href: '/wedding-venue-patna', label: 'Check Date Availability' },
     ],
   },
+  {
+    slug: 'banquet-hall-danapur-patna',
+    title: 'Best Banquet Hall in Danapur, Patna – Weddings, Birthdays & Events',
+    excerpt: 'Looking for a banquet hall in Danapur, Patna? This guide covers everything — capacity, pricing, decoration, and why Sayamwar Hall on Gola Road is Danapur\'s top-rated event venue.',
+    date: '2026-06-26',
+    readTime: '5 min read',
+    category: 'Banquet Hall',
+    image: '/gallery-banquet-hall-main.jpg',
+    keywords: 'banquet hall danapur patna, banquet hall in danapur, event hall danapur, wedding hall danapur patna, birthday party hall danapur, banquet hall near danapur station, party hall danapur, function hall danapur patna',
+    content: [
+      { type: 'p', text: 'Danapur is one of the best-connected cities in Bihar — and it has quietly become one of the most popular locations for weddings, receptions, birthday parties, and corporate events in the Patna area. If you are searching for a banquet hall in Danapur, Patna, this guide covers everything you need to know — capacity, pricing, what to check, and which venue consistently delivers the best experience.' },
+
+      { type: 'h2', text: 'Why Danapur is the Best Location for Events Near Patna' },
+      { type: 'p', text: 'Families across Bihar choose Danapur for their events for very practical reasons:' },
+      { type: 'ul', items: [
+        'Danapur Railway Station has direct trains from Muzaffarpur, Ara, Buxar, Siwan, Chapra, Bhagalpur, and Varanasi — guests from across Bihar arrive without entering central Patna',
+        'Wide roads like Gola Road handle large wedding convoys and guest parking without the bottlenecks of inner Patna lanes',
+        'Banquet halls in Danapur are 20–30% more affordable than comparable halls in central Patna — more value for the same budget',
+        '20 minutes from Patna Junction and 25 minutes from Patna Airport — accessible for guests coming from anywhere',
+        'Adarsh Vihar Colony and Gola Road area have multiple accommodation options for out-of-town guests',
+      ]},
+
+      { type: 'h2', text: 'What to Look for in a Banquet Hall in Danapur' },
+      { type: 'ul', items: [
+        'Full AC — not just partial cooling. Danapur summers regularly cross 40°C. Confirm the entire hall is air-conditioned with generator backup.',
+        'Seated capacity — ask for seated dining capacity specifically, not standing capacity. A 300-guest seated dinner needs 4,000+ sq ft.',
+        'All-inclusive packages — look for a hall that bundles decoration, catering, DJ, security, and rooms in one price. Booking vendors separately always costs more.',
+        'On-site rooms — essential for the bride, groom, and out-of-town family. Danapur\'s best banquet halls have attached homestay facilities.',
+        'Location — a hall on Gola Road or a main road ensures guests can find it easily and parking is not a problem.',
+      ]},
+
+      { type: 'h2', text: 'Banquet Hall Prices in Danapur, Patna' },
+      { type: 'p', text: 'Here is an honest price guide for banquet halls in Danapur for 2026:' },
+      { type: 'ul', items: [
+        'Birthday party hall (50–150 guests): ₹85,000 – ₹1,00,000 all-inclusive',
+        'Engagement / ring ceremony (100–200 guests): ₹85,000 – ₹1,25,000',
+        'Wedding hall (200–300 guests): ₹1,50,000 – ₹2,00,000 all-inclusive with decoration, DJ, catering, rooms',
+        'Reception (200–300 guests): ₹1,25,000 – ₹2,00,000',
+        'Corporate events (50–200 guests): ₹50,000 – ₹1,00,000 depending on duration and catering',
+        'Food (per plate): ₹999 – ₹1,399 veg; non-veg options available',
+      ]},
+      { type: 'p', text: 'All-inclusive packages are almost always better value than booking hall, decoration, DJ, and catering separately — and they reduce the coordination stress significantly.' },
+
+      { type: 'h2', text: 'Sayamwar Hall – The Best Banquet Hall in Danapur, Patna' },
+      { type: 'p', text: 'Sayamwar Hall & Homestay on Gola Road, Adarsh Vihar Colony, Danapur is consistently rated as the top banquet hall in Danapur for one simple reason — it delivers exactly what is promised, every time.' },
+      { type: 'ul', items: [
+        'Grand AC hall for 200–300 guests — crystal chandeliers, LED stage lighting, fully air-conditioned',
+        'All-inclusive wedding packages from ₹1,50,000 — stage decoration, mandap, selfie point, DJ, catering, 4 rooms, guard, night coffee, barat mala',
+        'Birthday packages from ₹85,000 — theme decoration, cake, DJ, buffet',
+        'Three food menus: Shagun (₹999/plate), Vivah (₹1,199/plate), Swayamvar (₹1,399/plate) — veg and non-veg',
+        'On-site homestay rooms from ₹1,500/night — AC and non-AC options for family stays',
+        '4.8 ★ Google rating — verified by real guest reviews',
+        'Open 24 hours, 7 days — no time restrictions',
+        'Just 5 minutes from Danapur Railway Station — easiest venue to reach in Danapur',
+      ]},
+
+      { type: 'h2', text: 'Events We Host at Our Danapur Banquet Hall' },
+      { type: 'ul', items: [
+        'Weddings (Vivah) — full mandap, stage, phera setup for 200–300 guests',
+        'Receptions — grand stage, couple entry, dinner buffet for 200–300 guests',
+        'Engagements (Sagai / Ring Ceremony) — floral mandap, ring exchange stage, selfie point',
+        'Birthday parties — custom theme decoration, DJ, cake, buffet for 50–300 guests',
+        'Corporate events — AC hall, PA system, catering for 50–300 attendees',
+        'Haldi & Mehendi functions — intimate setups for close family',
+      ]},
+
+      { type: 'h2', text: 'How to Reach Sayamwar Hall in Danapur' },
+      { type: 'p', text: 'Address: Gola Road, Adarsh Vihar Colony, Lane Number 5, near T Point, beside Hotel King Regency, Danapur, Patna, Bihar 801503.' },
+      { type: 'ul', items: [
+        'From Danapur Railway Station: 5 minutes by auto (₹30–40)',
+        'From Patna Junction: 20–25 minutes by car via the Ganga riverfront road',
+        'From Boring Road, Patna: 15–20 minutes',
+        'From Patna Airport: 25–30 minutes via NH-30',
+        'By auto from Danapur Bus Stand: 10 minutes',
+      ]},
+
+      { type: 'cta', text: 'Check availability at Sayamwar Hall — Danapur\'s best banquet hall. Weddings from ₹1,50,000 · Birthdays from ₹85,000 · Rooms from ₹1,500/night.', href: '/contact', label: 'Check Availability Now' },
+    ],
+  },
+  {
+    slug: 'banquet-hall-gola-road-patna',
+    title: 'Banquet Hall on Gola Road, Patna – Sayamwar Hall Guide',
+    excerpt: 'Searching for a banquet hall on Gola Road, Patna or near Danapur T Point? Sayamwar Hall & Homestay is the area\'s top-rated venue for weddings, birthdays, and all events. Read the full guide.',
+    date: '2026-06-26',
+    readTime: '4 min read',
+    category: 'Banquet Hall',
+    image: '/venue-5.jpg',
+    keywords: 'banquet hall gola road patna, banquet hall near t point danapur, hall near hotel king regency patna, banquet hall adarsh vihar danapur, event hall gola road danapur, wedding hall near danapur station, party hall gola road patna',
+    content: [
+      { type: 'p', text: 'Gola Road in Danapur, Patna is one of Bihar\'s most active event corridors — and the most searched location for banquet halls near Danapur Railway Station. If you are looking for a banquet hall on Gola Road, Patna, Sayamwar Hall & Homestay is the area\'s highest-rated venue for weddings, receptions, birthday parties, and corporate events.' },
+
+      { type: 'h2', text: 'Where Exactly is Sayamwar Hall on Gola Road?' },
+      { type: 'p', text: 'Sayamwar Hall & Homestay is located at: Gola Road, Adarsh Vihar Colony, Lane Number 5, near T Point, beside Hotel King Regency, Danapur, Patna, Bihar 801503.' },
+      { type: 'ul', items: [
+        'Landmark: Near T Point on Gola Road — one of Danapur\'s most recognizable junctions',
+        'Beside Hotel King Regency — visible from the main road',
+        'Lane Number 5, Adarsh Vihar Colony — a planned residential-commercial area off Gola Road',
+        '5 minutes from Danapur Railway Station by auto-rickshaw',
+        '20 minutes from Patna Junction by car',
+      ]},
+
+      { type: 'h2', text: 'Why Gola Road is the Best Location for a Banquet Hall in Patna' },
+      { type: 'ul', items: [
+        'Wide road — handles large wedding convoys, baraat processions, and guest vehicle parking without congestion',
+        'Central to Danapur — auto-rickshaws, cabs, and private vehicles all reach Gola Road easily from the railway station and bus stand',
+        'Close to markets — last-minute requirements (flowers, sweets, stationery) can be sourced on the same road',
+        'Residential and commercial mix — quiet enough for events but active enough for 24-hour access and security',
+        'Power infrastructure — Gola Road has relatively stable power supply with multiple transformer connections',
+      ]},
+
+      { type: 'h2', text: 'About Sayamwar Hall — Gola Road\'s Premier Event Venue' },
+      { type: 'p', text: 'Sayamwar Hall & Homestay has been hosting events for Patna and Danapur families for years. The venue is purpose-built for events — not a converted space — which means everything from the stage dimensions to the AC capacity to the parking area is designed with large celebrations in mind.' },
+      { type: 'ul', items: [
+        'Grand AC hall for 200–300 guests with crystal chandeliers and LED stage ambience',
+        'Stage dimensions suitable for full mandap + phera setup + DJ console simultaneously',
+        'Dedicated parking area for 50+ vehicles',
+        'On-site homestay: Standard (₹1,500), Deluxe AC (₹1,800), Premium Suite (₹2,500) per night',
+        'In-house catering with 3 menu tiers from ₹999/plate',
+        'Generator backup for uninterrupted AC and lighting through Patna\'s frequent power cuts',
+        'Open 24 hours — no midnight curfew on events',
+      ]},
+
+      { type: 'h2', text: 'All-Inclusive Packages at Sayamwar Hall, Gola Road' },
+      { type: 'ul', items: [
+        'Silver Wedding — ₹1,50,000: Hall, decoration, mandap, selfie point, DJ, veg buffet, 2 rooms, guard, night coffee',
+        'Gold Wedding — ₹2,00,000: All Silver inclusions + premium floral decor, 4 rooms, baraat welcome, non-veg option',
+        'Birthday Basic — ₹85,000: AC hall, theme decoration, cake, snacks, DJ (up to 50 guests)',
+        'Birthday Premium — ₹1,00,000: Hall, theme decor, dinner buffet, DJ, photo booth (up to 150 guests)',
+        'Engagement — ₹85,000: Floral mandap, ring exchange stage, selfie point, DJ, buffet (up to 150 guests)',
+      ]},
+
+      { type: 'h2', text: 'How to Book a Banquet Hall on Gola Road, Patna' },
+      { type: 'p', text: 'Booking is simple and fast. Contact us via WhatsApp or call directly:' },
+      { type: 'ul', items: [
+        'WhatsApp: 7646028228 — send your event date and guest count, get availability confirmed within the hour',
+        'Call: 7646028228 or 7070486987 — speak directly to the venue team',
+        'Visit: Walk in any time — the venue is open 24 hours for site visits',
+        'Advance payment secures your date — no date is confirmed without an advance',
+        'Peak season dates (October–February) fill up 3–6 months ahead — book early',
+      ]},
+
+      { type: 'h2', text: 'Frequently Asked Questions — Banquet Hall Gola Road Patna' },
+      { type: 'ul', items: [
+        'Q: Is there parking near Sayamwar Hall on Gola Road? — Yes, dedicated parking for 50+ vehicles on-site.',
+        'Q: How far is it from Danapur station? — 5 minutes by auto-rickshaw (₹30–40).',
+        'Q: Do you provide decoration? — Yes, all packages include full stage, mandap, and selfie point decoration.',
+        'Q: Can out-of-town family stay at the venue? — Yes, on-site homestay rooms from ₹1,500/night.',
+        'Q: Is generator backup available? — Yes, uninterrupted power for AC and full hall lighting.',
+      ]},
+
+      { type: 'cta', text: 'Book Sayamwar Hall on Gola Road, Danapur — Patna\'s most trusted banquet hall. Call or WhatsApp: 7646028228.', href: '/contact', label: 'Check Availability' },
+    ],
+  },
 ]
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
