@@ -9,36 +9,36 @@ export const metadata: Metadata = {
 }
 
 const photos = [
-  { src: '/venue-5.jpg', label: 'Our Building', category: 'Venue', span: 'col-span-2 row-span-2' },
-  { src: '/venue-4.jpg', label: 'Grand Banquet Hall', category: 'Banquet Hall', span: '' },
-  { src: '/venue-7.jpg', label: 'Hall Interior & Chandeliers', category: 'Banquet Hall', span: '' },
-  { src: '/venue-1.jpg', label: 'Hall Lounge Area', category: 'Banquet Hall', span: '' },
-  { src: '/venue-8.jpg', label: 'Event Hall', category: 'Banquet Hall', span: '' },
-  { src: '/venue-2.jpg', label: 'Birthday Party Setup', category: 'Birthday Events', span: 'col-span-2' },
-  { src: '/venue-3.jpg', label: 'Deluxe AC Room', category: 'Rooms', span: '' },
-  { src: '/venue-6.jpg', label: 'Premium AC Room', category: 'Rooms', span: '' },
+  { src: '/gallery-banquet-hall-main.jpg', label: 'Sayamwar Hall — Banquet Hall', category: 'Banquet Hall', span: 'col-span-2 row-span-2' },
+  { src: '/gallery-selfie-point-1.jpg', label: 'Selfie Point', category: 'Décor', span: '' },
+  { src: '/gallery-selfie-point-2.jpg', label: 'Selfie Corner Setup', category: 'Décor', span: '' },
+  { src: '/gallery-indoor-mandap.jpg', label: 'Indoor Mandap Setup', category: 'Wedding', span: '' },
+  { src: '/gallery-mandap-hall.jpg', label: 'Mandap in Hall', category: 'Wedding', span: '' },
+  { src: '/gallery-banquet-interior.jpg', label: 'Banquet Hall Interior', category: 'Banquet Hall', span: 'col-span-2' },
+  { src: '/gallery-lawn.jpg', label: 'Banquet Hall Lawn', category: 'Venue', span: '' },
+  { src: '/gallery-outside-stage.jpg', label: 'Outside Stage', category: 'Venue', span: '' },
 ]
 
 export default function GalleryPage() {
   return (
     <>
-      <section className="bg-gradient-to-br from-[#3D0A0A] via-[#5A0F0F] to-[#7B1818] py-20 px-4 text-center text-white">
-        <p className="text-[#C9A84C] text-xs tracking-[0.35em] uppercase font-[var(--font-inter)] mb-3">Our Venue</p>
+      <section className="bg-gradient-to-br from-[var(--black-2)] via-[var(--maroon-dark)] to-[var(--maroon)] py-20 px-4 text-center text-white">
+        <p className="section-label mb-3">Our Venue</p>
         <h1 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold mb-4">
-          Photo <span className="text-[#C9A84C]">Gallery</span>
+          Photo <span className="text-[var(--gold)]">Gallery</span>
         </h1>
-        <div className="w-16 h-px bg-[#C9A84C] mx-auto mb-4" />
+        <div className="gold-line" />
         <p className="text-white/60 text-base max-w-xl mx-auto">
           A glimpse of the beautiful moments created at Sayamwar Hall &amp; Homestay
         </p>
       </section>
 
-      <section className="py-16 px-4 bg-[#FDF8F0]">
+      <section className="py-16 px-4 bg-[var(--ivory)]">
         <div className="max-w-6xl mx-auto">
           <GalleryGrid photos={photos} />
 
-          <AnimateOnScroll className="mt-14 bg-[#3D0A0A] rounded-3xl p-10 text-center">
-            <p className="text-[#C9A84C] text-xs tracking-widest uppercase font-[var(--font-inter)] mb-2">Visit Us</p>
+          <AnimateOnScroll className="mt-14 bg-[var(--black)] rounded-3xl p-10 text-center">
+            <p className="section-label mb-2">Visit Us</p>
             <h3 className="font-[var(--font-playfair)] text-2xl font-bold text-white mb-6">Schedule a Free Site Visit</h3>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -48,7 +48,7 @@ export default function GalleryPage() {
               >
                 💬 Schedule via WhatsApp
               </a>
-              <a href="tel:7646028228" className="px-7 py-3 bg-[#C9A84C] text-[#3D0A0A] rounded-xl font-bold hover:bg-[#E8C547] transition-all hover:scale-105">
+              <a href="tel:7646028228" className="btn-gold rounded-xl">
                 📞 Call: 7646028228
               </a>
             </div>
