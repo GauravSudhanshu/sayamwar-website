@@ -144,8 +144,7 @@ export default function Footer({ className = '' }: { className?: string }) {
           <div className="flex flex-wrap justify-center gap-x-5 gap-y-2">
             {[
               { label: 'Google Maps', href: 'https://www.google.com/maps/place/Sayamwar+Hall+%26+Homestay/@25.6292816,85.0523556,17z' },
-              { label: 'JustDial', href: 'https://www.justdial.com/Patna/Sayamwar-Hall-Homestay-Gola-Road-Danapur/0612PX612-X612-231025153512-D1K5_BZDET' },
-              { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61590307323528' },
+{ label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61590307323528' },
               { label: 'Instagram', href: 'https://www.instagram.com/sayamwar_hall_homestay/' },
               { label: 'WhatsApp', href: 'https://wa.me/917646028228' },
             ].map((d) => (
