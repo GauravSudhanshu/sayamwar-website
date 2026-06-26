@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import LeadForm from '@/components/LeadForm'
+import AnimateOnScroll from '@/components/AnimateOnScroll'
 
 const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
@@ -45,8 +47,13 @@ const faqJsonLd = {
 export const metadata: Metadata = {
   title: 'Birthday Party Hall in Patna | From ₹85,000 | Danapur | Sayamwar Hall',
   description: 'Best birthday party hall in Patna & Danapur. Affordable packages from ₹85,000 with theme decor, cake, catering & DJ. 50–300 guests. Call 7646028228 to book.',
-  keywords: 'birthday party hall patna, birthday venue danapur, birthday party hall danapur patna, kids birthday venue patna, birthday party venue near me patna, birthday hall near me danapur, adult birthday party hall patna, birthday celebration hall patna, best birthday party venue patna, birthday party organizer patna, birthday function hall patna, birthday party near me patna, birthday party hall booking patna',
+  keywords: 'birthday party hall patna, birthday venue danapur, birthday party hall danapur patna, kids birthday venue patna, birthday party venue near me patna, best birthday party venue patna, birthday celebration hall patna',
   alternates: { canonical: 'https://sayamwar.com/birthday-party-hall-patna' },
+  openGraph: {
+    title: 'Birthday Party Hall in Patna | From ₹85,000 | Sayamwar Hall Danapur',
+    description: 'Best birthday party hall in Patna from ₹85,000. Theme decor, catering, DJ, 50–300 guests. Call 7646028228.',
+    images: [{ url: '/venue-2.jpg', width: 1200, height: 630, alt: 'Birthday Party Hall Sayamwar Danapur Patna' }],
+  },
 }
 
 const packages = [
@@ -54,15 +61,13 @@ const packages = [
     name: 'Basic Birthday',
     price: '₹85,000',
     capacity: 'Up to 50 Guests',
-    includes: ['AC Hall', 'Basic Decoration', 'Birthday Cake (1kg)', 'Snacks & Tea', '2 Hours Slot', 'Basic Sound System'],
-    color: '#E8C547',
+    includes: ['AC Hall', 'Basic Decoration', 'Birthday Cake (1 kg)', 'Snacks & Tea', '2 Hours Slot', 'Sound System'],
   },
   {
     name: 'Premium Birthday',
     price: '₹1,00,000',
     capacity: 'Up to 150 Guests',
-    includes: ['AC Hall', 'Theme Decoration', 'Birthday Cake (2kg)', 'Dinner Buffet', '4 Hours Slot', 'DJ & Lighting', 'Photo Booth'],
-    color: '#C9A84C',
+    includes: ['AC Hall', 'Theme Decoration', 'Birthday Cake (2 kg)', 'Dinner Buffet', '4 Hours Slot', 'DJ & Lighting', 'Photo Booth'],
     popular: true,
   },
   {
@@ -70,7 +75,6 @@ const packages = [
     price: '₹1,25,000',
     capacity: 'Up to 300 Guests',
     includes: ['AC Hall', 'Premium Theme Decor', 'Custom Birthday Cake', 'Full Dinner Buffet', 'Full Day Slot', 'Professional DJ', 'Photographer', 'Welcome Drink'],
-    color: '#C9A84C',
   },
 ]
 
@@ -79,38 +83,70 @@ export default function BirthdayPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      <section className="bg-gradient-to-br from-[#5A0F0F] via-[#7B1818] to-[#9B2222] py-20 px-4 text-center text-white relative overflow-hidden">
-        <div className="absolute top-4 left-8 text-6xl opacity-20">🎈</div>
-        <div className="absolute top-8 right-12 text-5xl opacity-20">🎂</div>
-        <div className="absolute bottom-8 left-16 text-5xl opacity-20">🎉</div>
-        <div className="relative z-10">
-          <p className="text-[#C9A84C] text-sm tracking-widest uppercase mb-3">Celebrate in Style</p>
+
+      {/* Hero */}
+      <section className="bg-gradient-to-br from-[var(--black-2)] via-[var(--maroon-dark)] to-[var(--maroon)] py-20 px-4 text-center text-white relative overflow-hidden">
+        <div className="absolute top-4 left-8 text-6xl opacity-15 select-none">🎈</div>
+        <div className="absolute top-8 right-12 text-5xl opacity-15 select-none">🎂</div>
+        <div className="absolute bottom-8 left-16 text-5xl opacity-15 select-none">🎉</div>
+        <div className="relative z-10 max-w-3xl mx-auto">
+          <p className="section-label mb-3">Celebrate in Style</p>
           <h1 className="font-[var(--font-playfair)] text-4xl md:text-5xl font-bold mb-4">
-            Birthday Party Hall in <span className="text-[#C9A84C]">Patna & Danapur</span>
+            Birthday Party Hall in <span className="text-[var(--gold)]">Patna & Danapur</span>
           </h1>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto mb-8">
-            Make every birthday unforgettable! Spacious halls, stunning decor, delicious food, and great entertainment — all at one place.
+          <div className="gold-line mb-5" />
+          <p className="text-white/65 text-lg max-w-2xl mx-auto mb-8">
+            Make every birthday unforgettable — spacious hall, stunning theme decor, delicious food, DJ & music, all at one place.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20a%20Birthday%20Party%20at%20Sayamwar%20Hall"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-bold transition-colors"
+              target="_blank" rel="noopener noreferrer"
+              className="px-8 py-4 bg-green-500 hover:bg-green-600 text-white rounded-xl font-bold text-base transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
             >
-              💬 Book via WhatsApp
+              ✅ Check Availability
             </a>
-            <a href="tel:7646028228" className="px-6 py-3 bg-[#C9A84C] text-[#5A0F0F] rounded-lg font-bold hover:bg-[#E8C547] transition-colors">
+            <a href="tel:7646028228" className="btn-gold rounded-xl text-base px-8 py-4 justify-center">
               📞 7646028228
+            </a>
+          </div>
+          <p className="text-white/40 text-xs mt-5">Packages from ₹85,000 · Up to 300 Guests · AC Hall · Theme Decor</p>
+        </div>
+      </section>
+
+      {/* Gallery strip */}
+      <section className="py-10 px-4 bg-[var(--ivory)]">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 auto-rows-[180px]">
+            {[
+              { src: '/venue-2.jpg', label: 'Birthday Party Setup', span: 'col-span-2 row-span-2' },
+              { src: '/gallery-selfie-point-1.jpg', label: 'Selfie Point' },
+              { src: '/gallery-selfie-point-2.jpg', label: 'Selfie Corner' },
+              { src: '/gallery-banquet-interior.jpg', label: 'Banquet Hall Interior' },
+              { src: '/gallery-banquet-hall-main.jpg', label: 'Grand Hall' },
+            ].map(p => (
+              <div key={p.src} className={`relative rounded-2xl overflow-hidden shadow-md group ${'span' in p ? p.span : ''}`}>
+                <Image src={p.src} alt={p.label} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="(max-width: 768px) 50vw, 25vw" />
+                <div className="overlay" />
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-5">
+            <a href="/gallery" className="text-[var(--gold)] text-sm font-semibold hover:text-[var(--gold-dark)] transition-colors">
+              View Full Gallery →
             </a>
           </div>
         </div>
       </section>
 
-      {/* Why us for birthday */}
-      <section className="py-14 px-4">
+      {/* Why us */}
+      <section className="py-14 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#7B1818] mb-10">Why Celebrate Here?</h2>
+          <AnimateOnScroll className="text-center mb-10">
+            <p className="section-label mb-2">All Included</p>
+            <h2 className="font-[var(--font-playfair)] text-3xl font-bold text-[var(--black)]">Why Celebrate Here?</h2>
+            <div className="gold-line mt-3" />
+          </AnimateOnScroll>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
             {[
               { icon: '🎨', label: 'Custom Theme Decor' },
@@ -119,63 +155,71 @@ export default function BirthdayPage() {
               { icon: '🎵', label: 'DJ & Music' },
               { icon: '📸', label: 'Photography' },
               { icon: '🎁', label: 'Return Gifts Setup' },
-            ].map((f) => (
-              <div key={f.label} className="card-hover bg-white rounded-xl p-6 text-center shadow-sm border border-gray-100">
-                <div className="text-4xl mb-3">{f.icon}</div>
-                <p className="font-semibold text-[#7B1818] text-sm">{f.label}</p>
-              </div>
+            ].map((f, i) => (
+              <AnimateOnScroll key={f.label} delay={i * 70}>
+                <div className="card-hover bg-[var(--ivory)] rounded-2xl p-6 text-center border border-[var(--gold)]/10">
+                  <div className="text-4xl mb-3">{f.icon}</div>
+                  <p className="font-semibold text-[var(--maroon)] text-sm">{f.label}</p>
+                </div>
+              </AnimateOnScroll>
             ))}
           </div>
         </div>
       </section>
 
       {/* Packages */}
-      <section className="py-14 px-4 bg-[#FDF8F0]">
+      <section className="py-14 px-4 bg-[var(--ivory)]">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#7B1818] mb-2">Birthday Packages</h2>
-          <p className="text-center text-gray-500 mb-10 text-sm">All prices inclusive. Customization available.</p>
+          <AnimateOnScroll className="text-center mb-10">
+            <p className="section-label mb-2">Pricing</p>
+            <h2 className="font-[var(--font-playfair)] text-3xl font-bold text-[var(--black)]">Birthday Packages</h2>
+            <div className="gold-line mt-3 mb-3" />
+            <p className="text-[var(--black)]/50 text-sm">All prices inclusive · Customization available</p>
+          </AnimateOnScroll>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {packages.map((pkg) => (
-              <div
-                key={pkg.name}
-                className={`card-hover bg-white rounded-2xl shadow-md overflow-hidden border-2 ${pkg.popular ? 'border-[#C9A84C]' : 'border-gray-100'} relative`}
-              >
-                {pkg.popular && (
-                  <div className="absolute top-0 left-0 right-0 bg-[#C9A84C] text-[#5A0F0F] text-center text-xs font-bold py-1">
-                    MOST POPULAR
+            {packages.map((pkg, i) => (
+              <AnimateOnScroll key={pkg.name} delay={i * 100}>
+                <div className={`card-hover bg-white rounded-2xl shadow-md overflow-hidden border-2 ${pkg.popular ? 'border-[var(--gold)]' : 'border-[var(--gold)]/10'} relative flex flex-col`}>
+                  {pkg.popular && (
+                    <div className="bg-[var(--gold)] text-white text-center text-xs font-bold py-1.5 tracking-wider">
+                      ⭐ MOST POPULAR
+                    </div>
+                  )}
+                  <div className="p-6 flex flex-col flex-1">
+                    <h3 className="font-bold text-[var(--maroon)] text-xl mb-1">{pkg.name}</h3>
+                    <p className="text-3xl font-bold text-[var(--gold)] mb-1">{pkg.price}</p>
+                    <p className="text-[var(--black)]/45 text-sm mb-5">{pkg.capacity}</p>
+                    <ul className="space-y-2 mb-6 flex-1">
+                      {pkg.includes.map((item) => (
+                        <li key={item} className="text-sm text-[var(--black)]/60 flex gap-2">
+                          <span className="text-green-500 font-bold flex-shrink-0">✓</span> {item}
+                        </li>
+                      ))}
+                    </ul>
+                    <a
+                      href={`https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20${encodeURIComponent(pkg.name)}%20for%20Birthday%20Party`}
+                      target="_blank" rel="noopener noreferrer"
+                      className="block text-center w-full py-3 bg-[var(--maroon)] hover:bg-[var(--maroon-dark)] text-white rounded-xl text-sm font-bold transition-all hover:scale-[1.02]"
+                    >
+                      Book This Package →
+                    </a>
                   </div>
-                )}
-                <div className={`${pkg.popular ? 'mt-6' : ''} p-6`}>
-                  <h3 className="font-bold text-[#7B1818] text-xl mb-1">{pkg.name}</h3>
-                  <p className="text-3xl font-bold text-[#C9A84C] mb-1">{pkg.price}</p>
-                  <p className="text-gray-500 text-sm mb-5">{pkg.capacity}</p>
-                  <ul className="space-y-2 mb-6">
-                    {pkg.includes.map((item) => (
-                      <li key={item} className="text-sm text-gray-600 flex gap-2">
-                        <span className="text-green-500 font-bold">✓</span> {item}
-                      </li>
-                    ))}
-                  </ul>
-                  <a
-                    href={`https://wa.me/917646028228?text=Hello!%20I%20want%20to%20book%20${encodeURIComponent(pkg.name)}%20package%20for%20Birthday%20Party`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-center w-full py-3 bg-[#7B1818] hover:bg-[#5A0F0F] text-white rounded-lg text-sm font-bold transition-colors"
-                  >
-                    Book This Package
-                  </a>
                 </div>
-              </div>
+              </AnimateOnScroll>
             ))}
           </div>
-          <p className="text-center text-gray-400 text-xs mt-6">* Prices are indicative. Contact us for custom quotes.</p>
+          <p className="text-center text-[var(--black)]/35 text-xs mt-6">* Prices are indicative. Contact us for custom quotes.</p>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-16 px-4 bg-[#FDF8F0]">
+      <section className="py-16 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#7B1818] text-center mb-10">Frequently Asked Questions</h2>
+          <AnimateOnScroll className="text-center mb-10">
+            <p className="section-label mb-2">Common Questions</p>
+            <h2 className="font-[var(--font-playfair)] text-3xl font-bold text-[var(--black)]">Birthday Party FAQ</h2>
+            <div className="gold-line mt-3" />
+          </AnimateOnScroll>
           <div className="space-y-4">
             {[
               { q: 'What is the cost of birthday party hall in Patna?', a: 'Birthday packages at Sayamwar Hall start from ₹85,000 for up to 150 guests, up to ₹1,25,000 for up to 300 guests — including AC hall, theme decoration, DJ, and catering.' },
@@ -184,12 +228,12 @@ export default function BirthdayPage() {
               { q: 'Is food included in the birthday package?', a: 'Yes. Choose from Shagun (₹999/plate veg), Vivah (₹1,199/plate veg), or Swayamvar (₹1,399/plate veg). Non-veg options are also available.' },
               { q: 'Where is the birthday party hall near me in Patna?', a: 'Sayamwar Hall is at Gola Road, Adarsh Vihar Colony, Lane 5, near T Point, Danapur — accessible from Danapur, Boring Road, and Patna city centre.' },
             ].map((item) => (
-              <details key={item.q} className="bg-white rounded-xl shadow-sm border border-gray-100 group">
-                <summary className="px-6 py-4 font-semibold text-[#7B1818] cursor-pointer list-none flex justify-between items-center">
+              <details key={item.q} className="bg-[var(--ivory)] rounded-xl border border-[var(--gold)]/15 group">
+                <summary className="px-6 py-4 font-semibold text-[var(--maroon)] cursor-pointer list-none flex justify-between items-center">
                   {item.q}
-                  <span className="text-[#C9A84C] group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-3">▼</span>
+                  <span className="text-[var(--gold)] group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-3 text-sm">▼</span>
                 </summary>
-                <p className="px-6 pb-5 text-gray-600 text-sm leading-relaxed">{item.a}</p>
+                <p className="px-6 pb-5 text-[var(--black)]/60 text-sm leading-relaxed">{item.a}</p>
               </details>
             ))}
           </div>
@@ -197,13 +241,18 @@ export default function BirthdayPage() {
       </section>
 
       {/* Inquiry Form */}
-      <section className="py-16 px-4 bg-gradient-to-br from-[#5A0F0F] to-[#7B1818]">
+      <section className="py-16 px-4 bg-gradient-to-br from-[var(--maroon-dark)] to-[var(--maroon)]">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-white mb-2">Plan Your Birthday Party</h2>
-          <p className="text-center text-white/60 mb-10 text-sm">Tell us your requirements and get a custom quote</p>
-          <div className="bg-white rounded-2xl p-8 shadow-2xl">
-            <LeadForm eventType="Birthday Party" />
-          </div>
+          <AnimateOnScroll className="text-center mb-8">
+            <p className="section-label mb-2">Free Quote — No Obligation</p>
+            <h2 className="font-[var(--font-playfair)] text-3xl font-bold text-white">Plan Your Birthday Party</h2>
+            <p className="text-white/55 text-sm mt-3">Tell us your requirements and get a custom quote within the hour</p>
+          </AnimateOnScroll>
+          <AnimateOnScroll delay={100}>
+            <div className="bg-white rounded-2xl p-8 shadow-2xl">
+              <LeadForm eventType="Birthday Party" />
+            </div>
+          </AnimateOnScroll>
         </div>
       </section>
     </>
