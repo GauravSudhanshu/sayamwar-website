@@ -80,10 +80,10 @@ export default function ContactPage() {
                 <div>
                   <p className="font-bold text-[#7B1818] mb-1">Email Us</p>
                   <a
-                    href="mailto:sayamwarbanquetrooms@gmail.com"
+                    href="mailto:care@sayamwar.com"
                     className="text-base font-semibold text-gray-800 hover:text-[#7B1818] transition-colors break-all"
                   >
-                    sayamwarbanquetrooms@gmail.com
+                    care@sayamwar.com
                   </a>
                   <p className="text-gray-400 text-xs mt-1">We reply within a few hours</p>
                 </div>

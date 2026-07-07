@@ -95,7 +95,7 @@ const orgJsonLd = {
   url: 'https://sayamwar.com',
   logo: 'https://sayamwar.com/logo.png',
   telephone: '+917646028228',
-  email: 'sayamwarhall@gmail.com',
+  email: 'care@sayamwar.com',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Gola Road, Adarsh Vihar Colony, Lane Number 5, near T Point, beside Hotel King Regency',
@@ -119,7 +119,7 @@ const localBusinessJsonLd = {
   description: 'Best banquet hall and homestay in Patna & Danapur. Low budget event packages for weddings, receptions, birthdays, engagements and corporate events. AC hall for 200–300 guests. On-site guest rooms from ₹1,500/night.',
   url: 'https://sayamwar.com',
   telephone: '+917646028228',
-  email: 'sayamwarhall@gmail.com',
+  email: 'care@sayamwar.com',
   priceRange: '₹₹',
   image: [
     'https://sayamwar.com/hero-bg.jpg',

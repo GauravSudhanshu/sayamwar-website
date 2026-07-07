@@ -35,7 +35,7 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
           food_preference: form.food, budget: form.budget,
           message: form.message,
           _subject: `New Inquiry: ${form.event || 'General'} — ${form.name}`,
-          _replyto: 'sayamwarbanquetrooms@gmail.com',
+          _replyto: 'care@sayamwar.com',
         }),
       }),
     ])
