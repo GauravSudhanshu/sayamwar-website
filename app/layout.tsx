@@ -193,6 +193,10 @@ const localBusinessJsonLd = {
   areaServed: [
     { '@type': 'City', name: 'Patna' },
     { '@type': 'City', name: 'Danapur' },
+    { '@type': 'Place', name: 'Bailey Road' },
+    { '@type': 'Place', name: 'Saguna More' },
+    { '@type': 'Place', name: 'Khagaul' },
+    { '@type': 'Place', name: 'Phulwari Sharif' },
   ],
   keywords: 'banquet hall patna, wedding venue patna, birthday party hall patna, engagement hall patna, reception hall patna, cheap banquet hall patna, banquet hall danapur, rooms in patna',
 }

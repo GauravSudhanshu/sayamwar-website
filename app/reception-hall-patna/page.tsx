@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
 import LeadForm from '@/components/LeadForm'
+import RelatedPages from '@/components/RelatedPages'
 
 export const metadata: Metadata = {
   title: 'Reception Hall in Patna | Wedding Reception Venue Danapur | Sayamwar Hall',
@@ -333,6 +334,13 @@ export default function ReceptionHallPage() {
           </div>
         </div>
       </section>
+
+      <RelatedPages links={[
+        { href: '/wedding-venue-patna', label: 'Wedding Venue in Patna' },
+        { href: '/engagement-hall-patna', label: 'Engagement Hall in Patna' },
+        { href: '/rooms-in-patna', label: 'Rooms in Patna' },
+        { href: '/packages', label: 'Packages & Pricing' },
+      ]} />
 
       {/* Lead Form */}
       <section className="py-16 px-4 bg-gradient-to-br from-[#5A0F0F] to-[#7B1818]">

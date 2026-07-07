@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import LeadForm from '@/components/LeadForm'
 import AnimateOnScroll from '@/components/AnimateOnScroll'
+import RelatedPages from '@/components/RelatedPages'
 
 const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
@@ -247,6 +248,13 @@ export default function WeddingVenuePage() {
           </div>
         </div>
       </section>
+
+      <RelatedPages links={[
+        { href: '/reception-hall-patna', label: 'Reception Hall in Patna' },
+        { href: '/engagement-hall-patna', label: 'Engagement Hall in Patna' },
+        { href: '/rooms-in-patna', label: 'Rooms in Patna' },
+        { href: '/packages', label: 'Packages & Pricing' },
+      ]} />
 
       {/* Inquiry Form */}
       <section className="py-16 px-4 bg-gradient-to-br from-[var(--maroon-dark)] to-[var(--maroon)]">

@@ -76,6 +76,14 @@ const homeFaqJsonLd = {
         text: 'Yes, ample parking is available on-site for guests. The venue is located on Gola Road, Danapur with easy access from Danapur railway station, Boring Road, and NH-30.',
       },
     },
+    {
+      '@type': 'Question',
+      name: 'Is Sayamwar Hall easy to reach from Khagaul, Phulwari Sharif, Saguna More or Bailey Road?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. Sayamwar Hall on Gola Road, Danapur is a short drive from Khagaul, Phulwari Sharif, Saguna More and Bailey Road — most guests from these areas reach us within 15–25 minutes.',
+      },
+    },
   ],
 }
 
@@ -167,6 +175,10 @@ const faqs = [
     a: 'Yes, ample free parking is available on-site for all guests. The venue is on Gola Road with easy vehicle access from NH-30, Boring Road, and Danapur station.',
   },
   {
+    q: 'Is Sayamwar Hall easy to reach from Khagaul, Phulwari Sharif, Saguna More or Bailey Road?',
+    a: 'Yes. We regularly host guests from Khagaul, Phulwari Sharif, Saguna More and Bailey Road — all within a 15–25 minute drive of our Gola Road location in Danapur.',
+  },
+  {
     q: 'Can you host corporate events and birthday parties?',
     a: 'Yes. We host weddings, receptions, engagements, birthday parties, corporate events, and private gatherings. The hall is available 24 hours with flexible booking slots.',
   },
@@ -198,7 +210,7 @@ export default async function HomePage() {
 
           {/* Main SEO heading */}
           <h1 className="anim-1 font-[var(--font-playfair)] leading-[1.15] mb-4 md:mb-5">
-            <span className="block text-2xl sm:text-3xl md:text-4xl font-normal text-white/90 mb-2">Best Banquet Hall in Patna</span>
+            <span className="block text-2xl sm:text-3xl md:text-4xl font-normal text-white/90 mb-2">Best Banquet Hall &amp; Wedding Venue in Patna</span>
             <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold gold-shimmer">For Weddings & Events</span>
           </h1>
 
@@ -305,7 +317,7 @@ export default async function HomePage() {
               Sayamwar Hall &amp; Homestay is Danapur, Patna&apos;s most trusted banquet hall — a fully AC hall for 200–300 guests with crystal chandeliers, LED ambience, and all-inclusive packages that cover everything from decoration to catering.
             </p>
             <p className="text-[var(--black)]/60 text-base leading-relaxed mb-10">
-              Conveniently located on Gola Road, 5 minutes from Danapur railway station. Open 24 hours, 7 days. Over <strong>500 successful events</strong> hosted since inception.
+              Conveniently located on Gola Road, 5 minutes from Danapur railway station and easily reachable from Bailey Road, Saguna More, Khagaul and Phulwari Sharif. Open 24 hours, 7 days. Over <strong>500 successful events</strong> hosted since inception.
             </p>
             <div className="grid grid-cols-2 gap-5 mb-10">
               {[

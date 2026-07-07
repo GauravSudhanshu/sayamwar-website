@@ -189,6 +189,7 @@ export default function CheapBanquetHallPatnaPage() {
           <Link href="/banquet-hall-patna" className="hover:text-[#C9A84C] transition-colors">Banquet Hall Patna</Link>
           <Link href="/banquet-hall-danapur" className="hover:text-[#C9A84C] transition-colors">Banquet Hall Danapur</Link>
           <Link href="/wedding-venue-patna" className="hover:text-[#C9A84C] transition-colors">Wedding Venue Patna</Link>
+          <Link href="/rooms-in-patna" className="hover:text-[#C9A84C] transition-colors">Rooms in Patna</Link>
           <Link href="/packages" className="hover:text-[#C9A84C] transition-colors">View All Packages</Link>
         </div>
       </section>

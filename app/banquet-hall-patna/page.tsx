@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import LeadForm from '@/components/LeadForm'
+import RelatedPages from '@/components/RelatedPages'
 
 export const metadata: Metadata = {
   title: 'Best Banquet Hall in Patna | Low Budget | AC Hall for 300 Guests | Sayamwar Hall',
@@ -213,6 +214,13 @@ export default function BanquetHallPage() {
           </div>
         </div>
       </section>
+
+      <RelatedPages links={[
+        { href: '/wedding-venue-patna', label: 'Wedding Venue in Patna' },
+        { href: '/birthday-party-hall-patna', label: 'Birthday Party Hall' },
+        { href: '/rooms-in-patna', label: 'Rooms in Patna' },
+        { href: '/packages', label: 'Packages & Pricing' },
+      ]} />
 
       {/* Booking form */}
       <section className="py-16 px-4 bg-gradient-to-br from-[#5A0F0F] to-[#7B1818]">
