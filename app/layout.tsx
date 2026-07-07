@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FloatingButtons from '@/components/FloatingButtons'
 import ExitIntentPopup from '@/components/ExitIntentPopup'
+import ConversionTracker from '@/components/ConversionTracker'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -219,6 +220,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer className="pb-16 md:pb-0" />
         <FloatingButtons />
         <ExitIntentPopup />
+        <ConversionTracker />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-VXSY95P5SF" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
