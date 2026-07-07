@@ -125,7 +125,7 @@ export const posts: BlogPost[] = [
     readTime: '5 min read',
     category: 'Birthday',
     image: '/venue-2.jpg',
-    keywords: 'birthday party ideas patna, birthday party hall patna, birthday venue danapur, birthday party planning patna',
+    keywords: 'birthday party ideas patna, birthday party hall patna, birthday venue danapur, birthday party planning patna, anniversary party hall in patna, anniversary celebration venue patna',
     content: [
       { type: 'p', text: 'Birthdays deserve more than a cake and balloons at home. Whether you\'re planning a kids\' party, a milestone celebration, or an adult birthday bash in Patna, here are 10 ideas to make it truly memorable.' },
       { type: 'h2', text: '1. Choose a Theme and Stick to It' },
@@ -153,7 +153,9 @@ export const posts: BlogPost[] = [
       { type: 'p', text: 'Return gifts don\'t have to be expensive. Personalised items — custom chocolates, name-printed mugs, photo frames, or plants — are memorable without being costly. Budget ₹100–₹300 per guest depending on your overall budget.' },
       { type: 'h2', text: '10. Book the Venue Early for Weekend Dates' },
       { type: 'p', text: 'Weekend dates at popular banquet halls in Patna fill up 2–3 months in advance, especially October to February. For a stress-free birthday party, finalize your venue first, then plan everything else around it.' },
-      { type: 'cta', text: 'View birthday party packages at Sayamwar Hall — starting from ₹85,000 for up to 300 guests.', href: '/birthday-party-hall-patna', label: 'See Birthday Packages' },
+      { type: 'h2', text: 'Bonus: Planning an Anniversary Instead? The Same Venue Works Beautifully' },
+      { type: 'p', text: 'Everything above applies just as well to an anniversary party hall in Patna — the theme changes, but the checklist doesn\'t. Couples celebrating a 25th or 50th anniversary often prefer a more formal, sit-down dinner setup over a dance-floor birthday vibe, with a renewal-of-vows moment or a photo montage in place of a surprise entry. Sayamwar Hall\'s AC banquet hall works for both — the same stage, catering, and décor team simply adjusts the tone for an anniversary celebration venue in Patna instead of a birthday bash.' },
+      { type: 'cta', text: 'View birthday and anniversary party packages at Sayamwar Hall — starting from ₹85,000 for up to 300 guests.', href: '/birthday-party-hall-patna', label: 'See Party Packages' },
     ],
   },
   {
@@ -164,7 +166,7 @@ export const posts: BlogPost[] = [
     readTime: '4 min read',
     category: 'Tips',
     image: '/venue-5.jpg',
-    keywords: 'booking banquet hall patna, tips banquet hall patna, checklist banquet hall patna, banquet hall guide patna',
+    keywords: 'booking banquet hall patna, tips banquet hall patna, checklist banquet hall patna, banquet hall guide patna, best marriage hall near me',
     content: [
       { type: 'p', text: 'Booking a banquet hall is one of the biggest decisions in event planning — and one of the most expensive. Mistakes here can cost ₹50,000–₹1,00,000 or ruin your event experience. Here\'s what to verify before you sign anything.' },
       { type: 'h2', text: '1. Confirm Exactly What\'s Included in the Package' },
@@ -191,6 +193,8 @@ export const posts: BlogPost[] = [
       { type: 'p', text: 'Photos and videos can be deceptive. Always visit the venue at a time when no event is happening so you can assess the true condition — cleanliness of washrooms, state of the AC units, quality of lighting, parking area size, and overall maintenance. Ask to see a recent event setup if possible.' },
       { type: 'h2', text: '5. Check Availability for Your Preferred Date Well in Advance' },
       { type: 'p', text: 'Premium dates — weekends between October and February, and auspicious muhurat dates — can be booked 6–12 months in advance at top venues in Patna. If you have a specific date in mind, start your venue search immediately. Waiting until 1–2 months before the event often means settling for your third or fourth choice.' },
+      { type: 'h2', text: 'How to Find the Best Marriage Hall Near You' },
+      { type: 'p', text: '"Best marriage hall near me" searches usually turn up a long list with little to separate one from another. Narrow it down with three filters before you start visiting venues: guest count you actually expect (not the maximum the hall can hold), distance from the railway station or highway your out-of-town guests will use, and whether the quoted price is per-plate or a flat package. Shortlist 3–4 venues that clear all three filters, then apply the checklist above to each before deciding.' },
       { type: 'h2', text: 'Bonus: Ask These Questions at Every Venue' },
       { type: 'ul', items: [
         '"Can I see an itemized quote, not a round-number total?"',
@@ -907,7 +911,7 @@ export const posts: BlogPost[] = [
     readTime: '5 min read',
     category: 'Local Guide',
     image: '/gallery-banquet-hall-main.jpg',
-    keywords: 'danapur patna event venue, banquet hall danapur, danapur railway station, rooms near danapur, event hall near danapur, danapur patna guide, gola road danapur, adarsh vihar danapur',
+    keywords: 'danapur patna event venue, banquet hall danapur, marriage hall in danapur, danapur railway station, rooms near danapur, event hall near danapur, danapur patna guide, gola road danapur, adarsh vihar danapur',
     content: [
       { type: 'p', text: 'When families in Bihar start planning a major event — wedding, reception, birthday, or corporate gathering — they typically think of Patna city first. But Danapur, just 15 km west of central Patna, has quietly become one of Bihar\'s best-connected and most cost-effective event destinations. Here\'s why.' },
 
@@ -964,7 +968,7 @@ export const posts: BlogPost[] = [
       ]},
 
       { type: 'h2', text: 'Sayamwar Hall & Homestay – Danapur\'s Premier Event Venue' },
-      { type: 'p', text: 'Located at Gola Road, Adarsh Vihar Colony, Lane 5 — near T Point, beside Hotel King Regency — Sayamwar Hall & Homestay is one of Danapur\'s top-rated event venues. The full address: Gola Road, Adarsh Vihar Colony, Lane Number 5, near T Point, beside Hotel King Regency, Danapur, Patna, Bihar 801503. Open 24 hours, 7 days. Call: 7646028228.' },
+      { type: 'p', text: 'Located at Gola Road, Adarsh Vihar Colony, Lane 5 — near T Point, beside Hotel King Regency — Sayamwar Hall & Homestay is one of Danapur\'s top-rated event venues. As a marriage hall in Danapur, it combines a full AC banquet hall with on-site homestay rooms — rare for a single venue in this price range. The full address: Gola Road, Adarsh Vihar Colony, Lane Number 5, near T Point, beside Hotel King Regency, Danapur, Patna, Bihar 801503. Open 24 hours, 7 days. Call: 7646028228.' },
 
       { type: 'cta', text: 'Book an event or stay at Sayamwar Hall — Danapur\'s best-connected venue on Gola Road, just 5 minutes from Danapur station.', href: '/contact', label: 'Check Availability' },
     ],
@@ -977,7 +981,7 @@ export const posts: BlogPost[] = [
     readTime: '5 min read',
     category: 'Wedding',
     image: '/gallery-indoor-mandap.jpg',
-    keywords: 'wedding package patna 150000, best banquet hall patna offer, luxury decoration wedding patna, wedding hall with homestay patna, affordable wedding venue danapur, sayamwar hall wedding offer, banquet hall offer patna, cheap wedding hall patna with decoration',
+    keywords: 'wedding package patna 150000, best banquet hall patna offer, luxury decoration wedding patna, luxury wedding venue in patna, wedding venue with catering in patna, wedding hall with homestay patna, affordable wedding venue danapur, sayamwar hall wedding offer, banquet hall offer patna, cheap wedding hall patna with decoration',
     content: [
       { type: 'p', text: 'Planning a wedding in Patna does not have to cost a fortune. At Sayamwar Hall & Homestay in Danapur, we are offering a complete, all-inclusive wedding package at ₹1,50,000 — covering the grand AC banquet hall, luxury stage and mandap decoration, full dinner catering, DJ and sound system, and on-site homestay rooms for your family. Everything in one place, at one honest price.' },
 
@@ -1019,6 +1023,10 @@ export const posts: BlogPost[] = [
         'Open 24 hours — no time restrictions on your event',
         'Located on Gola Road, Danapur — 5 minutes from Danapur railway station, 20 minutes from Patna Junction',
       ]},
+
+      { type: 'h2', text: 'A Luxury Wedding Venue in Patna — With Catering Included' },
+      { type: 'p', text: 'Many venues that call themselves "luxury" charge separately for hall rental, decoration, and catering — and the final bill often runs well past the quoted price. Sayamwar Hall is a luxury wedding venue in Patna where catering is part of the package from the start, not an add-on negotiated later. Your ₹1,50,000 already includes a full dinner buffet, so there is no separate catering vendor to coordinate, no per-plate haggling closer to the date, and no risk of your caterer and venue disagreeing on setup timing.' },
+      { type: 'p', text: 'For families who want to upgrade the menu, the Vivah (₹1,199/plate) and Swayamvar (₹1,399/plate) menus add live counters and a wider non-veg spread — while keeping the same one-vendor, one-bill simplicity.' },
 
       { type: 'h2', text: 'Homestay Rooms — Keep the Whole Family Together' },
       { type: 'p', text: 'One of the biggest advantages of Sayamwar Hall is the attached homestay. The ₹1,50,000 wedding package includes 4 rooms — and additional rooms are available at preferential rates for event families:' },
