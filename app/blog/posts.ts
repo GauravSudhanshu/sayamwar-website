@@ -1211,6 +1211,41 @@ export const posts: BlogPost[] = [
       { type: 'cta', text: 'Book Sayamwar Hall on Gola Road, Danapur — Patna\'s most trusted banquet hall. Call or WhatsApp: 7646028228.', href: '/contact', label: 'Check Availability' },
     ],
   },
+  {
+    slug: 'sayamwar-hall-in-patna-first-look',
+    title: 'Sayamwar Hall in Patna – A First Look Inside Danapur\'s Most-Loved Banquet Venue',
+    excerpt: 'From the fairy-lit entrance to the fully AC banquet hall, here\'s what to expect at Sayamwar Hall & Homestay — one of the best banquet halls in Patna and a top wedding venue in Danapur.',
+    date: '2026-07-09',
+    readTime: '4 min read',
+    category: 'Banquet Hall',
+    image: '/sayamwar-hall-night-entrance.jpg',
+    keywords: 'sayamwar hall patna, banquet hall in patna, best banquet hall in patna, wedding venue in patna, marriage hall in danapur, ac banquet hall in patna, banquet hall with rooms in patna, banquet hall gola road patna',
+    content: [
+      { type: 'p', text: 'Photos rarely do a venue justice — but this one comes close. Walk up to Sayamwar Hall & Homestay on any wedding night and the first thing you notice is the building itself, wrapped floor to roof in warm fairy lights, with a fresh floral arch marking the entrance. This is what a banquet hall in Patna looks like when it\'s dressed for a celebration.' },
+
+      { type: 'h2', text: 'First Impressions: The Entrance' },
+      { type: 'p', text: 'The Sayamwar Hall & Homestay signage glows above a multi-storey glass-and-white facade, with curtain lights cascading down every level. At ground level, guests walk through a rose-and-marigold arch into the lobby — the same spot where couples take their first welcome photos of the evening. It sets the tone before guests even reach the hall: this is a wedding venue in Patna built for occasions that deserve to be photographed.' },
+
+      { type: 'h2', text: 'Inside the AC Banquet Hall' },
+      { type: 'p', text: 'Past the entrance, the hall itself is fully air-conditioned and built to hold 200–300 guests comfortably — crystal chandeliers, LED ambience lighting, and a stage sized for a full mandap or DJ console setup. As an AC banquet hall in Patna, it\'s designed to stay cool through Bihar\'s peak wedding season (October–February) as well as the hotter months, when guests are dressed in heavy sherwanis and lehengas for hours at a stretch.' },
+
+      { type: 'h2', text: 'A Marriage Hall in Danapur With Rooms Attached' },
+      { type: 'p', text: 'What sets Sayamwar Hall apart from most banquet halls in Patna is what\'s attached to it: an on-site homestay. As a banquet hall with rooms in Patna, it means the family doesn\'t have to travel across the city after the reception — Standard, Deluxe AC, and Premium Suite rooms are all a short walk from the hall itself. For a marriage hall in Danapur hosting guests from Muzaffarpur, Ara, Bhagalpur or further, that\'s one less logistics headache on an already busy day.' },
+
+      { type: 'h2', text: 'Location: Gola Road, Danapur' },
+      { type: 'p', text: 'Sayamwar Hall & Homestay sits on Gola Road, Adarsh Vihar Colony, Lane Number 5 — near T Point, beside Hotel King Regency, Danapur, Patna, Bihar 801503. It\'s about 5 minutes from Danapur Railway Station and 20–25 minutes from Patna Junction, making it easy for both local guests and out-of-town family to reach.' },
+
+      { type: 'h2', text: 'What Events Happen Here?' },
+      { type: 'ul', items: [
+        'Weddings and receptions — full mandap, stage decor, and catering',
+        'Birthday parties — themed setups for kids to milestone birthdays',
+        'Engagement and ring ceremonies',
+        'Corporate events — conferences, annual dinners, team gatherings',
+      ]},
+
+      { type: 'cta', text: 'See the hall for yourself — book a site visit or check date availability at Sayamwar Hall, Danapur.', href: '/wedding-venue-patna', label: 'Check Date Availability' },
+    ],
+  },
 ]
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
