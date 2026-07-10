@@ -218,7 +218,7 @@ export default function BanquetHallPage() {
       <RelatedPages links={[
         { href: '/wedding-venue-patna', label: 'Wedding Venue in Patna' },
         { href: '/birthday-party-hall-patna', label: 'Birthday Party Hall' },
-        { href: '/rooms-in-patna', label: 'Rooms in Patna' },
+        { href: '/rooms', label: 'Rooms in Patna' },
         { href: '/packages', label: 'Packages & Pricing' },
       ]} />
 

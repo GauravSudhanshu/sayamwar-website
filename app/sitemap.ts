@@ -13,7 +13,6 @@ const pagePriorities: Record<string, number> = {
   '/banquet-hall-danapur': 0.85,
   '/blog': 0.85,
   '/rooms': 0.8,
-  '/rooms-in-patna': 0.8,
   '/packages': 0.8,
   '/gallery': 0.7,
   '/menu': 0.6,

@@ -223,7 +223,7 @@ export default function CorporateEventHallPage() {
             <Link href="/wedding-venue-patna" className="text-[#7B1818] hover:text-[#C9A84C] font-medium transition-colors">Wedding Venue Patna</Link>
             <Link href="/birthday-party-hall-patna" className="text-[#7B1818] hover:text-[#C9A84C] font-medium transition-colors">Birthday Party Hall</Link>
             <Link href="/engagement-hall-patna" className="text-[#7B1818] hover:text-[#C9A84C] font-medium transition-colors">Engagement Hall</Link>
-            <Link href="/rooms-in-patna" className="text-[#7B1818] hover:text-[#C9A84C] font-medium transition-colors">Rooms in Patna</Link>
+            <Link href="/rooms" className="text-[#7B1818] hover:text-[#C9A84C] font-medium transition-colors">Rooms in Patna</Link>
             <Link href="/packages" className="text-[#7B1818] hover:text-[#C9A84C] font-medium transition-colors">View All Packages</Link>
           </div>
         </div>

@@ -244,7 +244,7 @@ export default function BirthdayPage() {
       <RelatedPages links={[
         { href: '/engagement-hall-patna', label: 'Engagement Hall in Patna' },
         { href: '/banquet-hall-patna', label: 'Banquet Hall in Patna' },
-        { href: '/rooms-in-patna', label: 'Rooms in Patna' },
+        { href: '/rooms', label: 'Rooms in Patna' },
         { href: '/packages', label: 'Packages & Pricing' },
       ]} />
 

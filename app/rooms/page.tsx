@@ -89,6 +89,33 @@ const lodgingJsonLd = {
   },
 }
 
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Where can I find budget rooms in Patna?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Sayamwar Homestay in Danapur, Patna offers budget rooms starting from ₹1,500 per night. All rooms include clean linen, attached bathroom, and 24-hour hot water. Located on Gola Road, Danapur — easily accessible from Patna Junction, Boring Road and Danapur railway station.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the price of rooms at Sayamwar Homestay Patna?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Sayamwar Homestay offers three room types: Standard Room at ₹1,500/night, Deluxe AC Room at ₹1,800/night, and Premium AC Suite at ₹2,500/night. All rooms include free Wi-Fi, parking, and 24-hour check-in.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is 24-hour check-in available at Sayamwar Homestay?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes, Sayamwar Homestay is open 24 hours, 7 days a week. You can check in at any time — day or night. Call 7646028228 for late-night check-in arrangements.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Are AC rooms available in Danapur Patna?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes, Sayamwar Homestay offers fully air-conditioned Deluxe AC Rooms at ₹1,800/night and Premium AC Suites at ₹2,500/night in Danapur, Patna. Both include TV, free Wi-Fi, and attached bathroom.' },
+    },
+  ],
+}
+
 const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -131,6 +158,7 @@ export default function RoomsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(lodgingJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Hero */}
       <section className="relative py-28 px-4 text-center text-white overflow-hidden">
@@ -221,6 +249,27 @@ export default function RoomsPage() {
               ))}
             </div>
           </AnimateOnScroll>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <AnimateOnScroll className="text-center mb-10">
+            <h2 className="font-[var(--font-playfair)] text-3xl font-bold text-[#3D0A0A]">Frequently Asked Questions</h2>
+            <div className="gold-divider" />
+          </AnimateOnScroll>
+          <div className="space-y-4">
+            {faqJsonLd.mainEntity.map((faq) => (
+              <details key={faq.name} className="bg-[#FDF8F0] rounded-xl border border-[#C9A84C]/20 group">
+                <summary className="p-5 font-semibold text-[#7B1818] cursor-pointer list-none flex justify-between items-center">
+                  {faq.name}
+                  <span className="text-[#C9A84C] group-open:rotate-180 transition-transform duration-300 flex-shrink-0 ml-3">▼</span>
+                </summary>
+                <p className="px-5 pb-5 text-gray-600 text-sm leading-relaxed">{faq.acceptedAnswer.text}</p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 

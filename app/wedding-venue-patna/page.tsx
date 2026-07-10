@@ -252,7 +252,7 @@ export default function WeddingVenuePage() {
       <RelatedPages links={[
         { href: '/reception-hall-patna', label: 'Reception Hall in Patna' },
         { href: '/engagement-hall-patna', label: 'Engagement Hall in Patna' },
-        { href: '/rooms-in-patna', label: 'Rooms in Patna' },
+        { href: '/rooms', label: 'Rooms in Patna' },
         { href: '/packages', label: 'Packages & Pricing' },
       ]} />
 
