@@ -16,6 +16,17 @@ export function trackLead(eventName: string, params: Record<string, string> = {}
   })
 }
 
+// Fires a Google Ads conversion. Callers must only invoke this after a
+// confirmed successful submission — never on page load, click, or failure.
+export function trackAdsConversion(sendTo: string) {
+  if (typeof window === 'undefined' || !window.gtag) {
+    console.warn('[ads-conversion] skipped: gtag not available')
+    return
+  }
+  console.log('[ads-conversion] firing', sendTo)
+  window.gtag('event', 'conversion', { send_to: sendTo })
+}
+
 // Fires a GA4 event whenever a visitor clicks any WhatsApp (wa.me) or tel: link
 // anywhere on the site, without needing to instrument every CTA individually.
 export default function ConversionTracker() {

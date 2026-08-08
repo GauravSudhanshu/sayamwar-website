@@ -1,11 +1,13 @@
 'use client'
 import { useState } from 'react'
+import { trackAdsConversion } from './ConversionTracker'
 
 interface LeadFormProps {
   eventType?: string
 }
 
 const FORMSPREE_ID = 'xbdeqoln'
+const ADS_CONVERSION_SEND_TO = 'AW-18212601463/fDLjCNncpt4cEPf8uOxD' // "Submit lead form (2)"
 
 export default function LeadForm({ eventType = '' }: LeadFormProps) {
   const [form, setForm] = useState({
@@ -19,7 +21,7 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
     e.preventDefault()
     setLoading(true)
 
-    await Promise.allSettled([
+    const [inquiryResult] = await Promise.allSettled([
       fetch('/api/inquiries', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -38,6 +40,20 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
         }),
       }),
     ])
+
+    let inquirySucceeded = false
+    if (inquiryResult.status === 'fulfilled' && inquiryResult.value.ok) {
+      try {
+        const data = await inquiryResult.value.json()
+        inquirySucceeded = data.ok === true
+      } catch {
+        inquirySucceeded = false
+      }
+    }
+
+    if (inquirySucceeded) {
+      trackAdsConversion(ADS_CONVERSION_SEND_TO)
+    }
 
     const msg = encodeURIComponent(
       `Hello! I want to enquire about Sayamwar Hall & Homestay.\n` +
