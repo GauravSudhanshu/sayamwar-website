@@ -1,6 +1,5 @@
 'use client'
 import { useState } from 'react'
-import { trackLead } from './ConversionTracker'
 
 interface LeadFormProps {
   eventType?: string
@@ -51,7 +50,6 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
       `Budget: ${form.budget || 'Not specified'}\n` +
       `Message: ${form.message}`
     )
-    trackLead('generate_lead', { event_type: form.event || 'unspecified' })
     window.open(`https://wa.me/917646028228?text=${msg}`, '_blank')
 
     setLoading(false)
