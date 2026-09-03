@@ -10,6 +10,8 @@ export interface Inquiry {
   event: string
   date: string
   guests: string
+  food: string
+  budget: string
   message: string
   status: InquiryStatus
   source: InquirySource
