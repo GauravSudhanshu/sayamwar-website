@@ -6,6 +6,7 @@ import type { Inquiry, InquiryStatus } from '@/lib/inquiries'
 const STATUS_LABELS: Record<InquiryStatus, string> = {
   new: 'New',
   contacted: 'Contacted',
+  qualified: 'Qualified',
   booked: 'Booked',
   declined: 'Declined',
 }
@@ -13,6 +14,7 @@ const STATUS_LABELS: Record<InquiryStatus, string> = {
 const STATUS_COLORS: Record<InquiryStatus, string> = {
   new: 'bg-red-100 text-red-700',
   contacted: 'bg-yellow-100 text-yellow-700',
+  qualified: 'bg-blue-100 text-blue-700',
   booked: 'bg-green-100 text-green-700',
   declined: 'bg-gray-100 text-gray-500',
 }
@@ -21,6 +23,7 @@ const FILTERS: { label: string; value: InquiryStatus | 'all' }[] = [
   { label: 'All', value: 'all' },
   { label: 'New', value: 'new' },
   { label: 'Contacted', value: 'contacted' },
+  { label: 'Qualified', value: 'qualified' },
   { label: 'Booked', value: 'booked' },
   { label: 'Declined', value: 'declined' },
 ]
@@ -50,7 +53,6 @@ export default function InquiryTable({ inquiries: initial }: { inquiries: Inquir
 
   return (
     <div className="space-y-4">
-      {/* Filter tabs */}
       <div className="flex gap-2 flex-wrap">
         {FILTERS.map(f => (
           <button
@@ -67,9 +69,7 @@ export default function InquiryTable({ inquiries: initial }: { inquiries: Inquir
         ))}
       </div>
 
-      {/* Table */}
       <div className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
-        {/* Desktop table */}
         <div className="hidden md:block overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
@@ -131,17 +131,28 @@ export default function InquiryTable({ inquiries: initial }: { inquiries: Inquir
                     </td>
                   </tr>
 
-                  {/* Expanded row */}
                   {expanded === inq.id && (
                     <tr key={`${inq.id}-exp`} className="bg-gray-50">
                       <td colSpan={7} className="px-5 py-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          {inq.message && (
-                            <div>
-                              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Message</p>
-                              <p className="text-sm text-gray-700">{inq.message}</p>
+                          <div className="space-y-3">
+                            {inq.message && (
+                              <div>
+                                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-1">Message</p>
+                                <p className="text-sm text-gray-700">{inq.message}</p>
+                              </div>
+                            )}
+                            <div className="grid grid-cols-2 gap-3">
+                              <div>
+                                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Budget</p>
+                                <p className="text-sm text-gray-700 mt-1">{inq.budget || '—'}</p>
+                              </div>
+                              <div>
+                                <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Food</p>
+                                <p className="text-sm text-gray-700 mt-1">{inq.food || '—'}</p>
+                              </div>
                             </div>
-                          )}
+                          </div>
                           <div>
                             <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Update Status</p>
                             <div className="flex flex-wrap gap-2">
@@ -171,7 +182,6 @@ export default function InquiryTable({ inquiries: initial }: { inquiries: Inquir
           </table>
         </div>
 
-        {/* Mobile cards */}
         <div className="md:hidden divide-y divide-gray-100">
           {filtered.map(inq => (
             <div key={inq.id} className="p-4 space-y-3">
@@ -191,6 +201,10 @@ export default function InquiryTable({ inquiries: initial }: { inquiries: Inquir
                 <span>{inq.date || '—'}</span>
                 <span className="text-gray-400 text-xs">Guests</span>
                 <span>{inq.guests || '—'}</span>
+                <span className="text-gray-400 text-xs">Budget</span>
+                <span>{inq.budget || '—'}</span>
+                <span className="text-gray-400 text-xs">Food</span>
+                <span>{inq.food || '—'}</span>
                 <span className="text-gray-400 text-xs">Received</span>
                 <span>{new Date(inq.createdAt).toLocaleDateString('en-IN')}</span>
               </div>
