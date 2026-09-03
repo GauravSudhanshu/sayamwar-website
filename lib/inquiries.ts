@@ -1,6 +1,6 @@
 import { kvGet, kvSet, kvLPush, kvLRange, kvLLen } from './kv'
 
-export type InquiryStatus = 'new' | 'contacted' | 'booked' | 'declined'
+export type InquiryStatus = 'new' | 'contacted' | 'qualified' | 'booked' | 'declined'
 export type InquirySource = 'lead-form' | 'exit-popup'
 
 export interface Inquiry {
