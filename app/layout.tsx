@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import FloatingButtons from '@/components/FloatingButtons'
 import ExitIntentPopup from '@/components/ExitIntentPopup'
 import ConversionTracker from '@/components/ConversionTracker'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -225,6 +226,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <FloatingButtons />
         <ExitIntentPopup />
         <ConversionTracker />
+        <SpeedInsights />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-VXSY95P5SF" strategy="afterInteractive" />
         <Script id="google-analytics" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
