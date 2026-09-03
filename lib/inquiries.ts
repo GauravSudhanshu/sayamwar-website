@@ -16,6 +16,8 @@ export interface Inquiry {
   status: InquiryStatus
   source: InquirySource
   createdAt: string
+  clientId?: string
+  qualifiedLeadTrackedAt?: string
 }
 
 const INQUIRIES_LIST = 'inquiries:list'
@@ -46,10 +48,24 @@ export async function getInquiries(): Promise<Inquiry[]> {
   }
 }
 
+export async function getInquiry(id: string): Promise<Inquiry | null> {
+  return kvGet<Inquiry>(INQUIRY_KEY(id))
+}
+
 export async function updateInquiryStatus(id: string, status: InquiryStatus): Promise<void> {
-  const inquiry = await kvGet<Inquiry>(INQUIRY_KEY(id))
+  const inquiry = await getInquiry(id)
   if (inquiry) {
     await kvSet(INQUIRY_KEY(id), { ...inquiry, status })
+  }
+}
+
+export async function markQualifiedLeadTracked(id: string): Promise<void> {
+  const inquiry = await getInquiry(id)
+  if (inquiry && !inquiry.qualifiedLeadTrackedAt) {
+    await kvSet(INQUIRY_KEY(id), {
+      ...inquiry,
+      qualifiedLeadTrackedAt: new Date().toISOString(),
+    })
   }
 }
 
