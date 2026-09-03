@@ -43,7 +43,7 @@ async function trackServerLead(clientId: string, eventType: string, source: stri
 export async function POST(request: Request) {
   try {
     const body = await request.json()
-    const { name, phone, event, date, guests, message, source } = body
+    const { name, phone, event, date, guests, food, budget, message, source } = body
 
     await saveInquiry({
       name: String(name ?? ''),
@@ -51,6 +51,8 @@ export async function POST(request: Request) {
       event: String(event ?? ''),
       date: String(date ?? ''),
       guests: String(guests ?? ''),
+      food: String(food ?? ''),
+      budget: String(budget ?? ''),
       message: String(message ?? ''),
       source: (source as InquirySource) ?? 'lead-form',
     })
