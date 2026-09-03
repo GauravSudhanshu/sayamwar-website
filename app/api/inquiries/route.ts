@@ -5,9 +5,11 @@ const GA4_MEASUREMENT_ID = process.env.GA4_MEASUREMENT_ID
 const GA4_API_SECRET = process.env.GA4_API_SECRET
 
 // GA4's _ga cookie looks like "GA1.1.<client_id>" — client_id is the last two dot-separated segments.
-function getGaClientId(cookieHeader: string | null): string {
-  const match = cookieHeader?.match(/_ga=GA\d\.\d\.(\d+\.\d+)/)
-  return match?.[1] ?? `${Date.now()}.${Math.floor(Math.random() * 1e10)}`
+// Return null when the browser did not provide the cookie; a generated ID must not be
+// persisted because it would not represent the visitor's real GA4 identity.
+function getGaClientId(cookieHeader: string | null): string | null {
+  const match = cookieHeader?.match(/(?:^|;\s*)_ga=GA\d\.\d\.(\d+\.\d+)/)
+  return match?.[1] ?? null
 }
 
 // Fires the lead conversion server-side via the GA4 Measurement Protocol so it
@@ -44,6 +46,7 @@ export async function POST(request: Request) {
   try {
     const body = await request.json()
     const { name, phone, event, date, guests, food, budget, message, source } = body
+    const clientId = getGaClientId(request.headers.get('cookie'))
 
     await saveInquiry({
       name: String(name ?? ''),
@@ -55,9 +58,14 @@ export async function POST(request: Request) {
       budget: String(budget ?? ''),
       message: String(message ?? ''),
       source: (source as InquirySource) ?? 'lead-form',
+      ...(clientId ? { clientId } : {}),
     })
 
-    await trackServerLead(getGaClientId(request.headers.get('cookie')), String(event ?? ''), String(source ?? 'lead-form'))
+    if (clientId) {
+      await trackServerLead(clientId, String(event ?? ''), String(source ?? 'lead-form'))
+    } else {
+      console.warn('[generate_lead] skipped: no GA client ID cookie found')
+    }
 
     return NextResponse.json({ ok: true })
   } catch {
