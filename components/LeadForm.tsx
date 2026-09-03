@@ -108,8 +108,12 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <select value={form.event} onChange={(e) => setForm({ ...form, event: e.target.value })} className="luxury-input">
-          <option value="">Event Type</option>
+        <select
+          required value={form.event}
+          onChange={(e) => setForm({ ...form, event: e.target.value })}
+          className="luxury-input"
+        >
+          <option value="">Event Type *</option>
           <option value="Wedding">Wedding</option>
           <option value="Reception">Reception</option>
           <option value="Engagement">Engagement</option>
@@ -119,15 +123,16 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
           <option value="Other">Other</option>
         </select>
         <input
-          type="date" value={form.date}
+          required type="date" value={form.date}
           onChange={(e) => setForm({ ...form, date: e.target.value })}
           className="luxury-input"
+          aria-label="Event date"
         />
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <input
-          type="number" placeholder="Number of Guests"
+          required type="number" min="50" placeholder="Number of Guests *"
           value={form.guests} onChange={(e) => setForm({ ...form, guests: e.target.value })}
           className="luxury-input"
         />
@@ -139,12 +144,17 @@ export default function LeadForm({ eventType = '' }: LeadFormProps) {
         </select>
       </div>
 
-      <select value={form.budget} onChange={(e) => setForm({ ...form, budget: e.target.value })} className="luxury-input">
-        <option value="">Budget Range (Optional)</option>
-        <option value="₹85,000 – ₹1,50,000">₹85,000 – ₹1,50,000</option>
-        <option value="₹1,50,000 – ₹2,50,000">₹1,50,000 – ₹2,50,000</option>
-        <option value="₹2,50,000 – ₹4,00,000">₹2,50,000 – ₹4,00,000</option>
-        <option value="₹4,00,000+">₹4,00,000+</option>
+      <select
+        required value={form.budget}
+        onChange={(e) => setForm({ ...form, budget: e.target.value })}
+        className="luxury-input"
+      >
+        <option value="">Approx. Event Budget *</option>
+        <option value="₹1,50,000 – ₹3,00,000">₹1.5 – ₹3 Lakh</option>
+        <option value="₹3,00,000 – ₹5,00,000">₹3 – ₹5 Lakh</option>
+        <option value="₹5,00,000 – ₹10,00,000">₹5 – ₹10 Lakh</option>
+        <option value="₹10,00,000+">₹10 Lakh+</option>
+        <option value="Not decided">Not decided</option>
       </select>
 
       <textarea
